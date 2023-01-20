@@ -1,11 +1,14 @@
 import { Link } from "react-router-dom"
 import style from "./Navbar.module.css"
+import cart from "../../assets/cart.svg"
+import user from "../../assets/user.svg"
+import logo from "../../assets/logo.png"
 function Navbar(){
 return(
 <nav className={style.nav}>
     <div className={style.logo}>
     <Link to="/">
-        <h1>Nilaik</h1>
+        <img className={style.img}src={logo} alt="Nilaik logo de colores diversos"/>
     </Link>
     </div>
     <div className={style.options}>
@@ -19,10 +22,10 @@ return(
         <h2>Contactanos</h2>
     </Link>
     <Link to="/login">
-        <h2>Login</h2>
+        <img src={user} alt="usuario donde puedes logearte o comprobar si ya lo estas"/>
     </Link>
     <Link to="/Cart">
-        <h2>Carrito</h2>
+        <img src={cart} alt="carro de compra para añadir tus productos" />
     </Link>
     </div>
 </nav>)
