@@ -1,0 +1,9 @@
+.nav{
+    background-color: #f6d522;
+    display: flex;
+    justify-content: space-between;
+}
+.options{
+    display: flex;
+    justify-content: space-around;
+}
