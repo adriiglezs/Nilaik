@@ -8,3 +8,6 @@ a{
     color: #4f1f28;
     text-decoration: none;
 }
+a:hover{
+    color: #923748;
+}
