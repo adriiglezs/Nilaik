@@ -1,14 +1,14 @@
 import { Link } from "react-router-dom"
 import style from "./Navbar.module.css"
+import logo from "../../assets/logo.png"
 import cart from "../../assets/cart.svg"
 import user from "../../assets/user.svg"
-import logo from "../../assets/logo.png"
 function Navbar(){
 return(
 <nav className={style.nav}>
     <div className={style.logo}>
     <Link to="/">
-        <img className={style.img}src={logo} alt="Nilaik logo de colores diversos"/>
+        <img className={style.img} src={logo} alt="Nilaik logo de colores diversos"/>
     </Link>
     </div>
     <div className={style.options}>
