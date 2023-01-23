@@ -3,6 +3,7 @@ import style from "./Navbar.module.css";
 import brand from "../../assets/brand.png";
 import cart from "../../assets/cart.svg";
 import user from "../../assets/user.svg";
+import menu from "../../assets/menu.svg"
 function Navbar() {
   return (
     <nav className={style.nav}>
@@ -34,6 +35,7 @@ function Navbar() {
         <Link to="/Cart">
           <img src={cart} alt="carro de compra para añadir tus productos" />
         </Link>
+        <img src={menu} className={style.menu} alt="menu para desplegar opciones en dispositivos mobiles" />
       </div>
     </nav>
   );
