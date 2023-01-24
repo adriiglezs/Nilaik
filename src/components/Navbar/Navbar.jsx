@@ -4,7 +4,9 @@ import brand from "../../assets/brand.png";
 import cart from "../../assets/cart.svg";
 import user from "../../assets/user.svg";
 import menu from "../../assets/menu.svg"
+import { useState } from "react";
 function Navbar() {
+  const [isNavShow,setNavShow] = useState(false)
   return (
     <nav className={style.nav}>
       <div className={style.logo}>
@@ -16,7 +18,7 @@ function Navbar() {
           />
         </Link>
       </div>
-      <div className={style.options}>
+      <div className={`${isNavShow ? style.false : style.true}`}>
         <Link to="/products">
           <h2>Productos</h2>
         </Link>
@@ -35,8 +37,10 @@ function Navbar() {
         <Link to="/Cart">
           <img src={cart} alt="carro de compra para añadir tus productos" />
         </Link>
-        <img src={menu} className={style.menu} alt="menu para desplegar opciones en dispositivos mobiles" />
       </div>
+        <div className={`${isNavShow} ${style.hamburger}`} onClick={()=> setNavShow(!isNavShow)}>
+          <img src={menu} className={`${isNavShow}`} alt="menu para desplegar opciones en dispositivos mobiles" />
+        </div>
     </nav>
   );
 }
