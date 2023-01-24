@@ -16,9 +16,7 @@ footer {
     bottom: 0;
     /* Ocupar todo el ancho disponible */
     width: 100%;
-    min-height: 18vh;
-    /* Solo para probar cómo se ve */
-    background: #ccc;
+    min-height: 20vh;
 }
 h2{
   font-size: 1em;

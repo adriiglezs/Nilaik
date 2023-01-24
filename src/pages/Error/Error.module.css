@@ -1,7 +1,9 @@
 .container{
     display: flex;
-    justify-content:  center;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    background-color: rgb(255, 67, 67);
-    height: 100vh;
+}
+.svg{
+    min-height: 10em;
 }

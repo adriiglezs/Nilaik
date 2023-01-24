@@ -1,7 +1,7 @@
 import style from "./Footer.module.css"
-export default function Footer(){
+export default function Footer({styleFoo}){
     return(
-    <footer className={style.content}>
+    <footer className={styleFoo ? styleFoo : style.content}>
         <p className={style.text}>Direccion: Estado de México</p>
     </footer>)
 }

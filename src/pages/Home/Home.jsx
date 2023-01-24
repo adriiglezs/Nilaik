@@ -1,4 +1,8 @@
+import Footer from "../../components/Footer/Footer"
+
 function Home(){
-    return(<></>)
+    return(<>
+    <Footer/>
+    </>)
 }
 export default Home

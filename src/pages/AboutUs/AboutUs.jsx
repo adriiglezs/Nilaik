@@ -5,6 +5,8 @@ import axel from "../../assets/axel-min.jpeg"
 import victoria from "../../assets/victoria-min.jpg"
 import diego from "../../assets/diego-min.png"
 import adrian from "../../assets/adrian-min.jpg"
+import Footer from "../../components/Footer/Footer"
+import style from "./AboutUs.module.css"
 
 export default function AboutUs(){
     return(<>
@@ -31,5 +33,6 @@ export default function AboutUs(){
      <Card name = "Adrián González"
     photo = {adrian}
     biography = "Originaria del estado de Hidalgo, graduada de la Licenciatura en Historia del Arte."/>
+    <Footer styleFoo={style.foo}/>
     </>)
 }
