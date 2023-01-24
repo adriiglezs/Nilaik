@@ -19,14 +19,26 @@ function Navbar() {
         </Link>
       </div>
       <div className={`${isNavShow ? style.false : style.true}`}>
-        <Link to="/products">
-          <h2>Productos</h2>
+      <Link to="/home">
+          <h2>Inicio</h2>
+        </Link>
+        <Link to="/characters">
+          <h2>Personajes</h2>
+        </Link>
+        <Link to="/nike-puma">
+          <h2>Nike   Puma</h2>
+        </Link>
+        <Link to="/jordan-adidas">
+          <h2>Jordan   Adidas</h2>
+        </Link>
+        <Link to="/aboutus">
+          <h2>Sobre nosotros</h2>
         </Link>
         <Link to="/about">
           <h2>Acerca de</h2>
         </Link>
         <Link to="/contact">
-          <h2>Contactanos</h2>
+          <h2>Contáctanos</h2>
         </Link>
         <Link to="/login">
           <img

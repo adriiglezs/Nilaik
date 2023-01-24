@@ -1,0 +1,29 @@
+.image{
+   height: 291px;
+   width: 291px;
+   border-radius: 100px;
+   padding: 25px;
+}
+.paragraph{
+    padding: 85px;
+    background-color: #f6d522;
+    max-height: 330px;
+    max-width: 900px;
+}
+.photo{
+    display: flex;
+    max-width: 413px;
+    max-height: 330px;
+    background-color: #A6B8D3;
+    justify-content: center;
+}
+.mainContainer{
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+    gap: 2em;
+}
+.icons{
+    display: flex;
+    justify-content: center;
+}
