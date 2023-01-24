@@ -1,12 +1,29 @@
 import style from "./Card.module.css"
-export default function Card({name, photo, biography}){
+import instagram from "../../assets/social/instagram.svg"
+import github from "../../assets/social/github.svg"
+import linkedin from "../../assets/social/linkedin.svg"
+import cv from "../../assets/social/cv.svg"
+export default function Card({name, photo, biography,instagramUrl,githubUrl,linkedinUrl, cvUrl}){
     return(<>
     <div className={style.mainContainer}>
        <div className={style.photo}><img className={style.image} src = {photo}/></div>
        <div className={style.paragraph}>
         <h3>{name}</h3>
        <div ><p>{biography}</p></div>
-       <div className={style.icons}>Redes sociales</div>
+       <div className={style.icons}>
+        <a href={instagramUrl} target="_blank" rel="noopener noreferrer">
+        <img src={instagram} alt="icono de instagram"/>
+        </a>
+        <a href={linkedinUrl} target="_blank" rel="noopener noreferrer">
+        <img src={linkedin} alt="icono de linkedin"/>
+        </a>
+        <a href={githubUrl} target="_blank" rel="noopener noreferrer">
+        <img src={github} alt="icono de github"/>
+        </a>
+        <a href={cvUrl} target="_blank" rel="noopener noreferrer">
+        <img src={cv} alt="icono para enviar al cv"/>
+        </a>
+       </div>
        </div>
     </div>
     </>)

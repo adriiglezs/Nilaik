@@ -1,12 +1,12 @@
 import Card from "../../components/Card/Card"
-import melanie from "../../assets/cortada.jpeg"
-import alan from "../../assets/alan.png"
-import axel from "../../assets/axel.jpeg"
-import victoria from "../../assets/victoria.jpg"
-import diego from "../../assets/Diego.png"
-import adrian from "../../assets/adrian.jpg"
+import melanie from "../../assets/melanie-min.jpeg"
+import alan from "../../assets/alan-min.png"
+import axel from "../../assets/axel-min.jpeg"
+import victoria from "../../assets/victoria-min.jpg"
+import diego from "../../assets/diego-min.png"
+import adrian from "../../assets/adrian-min.jpg"
 
-export default function About(){
+export default function AboutUs(){
     return(<>
     <Card name = "Melanie Leal"
     photo = {melanie}
@@ -31,10 +31,5 @@ export default function About(){
      <Card name = "Adrián González"
     photo = {adrian}
     biography = "Originaria del estado de Hidalgo, graduada de la Licenciatura en Historia del Arte."/>
-    
-  
-
-
-
     </>)
 }
