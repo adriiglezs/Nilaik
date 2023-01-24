@@ -1,4 +1,7 @@
-.foo{
-    position:relative;
-    background-color: #2F5898;
+.foo {
+  position: relative;
+  background-color: #2f5898;
+}
+.background {
+  background-image: url("https://images.pexels.com/photos/3965557/pexels-photo-3965557.jpeg");
 }
