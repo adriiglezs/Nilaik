@@ -19,7 +19,7 @@ function Navbar() {
         </Link>
       </div>
       <div className={`${isNavShow ? style.false : style.true}`}>
-      <Link to="/home">
+      <Link to="/">
           <h2>Inicio</h2>
         </Link>
         <Link to="/characters">
