@@ -7,20 +7,22 @@ export default function Card({name, photo, biography,instagramUrl,githubUrl,link
     return(<>
     <div className={style.mainContainer}>
        <div className={style.photo}><img className={style.image} src = {photo}/></div>
-       <div className={style.paragraph}>
+       <div className={style.content}>
         <h3>{name}</h3>
-       <div ><p>{biography}</p></div>
+       <div>
+        <p>{biography}</p>
+        </div>
        <div className={style.icons}>
-        <a href={instagramUrl} target="_blank" rel="noopener noreferrer">
+        <a className={style.anchor}href={instagramUrl} target="_blank" rel="noopener noreferrer">
         <img src={instagram} alt="icono de instagram"/>
         </a>
-        <a href={linkedinUrl} target="_blank" rel="noopener noreferrer">
+        <a className={style.anchor}href={linkedinUrl} target="_blank" rel="noopener noreferrer">
         <img src={linkedin} alt="icono de linkedin"/>
         </a>
-        <a href={githubUrl} target="_blank" rel="noopener noreferrer">
+        <a className={style.anchor}href={githubUrl} target="_blank" rel="noopener noreferrer">
         <img src={github} alt="icono de github"/>
         </a>
-        <a href={cvUrl} target="_blank" rel="noopener noreferrer">
+        <a className={style.anchor}href={cvUrl} target="_blank" rel="noopener noreferrer">
         <img src={cv} alt="icono para enviar al cv"/>
         </a>
        </div>

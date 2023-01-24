@@ -4,11 +4,15 @@
    border-radius: 100px;
    padding: 25px;
 }
-.paragraph{
-    padding: 85px;
+.anchor{
+    cursor: pointer;
+}
+.content{
+    display: flex;
+    flex-direction:column;
     background-color: #f6d522;
-    max-height: 330px;
-    max-width: 900px;
+    padding: 2em;
+    width: 94vh;
 }
 .photo{
     display: flex;
@@ -19,11 +23,21 @@
 }
 .mainContainer{
     display: flex;
-    margin-top: 50px;
+    flex-wrap: wrap;
+    margin-top: 2em;
     justify-content: center;
-    gap: 2em;
+    gap: 1em;
 }
+
+@media screen and (min-width:768px){
+    .mainContainer{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+}
+
 .icons{
     display: flex;
+    gap:1em;
     justify-content: center;
 }
