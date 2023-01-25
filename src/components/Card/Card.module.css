@@ -10,6 +10,13 @@
 .content{
     display: flex;
     flex-direction:column;
+    background-color: #fb9595;
+    padding: 2em;
+    width: 94vh;
+}
+.contentColor{
+    display: flex;
+    flex-direction:column;
     background-color: #f6d522;
     padding: 2em;
     width: 94vh;
