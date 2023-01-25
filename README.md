@@ -26,3 +26,13 @@ Este proyecto es una tienda de ropa desarrollada utilizando las tecnologías Rea
 ## Acerca del producto
 
 Nilaik es una aplicación web que permite a los usuarios navegar por un catálogo de productos, agregar productos al carrito y realizar compras. También cuenta con un sistema de autenticación y un formulario de contacto.
+
+## Colaboradores
+
+- Bolaños Cerón Victoria
+- González Sánchez Adrián
+- Hernández González Jorge
+- Leal Barrera Melanie 
+- Mercado Moreno Axel Joshua
+- Pahua Silvan Diego 
+- Ramos Preciado Alan Josafat
