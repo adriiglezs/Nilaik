@@ -34,5 +34,4 @@ Nilaik es una aplicación web que permite a los usuarios navegar por un catálog
 - Hernández González Jorge
 - Leal Barrera Melanie 
 - Mercado Moreno Axel Joshua
-- Pahua Silvan Diego 
 - Ramos Preciado Alan Josafat
