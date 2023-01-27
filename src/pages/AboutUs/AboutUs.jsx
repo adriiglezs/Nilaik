@@ -15,7 +15,7 @@ export default function AboutUs() {
       <div className={style.background}>
         <Card
           name="Melanie Leal"
-          changeColor = {true}
+          changeColor={true}
           instagramUrl=""
           githubUrl="https://github.com/mondalnim"
           linkedinUrl="https://www.linkedin.com/in/melanie-l-04339025a"
@@ -36,7 +36,7 @@ export default function AboutUs() {
 
         <Card
           name="Axel Mercado"
-          changeColor = {true}
+          changeColor={true}
           instagramUrl="https://instagram.com/joaxelrock?igshid=ZDdkNTZiNTM="
           githubUrl="https://github.com/AxelRoseCooper"
           linkedinUrl="https://www.linkedin.com/in/axel-joshua-mercado-moreno"
@@ -56,7 +56,7 @@ export default function AboutUs() {
         />
         <Card
           name="Jorge Hernandez"
-          changeColor = {true}
+          changeColor={true}
           instagramUrl=""
           githubUrl="https://github.com/jorhdz"
           linkedinUrl="https://www.linkedin.com/in/jorge-hern%C3%A1ndez-46083425a/"
@@ -64,7 +64,7 @@ export default function AboutUs() {
           photo={jorge}
           biography="Cocinero por profesión en búsqueda de nuevos aires y nuevos retos. Originario de Guadalajara, Jalisco. Tragón por excelencia. Integrante del dev-team."
         />
-        <Card
+        {/* <Card
           name="Diego Pahua"
           instagramUrl="https://www.instagram.com/d7egps/"
           githubUrl="https://github.com/d7egps"
@@ -72,11 +72,10 @@ export default function AboutUs() {
           cvUrl="https://drive.google.com/file/d/1eASwwiZ0OJiNwNNOQERk7giu5dYBd9Rp/view"
           photo={diego}
           biography="Soy un miembro del equipo de desarrolladores con formación en Pedagogía y pasión por la arquitectura de software, con la necesidad de mantenerme actualizado y buscando oportunidades para crecer profesionalmente, con ganas de afrontar cualquier reto que se me presente."
-        />
+        /> */}
 
         <Card
           name="Adrián González"
-          changeColor = {true}
           instagramUrl="https://instagram.com/adrii_wings?igshid=NmQ2ZmYxZjA="
           githubUrl="https://github.com/adriiglezs"
           linkedinUrl="https://www.linkedin.com/in/adri%C3%A1n-gonz%C3%A1lez-s%C3%A1nchez-649141253"
