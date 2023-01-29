@@ -1,0 +1,51 @@
+.background {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #f6d522;
+  padding: 3%;
+  width: 100%;
+}
+
+.cod {
+  display: inline-block;
+  margin: 0;
+  width: 40%;
+  padding: 0;
+  font-size: 70%;
+}
+.name {
+  display: inline-block;
+  width: 60%;
+  font-display: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 50%;
+}
+.cost {
+  display: inline-block;
+  width: 50%;
+  margin: 0;
+  padding: 0;
+  font-size: 70%;
+}
+.shopping {
+  text-align: right;
+  display: inline-block;
+  width: 50%;
+  height: 50%;
+}
+.target {
+  width: 29%;
+  margin: 2%;
+  align-self: center;
+  justify-content: center;
+  display: inline-block;
+}
+
+.CardProduct {
+  width: 100%;
+  height: auto;
+  align-self: center;
+  display: inline-block;
+  margin: 0;
+}
