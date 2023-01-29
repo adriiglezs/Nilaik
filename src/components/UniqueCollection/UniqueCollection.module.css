@@ -1,0 +1,20 @@
+.content {
+  display: flex;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("https://images.pexels.com/photos/1166209/pexels-photo-1166209.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  gap: 3rem;
+  justify-content: space-evenly;
+  padding: 4rem;
+}
+.img {
+  max-width: 15rem;
+  height: 25rem;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  max-width: 30rem;
+  align-items: center;
+}
