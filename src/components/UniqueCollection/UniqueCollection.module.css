@@ -1,0 +1,26 @@
+.img {
+  max-width: 15rem;
+  height: 25rem;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  max-width: 30rem;
+  align-items: center;
+}
+
+.Content {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2em;
+  justify-content: center;
+  gap: 1em;
+}
+
+@media screen and (min-width: 768px) {
+  .Content {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}

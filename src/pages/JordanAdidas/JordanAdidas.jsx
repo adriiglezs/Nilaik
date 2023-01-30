@@ -1,5 +1,6 @@
 import CardProduct from "../../components/CardProduct/CardProduct";
 import Footer from "../../components/Footer/Footer";
+import UniqueCollection from "../../components/UniqueCollection/UniqueCollection";
 import style from "./JordanAdidas.module.css";
 
 export default function JordanAdidas() {
@@ -22,6 +23,8 @@ export default function JordanAdidas() {
       code="CNIG"
       cost="175.00"
     />
+
+    <UniqueCollection />
     <Footer styleFoo={style.foo} />
 
   </>)

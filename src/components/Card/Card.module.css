@@ -1,50 +1,50 @@
-.image{
-   height: 291px;
-   width: 291px;
-   border-radius: 100px;
-   padding: 25px;
+.image {
+  height: 291px;
+  width: 291px;
+  border-radius: 100px;
+  padding: 25px;
 }
-.anchor{
-    cursor: pointer;
+.anchor {
+  cursor: pointer;
 }
-.content{
-    display: flex;
-    flex-direction:column;
-    background-color: #fb9595;
-    padding: 2em;
-    width: 94vh;
+.content {
+  display: flex;
+  flex-direction: column;
+  background-color: #fb9595;
+  padding: 2em;
+  width: 94vh;
 }
-.contentColor{
-    display: flex;
-    flex-direction:column;
-    background-color: #f6d522;
-    padding: 2em;
-    width: 94vh;
+.contentColor {
+  display: flex;
+  flex-direction: column;
+  background-color: #f6d522;
+  padding: 2em;
+  width: 94vh;
 }
-.photo{
-    display: flex;
-    max-width: 413px;
-    max-height: 330px;
-    background-color: #A6B8D3;
-    justify-content: center;
+.photo {
+  display: flex;
+  max-width: 413px;
+  max-height: 330px;
+  background-color: #a6b8d3;
+  justify-content: center;
 }
-.mainContainer{
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 2em;
-    justify-content: center;
-    gap: 1em;
-}
-
-@media screen and (min-width:768px){
-    .mainContainer{
-        display: flex;
-        flex-wrap: nowrap;
-    }
+.mainContainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2em;
+  justify-content: center;
+  gap: 1em;
 }
 
-.icons{
+@media screen and (min-width: 768px) {
+  .mainContainer {
     display: flex;
-    gap:1em;
-    justify-content: center;
+    flex-wrap: nowrap;
+  }
+}
+
+.icons {
+  display: flex;
+  gap: 1em;
+  justify-content: center;
 }
