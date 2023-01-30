@@ -1,26 +1,43 @@
 .img {
-  max-width: 15rem;
-  height: 25rem;
+  display: inline-block;
+  max-width: 30%;
+  height: auto;
 }
 
 .text {
-  display: flex;
+  display: inline-block;
   flex-direction: column;
-  max-width: 30rem;
+  max-width: 30%;
   align-items: center;
 }
 
-.Content {
+.content {
   display: flex;
   flex-wrap: wrap;
   margin-top: 2em;
   justify-content: center;
   gap: 1em;
 }
-
-@media screen and (min-width: 768px) {
-  .Content {
-    display: flex;
+@media screen and (max-width: 768px) {
+  .img {
+    display: inline-block;
+    max-width: 45%;
     flex-wrap: nowrap;
   }
+}
+
+@media screen and (max-width: 768px) {
+  .text {
+    display: flex;
+    max-width: 90%;
+    flex-wrap: nowrap;
+  }
+}
+.content1 {
+  display: flex;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("https://images.pexels.com/photos/1166209/pexels-photo-1166209.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  justify-content: space-evenly;
+  margin: 5% auto;
 }
