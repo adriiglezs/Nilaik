@@ -1,13 +1,6 @@
-* {
-	padding: 0px;
-	margin: 0;
-	box-sizing: border-box;
-}
 
-body {
-	background: #E8E8E8;
-	font-family: 'Open Sans', sans-serif;
-}
+
+
 
 .contenedor {
 	min-height: 100vh;

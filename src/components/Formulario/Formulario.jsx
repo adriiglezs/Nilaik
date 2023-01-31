@@ -5,7 +5,7 @@
 import React, { useState } from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 
-const Formulario = () => {
+export default function Formulario () {
   const [formularioEnviado, cambiarFormularioEnviado] = useState(false);
   return (
     <>
@@ -46,7 +46,7 @@ const Formulario = () => {
         }}
       >
         {({ errors }) => (
-          <Form className="formulario">
+          <Form className={formulario}>
             <div>
               <label htmlFor="nombre">Nombre</label>
               <Field
@@ -57,7 +57,7 @@ const Formulario = () => {
               />
               <ErrorMessage
                 name="nombre"
-                component={() => <div className="error">{errors.nombre}</div>}
+                component={() => <div className={error}>{errors.nombre}</div>}
               />
             </div>
             <div>
@@ -70,11 +70,9 @@ const Formulario = () => {
               />
               <ErrorMessage
                 name="correo"
-                component={() => <div className="error">{errors.correo}</div>}
+                component={() => <div className={error}>{errors.correo}</div>}
               />
             </div>
-
-           
 
             <div>
               <Field name="mensaje" as="textarea" placeholder="Mensaje" />
@@ -82,15 +80,12 @@ const Formulario = () => {
 
             <button type="submit">Enviar</button>
             {formularioEnviado && (
-              <p className="exito">Formulario enviado con exito!</p>
+              <p className={exito}>Formulario enviado con exito!</p>
             )}
           </Form>
         )}
-
-        
       </Formik>
     </>
   );
 };
 
-export default Formulario;
