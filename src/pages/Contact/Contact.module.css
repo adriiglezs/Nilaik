@@ -1,10 +1,52 @@
 .container {
+  flex-wrap: wrap;
+  display: flex;
+  max-width: 500px;
+  max-height: 300px;
+  background-color: #A6B8D3;
+  justify-content: center;
+  text-align: center;
+  
+ 
+  
+  /*  gap: 1em; */
+}
+.titulo{
+  justify-content: center;
+  text-align: center;
+  color:white;
+  font-size:25px;
+}
+.containerLeft {
   display: flex;
   flex-wrap: wrap;
-  margin: 50px 150px 50px 150px;
-  background-color: red;
+  background-color: rgb(255, 196, 0);
+  text-align: center;
   justify-content: center;
+  width: max-content;
+  height: 300px;
+ 
+  
+  
   /*  gap: 1em; */
+}
+.mainContainer{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2em;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    margin-bottom: 1.5em;
+    gap: 1em;
+    justify-content: center;
+}
+
+@media screen and (min-width:768px){
+    .mainContainer{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    
 }
 
 /* .mainContainer {
@@ -14,3 +56,14 @@
   justify-content: center;
   gap: 1em;
 } */
+.background {
+  background-repeat: no-repeat;   
+  background-size:cover;
+  background-image: url("https://images.pexels.com/photos/3152187/pexels-photo-3152187.jpeg");
+}
+.icons{
+    display: flex;
+    justify-content: center;
+    gap: 4em;
+    width: 100px;
+}

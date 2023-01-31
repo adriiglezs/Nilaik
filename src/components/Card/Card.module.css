@@ -32,8 +32,8 @@
     display: flex;
     flex-wrap: wrap;
     margin-top: 2em;
-    justify-content: center;
     gap: 1em;
+    justify-content: center;
 }
 
 @media screen and (min-width:768px){
