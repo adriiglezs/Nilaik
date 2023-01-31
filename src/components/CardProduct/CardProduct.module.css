@@ -8,31 +8,33 @@
 
 .cod {
   display: inline-block;
-  margin: 0;
   width: 40%;
-  padding: 0;
-  font-size: 70%;
+  font-size: 15px;
 }
 .name {
   display: inline-block;
   width: 60%;
   font-display: 100%;
-  margin: 0;
-  padding: 0;
-  font-size: 50%;
+  font-size: 12px;
 }
 .cost {
   display: inline-block;
   width: 50%;
   margin: 0;
   padding: 0;
-  font-size: 70%;
+  font-size: 15px;
 }
 .shopping {
   text-align: right;
   display: inline-block;
   width: 50%;
   height: 50%;
+}
+@media screen and (max-width: 768px) {
+  .cards {
+    width: 40%;
+    height: 40%;
+  }
 }
 .target {
   width: 29%;
@@ -48,4 +50,26 @@
   align-self: center;
   display: inline-block;
   margin: 0;
+}
+@media screen and (max-width: 810px) {
+  .cost,
+  .cod,
+  .name {
+    display: inline-block;
+    max-width: 90%;
+    flex-wrap: nowrap;
+    color: black;
+    font-size: 7.5px;
+  }
+}
+@media screen and (max-width: 512px) {
+  .cost,
+  .cod,
+  .name {
+    display: inline-block;
+    max-width: 90%;
+    flex-wrap: nowrap;
+    color: black;
+    font-size: 5px;
+  }
 }

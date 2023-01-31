@@ -8,7 +8,7 @@
   display: inline-block;
   flex-direction: column;
   max-width: 30%;
-  align-items: center;
+  text-align: center;
 }
 
 .content {
@@ -16,21 +16,24 @@
   flex-wrap: wrap;
   margin-top: 2em;
   justify-content: center;
-  gap: 1em;
+  gap: 3%;
 }
 @media screen and (max-width: 768px) {
   .img {
     display: inline-block;
     max-width: 45%;
     flex-wrap: nowrap;
+    margin: 0%;
   }
 }
 
 @media screen and (max-width: 768px) {
   .text {
-    display: flex;
+    display: inline-block;
     max-width: 90%;
     flex-wrap: nowrap;
+    color: azure;
+    font-size: 12px;
   }
 }
 .content1 {
@@ -39,5 +42,5 @@
   background-repeat: no-repeat;
   background-image: url("https://images.pexels.com/photos/1166209/pexels-photo-1166209.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
   justify-content: space-evenly;
-  margin: 5% auto;
+  margin: 0;
 }

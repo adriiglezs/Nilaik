@@ -15,7 +15,7 @@ export default function CardProduct({ name, photoUrl, code, cost }) {
           <h3 >{cost}</h3>
         </div>
         <div className={style.shopping} >
-          <img src="/src/assets/cart.svg" alt="carro de compra para añadir tus productos"></img>
+          <img className={style.cards} src="/src/assets/cart.svg" alt="carro de compra para añadir tus productos"></img>
         </div>
       </div>
     </div>
