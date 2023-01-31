@@ -1,0 +1,38 @@
+.background{
+    display: flex;
+    justify-content: space-around;
+    vertical-align: top;
+    margin:  15%;
+    position:absolute;
+    width: 70%;
+
+}
+
+.SocialNetworksLogo{
+    display: flex;
+    vertical-align: center;
+    margin: 10% 10% 10% 10%;
+    padding: 0px 20%px 0px 20%px;
+
+}
+
+.imgWA{
+    width: 125px;
+    height: 125px;
+    display: block;
+    margin: auto;
+}
+
+.imgIG{
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: auto;
+}
+
+.imgFB{
+    width: 100px;
+    height: 150px;
+    display: block;
+    margin: auto;
+}
