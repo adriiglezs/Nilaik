@@ -1,17 +1,33 @@
 import React, { useState } from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 
-
 import style from "./Contact.module.css";
 import Footer from "../../components/Footer/Footer";
 import whatsapp from "../../assets/social/whatsapp.svg";
 import servicio from "../../assets/social/servicio.svg";
-
+import emailjs from "@emailjs/browser";
 
 export default function Contact() {
-  function publish(value) {
-    console.log(value);
+  function enviarEmail(e) {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_bi0uqxh",
+        "service_bi0uqxh",
+        form.current,
+        "LpNalDBsDJDLtYUgG"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
   }
+
   const [formularioEnviado, cambiarFormularioEnviado] = useState(false);
   return (
     <>
@@ -34,7 +50,7 @@ export default function Contact() {
               />
             </div>
 
-            <h2 >
+            <h2>
               Si tienes alguna duda o necesitas contactarte directamente con
               nosotros. Por favor llena el formulario y nos pondremos en
               contacto contigo.
@@ -79,7 +95,7 @@ export default function Contact() {
 
                 return errores;
               }}
-              onSubmit={(valores, { resetForm }) => {
+              onSubmit={(valores, { resetForm, enviarEmail }) => {
                 resetForm();
                 console.log("Formulario enviado");
                 cambiarFormularioEnviado(true);
@@ -148,7 +164,7 @@ export default function Contact() {
           </div>
         </div>
       </div>
-      {/*<Footer />*/}
+      <Footer />
     </>
   );
-};
+}
