@@ -1,20 +1,23 @@
-import React, { useState } from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 
 import style from "./Contact.module.css";
 import Footer from "../../components/Footer/Footer";
 import whatsapp from "../../assets/social/whatsapp.svg";
 import servicio from "../../assets/social/servicio.svg";
+
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
 export default function Contact() {
-  function enviarEmail(e) {
+  const form = useRef();
+
+  const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs
       .sendForm(
         "service_bi0uqxh",
-        "service_bi0uqxh",
+        "template_5xkfdzf",
         form.current,
         "LpNalDBsDJDLtYUgG"
       )
@@ -26,9 +29,10 @@ export default function Contact() {
           console.log(error.text);
         }
       );
-  }
+  };
 
   const [formularioEnviado, cambiarFormularioEnviado] = useState(false);
+
   return (
     <>
       <div className={style.background}>
@@ -56,6 +60,7 @@ export default function Contact() {
               contacto contigo.
             </h2>
           </div>
+
           <div className={style.container}>
             <Formik
               initialValues={{
@@ -95,7 +100,7 @@ export default function Contact() {
 
                 return errores;
               }}
-              onSubmit={(valores, { resetForm, enviarEmail }) => {
+              onSubmit={(valores, { resetForm }) => {
                 resetForm();
                 console.log("Formulario enviado");
                 cambiarFormularioEnviado(true);
@@ -103,7 +108,11 @@ export default function Contact() {
               }}
             >
               {({ errors }) => (
-                <Form className={style.formulario}>
+                <Form
+                  className={style.formulario}
+                  ref={form}
+                  onSubmit={sendEmail}
+                >
                   <div>
                     <label htmlFor="nombre">Nombre</label>
                     <Field
@@ -164,7 +173,17 @@ export default function Contact() {
           </div>
         </div>
       </div>
-      <Footer />
+
+      {/*
+    <form ref={form} onSubmit={sendEmail}>
+      <label>Name</label>
+      <input type="text" name="nombre" />
+      <label>Email</label>
+      <input type="email" name="email" />
+      <label>Message</label>
+      <textarea name="mensaje" />
+      <input type="submit" value="Send" />
+            </form>*/}
     </>
   );
 }
