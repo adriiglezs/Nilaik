@@ -160,7 +160,7 @@ export default function Contact() {
                   </div>
 
                   <div>
-                    <Field name="mensaje" as="textarea" placeholder="Mensaje" />
+                    <Field name="mensaje" as="textarea" placeholder=" Mensaje" />
                   </div>
 
                   <button type="submit">Enviar</button>
