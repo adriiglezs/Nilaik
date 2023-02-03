@@ -4,7 +4,7 @@ import IG from "../../assets/Íconos/IG-Icono.png";
 import FB from "../../assets/Íconos/FB-Icono.png";
 
 
-function SocialMedia () {
+function SocialMedia() {
   return (
     <nav className={style.background}>
       <div className={style.SocialNetworksLogo}>
@@ -14,7 +14,7 @@ function SocialMedia () {
             src={WA}
             alt="Logo Whatsapp"
           />
-          </a>
+        </a>
       </div>
 
       <div className={style.SocialNetworksLogo}>
@@ -24,7 +24,7 @@ function SocialMedia () {
             src={IG}
             alt="Logo Instagram"
           />
-          </a>
+        </a>
       </div>
 
       <div className={style.SocialNetworksLogo}>
@@ -34,7 +34,7 @@ function SocialMedia () {
             src={FB}
             alt="Logo Facebook"
           />
-          </a>
+        </a>
       </div>
 
     </nav>

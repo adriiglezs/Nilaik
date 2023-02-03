@@ -1,38 +1,42 @@
-.background{
-    display: flex;
-    justify-content: space-around;
-    vertical-align: top;
-    margin:  15%;
-    position:absolute;
-    width: 70%;
-
+.background {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5% 10% 5% 10%;
+  justify-content: center;
 }
 
-.SocialNetworksLogo{
-    display: flex;
-    vertical-align: center;
-    margin: 10% 10% 10% 10%;
-    padding: 0px 20%px 0px 20%px;
-
+.SocialNetworksLogo {
+  display: FLEX;
+  justify-content: center;
+  padding: 0px;
+  max-width: 30%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  align-items: center;
 }
 
-.imgWA{
-    width: 125px;
-    height: 125px;
-    display: block;
-    margin: auto;
+.imgWA {
+  width: 40%;
+  height: auto;
 }
 
-.imgIG{
-    width: 100px;
-    height: 100px;
-    display: block;
-    margin: auto;
+.imgIG {
+  width: 40%;
+  height: auto;
 }
 
-.imgFB{
-    width: 100px;
-    height: 150px;
-    display: block;
-    margin: auto;
+.imgFB {
+  width: 40%;
+  height: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .imgFB,
+  .imgIG,
+  .imgWA {
+    width: 60%;
+    height: auto;
+  }
 }
