@@ -4,7 +4,7 @@ footer {
   align-items: center;
   justify-items: center;
   display: flex;
-  font-size: 1em;
+  /* font-size: 1em; */
   color: #a6b8d3;
   /* Posicionar abajo */
   /*  position: absolute; */
@@ -23,6 +23,8 @@ footer {
   padding-left: 10px;
   align-items: flex-start;
   margin-block-end: 20px;
+  width: 100%;
+  height: auto;
 }
 
 .address {
@@ -32,18 +34,21 @@ footer {
 
 .catalogue {
   margin-block-end: 20px;
-  padding-left: 100px;
+  width: 100%;
+  height: auto;
 }
 
 .links {
   margin-block-end: 20px;
   justify-content: end;
-  padding-left: 100px;
+  width: 100%;
+  height: auto;
 }
 
 .shipping {
   margin-block-end: 20px;
-  padding-left: 100px;
+  width: 100%;
+  height: auto;
 }
 
 /* .content{
@@ -68,3 +73,13 @@ footer {
     justify-content: end;
 }
  */
+
+/*  @media screen and (max-width: 768px) {
+  .text {
+    display: inline-block;
+    max-width: 90%;
+    flex-wrap: nowrap;
+    color: azure;
+    font-size: 12px;
+  }
+} */
