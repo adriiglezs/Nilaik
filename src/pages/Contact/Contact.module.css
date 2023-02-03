@@ -170,3 +170,7 @@
   padding-top: 15px;
   color: #22f645;
 }
+.foo {
+  position: relative;
+  background-color: #2f5898;
+}

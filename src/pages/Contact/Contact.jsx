@@ -54,7 +54,7 @@ export default function Contact() {
               />
             </div>
 
-            <h2 className={style.Ch2}>
+            <h2 className={style.Mh2}>
               Si tienes alguna duda o necesitas contactarte directamente con
               nosotros. Por favor llena el formulario y nos pondremos en
               contacto contigo.
@@ -185,6 +185,8 @@ export default function Contact() {
       <textarea name="mensaje" />
       <input type="submit" value="Send" />
             </form>*/}
+      <Footer styleFoo={style.foo} />
     </>
   );
+
 }
