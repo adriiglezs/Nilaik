@@ -119,7 +119,7 @@ export default function Contact() {
                       type="text"
                       id="nombre"
                       name="nombre"
-                      placeholder="Ingresa tu nombre"
+                      placeholder="Helena "
                     />
                     <ErrorMessage
                       name="nombre"
@@ -144,7 +144,7 @@ export default function Contact() {
                     />
                   </div>
                   <div>
-                    <label htmlFor="phone">Telefono</label>
+                    <label htmlFor="phone">Teléfono</label>
                     <Field
                       type="tel"
                       id="phone"
