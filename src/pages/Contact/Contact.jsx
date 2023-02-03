@@ -37,7 +37,7 @@ export default function Contact() {
     <>
       <div className={style.background}>
         <div className={style.titulo}>
-          <h1> Contactanos </h1>
+          <h1 className={style.Mh1}> Contáctanos </h1>
         </div>
         <div className={style.mainContainer}>
           <div className={style.containerLeft}>
@@ -54,7 +54,7 @@ export default function Contact() {
               />
             </div>
 
-            <h2>
+            <h2 className={style.Mh2}>
               Si tienes alguna duda o necesitas contactarte directamente con
               nosotros. Por favor llena el formulario y nos pondremos en
               contacto contigo.
@@ -119,7 +119,7 @@ export default function Contact() {
                       type="text"
                       id="nombre"
                       name="nombre"
-                      placeholder="Ingresa tu nombre"
+                      placeholder="Helena "
                     />
                     <ErrorMessage
                       name="nombre"
@@ -144,7 +144,7 @@ export default function Contact() {
                     />
                   </div>
                   <div>
-                    <label htmlFor="phone">Telefono</label>
+                    <label htmlFor="phone">Teléfono</label>
                     <Field
                       type="tel"
                       id="phone"
@@ -172,7 +172,9 @@ export default function Contact() {
             </Formik>
           </div>
         </div>
+        <Footer styleFoo={style.foo} />
       </div>
+
 
       {/*
     <form ref={form} onSubmit={sendEmail}>
@@ -184,6 +186,8 @@ export default function Contact() {
       <textarea name="mensaje" />
       <input type="submit" value="Send" />
             </form>*/}
+
     </>
   );
+
 }

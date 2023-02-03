@@ -1,8 +1,7 @@
-
 import style from "./CardContact.module.css";
-export default function CardContactVision({ tittle, content }) {
+export default function CardValores({ tittle, content }) {
   return (
-    <div className={style.CardContactVision}>
+    <div className={style.CardValores}>
 
       <h4>{tittle}</h4>
       <p>{content}</p>

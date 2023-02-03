@@ -1,0 +1,42 @@
+.background {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5% 10% 5% 10%;
+  justify-content: center;
+}
+
+.SocialNetworksLogo {
+  display: FLEX;
+  justify-content: center;
+  padding: 0px;
+  max-width: 30%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  align-items: center;
+}
+
+.imgWA {
+  width: 40%;
+  height: auto;
+}
+
+.imgIG {
+  width: 40%;
+  height: auto;
+}
+
+.imgFB {
+  width: 40%;
+  height: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .imgFB,
+  .imgIG,
+  .imgWA {
+    width: 60%;
+    height: auto;
+  }
+}
