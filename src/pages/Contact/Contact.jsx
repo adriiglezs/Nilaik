@@ -54,7 +54,7 @@ export default function Contact() {
               />
             </div>
 
-            <h2 className={style.Mh2}>
+            <h2 className={style.Ch2}>
               Si tienes alguna duda o necesitas contactarte directamente con
               nosotros. Por favor llena el formulario y nos pondremos en
               contacto contigo.
