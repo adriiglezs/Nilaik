@@ -37,7 +37,7 @@ export default function Contact() {
     <>
       <div className={style.background}>
         <div className={style.titulo}>
-          <h1 className={style.Mh1}> Contactanos </h1>
+          <h1 className={style.Mh1}> Contáctanos </h1>
         </div>
         <div className={style.mainContainer}>
           <div className={style.containerLeft}>
@@ -172,6 +172,7 @@ export default function Contact() {
             </Formik>
           </div>
         </div>
+        <Footer styleFoo={style.foo} />
       </div>
 
 
@@ -185,7 +186,7 @@ export default function Contact() {
       <textarea name="mensaje" />
       <input type="submit" value="Send" />
             </form>*/}
-      <Footer styleFoo={style.foo} />
+
     </>
   );
 
