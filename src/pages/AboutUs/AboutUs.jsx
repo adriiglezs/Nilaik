@@ -12,6 +12,7 @@ import style from "./AboutUs.module.css";
 export default function AboutUs() {
   return (
     <>
+
       <div className={style.background}>
         <Card
           name="Melanie Leal"

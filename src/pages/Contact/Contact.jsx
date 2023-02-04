@@ -35,144 +35,146 @@ export default function Contact() {
 
   return (
     <>
-      <div className={style.background}>
-        <div className={style.titulo}>
-          <h1 className={style.Mh1}> Contáctanos </h1>
-        </div>
-        <div className={style.mainContainer}>
-          <div className={style.containerLeft}>
-            <div className={style.icons}>
-              <img
-                className={style.icons}
-                src={whatsapp}
-                alt="icono de whats"
-              />
-              <img
-                className={style.icons}
-                src={servicio}
-                alt="icono de servicio"
-              />
+      <div className={style.background1}>
+        <div className={style.background}>
+          <div className={style.titulo}>
+            <h1 className={style.Mh1}> Contáctanos </h1>
+          </div>
+          <div className={style.mainContainer}>
+            <div className={style.containerLeft}>
+              <div className={style.icons}>
+                <img
+                  className={style.icons}
+                  src={whatsapp}
+                  alt="icono de whats"
+                />
+                <img
+                  className={style.icons}
+                  src={servicio}
+                  alt="icono de servicio"
+                />
+              </div>
+
+              <h2 className={style.Mh2}>
+                Si tienes alguna duda o necesitas contactarte directamente con
+                nosotros. Por favor llena el formulario y nos pondremos en
+                contacto contigo.
+              </h2>
             </div>
 
-            <h2 className={style.Mh2}>
-              Si tienes alguna duda o necesitas contactarte directamente con
-              nosotros. Por favor llena el formulario y nos pondremos en
-              contacto contigo.
-            </h2>
+            <div className={style.container}>
+              <Formik
+                initialValues={{
+                  nombre: "",
+                  correo: "",
+                  phone: "",
+                }}
+                validate={(valores) => {
+                  let errores = {};
+
+                  // Validacion nombre
+                  if (!valores.nombre) {
+                    errores.nombre = "Por favor ingresa un nombre";
+                  } else if (!/^[a-zA-ZÀ-ÿ\s]{1,40}$/.test(valores.nombre)) {
+                    errores.nombre =
+                      "El nombre solo puede contener letras y espacios";
+                  }
+
+                  // Validacion correo
+                  if (!valores.correo) {
+                    errores.correo = "Por favor ingresa un correo electronico";
+                  } else if (
+                    !/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/.test(
+                      valores.correo
+                    )
+                  ) {
+                    errores.correo =
+                      "El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.";
+                  }
+                  //Validacion telefono
+                  if (!valores.phone) {
+                    errores.phone = "Por favor ingresa un numero telefonico";
+                  } else if (!/^[0-9]{1,10}$/.test(valores.phone)) {
+                    errores.phone =
+                      "EL numero de telefono debe de ser de 10 digitos";
+                  }
+
+                  return errores;
+                }}
+                onSubmit={(valores, { resetForm }) => {
+                  resetForm();
+                  console.log("Formulario enviado");
+                  cambiarFormularioEnviado(true);
+                  setTimeout(() => cambiarFormularioEnviado(false), 5000);
+                }}
+              >
+                {({ errors }) => (
+                  <Form
+                    className={style.formulario}
+                    ref={form}
+                    onSubmit={sendEmail}
+                  >
+                    <div>
+                      <label htmlFor="nombre">Nombre</label>
+                      <Field
+                        type="text"
+                        id="nombre"
+                        name="nombre"
+                        placeholder="Helena "
+                      />
+                      <ErrorMessage
+                        name="nombre"
+                        component={() => (
+                          <div className={style.error}>{errors.nombre}</div>
+                        )}
+                      />
+                    </div>
+                    <div>
+                      <label htmlFor="correo">Correo</label>
+                      <Field
+                        type="text"
+                        id="correo"
+                        name="correo"
+                        placeholder="correo@correo.com"
+                      />
+                      <ErrorMessage
+                        name="correo"
+                        component={() => (
+                          <div className={style.error}>{errors.correo}</div>
+                        )}
+                      />
+                    </div>
+                    <div>
+                      <label htmlFor="phone">Teléfono</label>
+                      <Field
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        placeholder="55-5555-5555"
+                      />
+                      <ErrorMessage
+                        name="phone"
+                        component={() => (
+                          <div className={style.error}>{errors.phone}</div>
+                        )}
+                      />
+                    </div>
+
+                    <div>
+                      <Field name="mensaje" as="textarea" placeholder=" Mensaje" />
+                    </div>
+
+                    <button type="submit">Enviar</button>
+                    {formularioEnviado && (
+                      <p className={style.exito}>Formulario enviado con exito!</p>
+                    )}
+                  </Form>
+                )}
+              </Formik>
+            </div>
           </div>
-
-          <div className={style.container}>
-            <Formik
-              initialValues={{
-                nombre: "",
-                correo: "",
-                phone: "",
-              }}
-              validate={(valores) => {
-                let errores = {};
-
-                // Validacion nombre
-                if (!valores.nombre) {
-                  errores.nombre = "Por favor ingresa un nombre";
-                } else if (!/^[a-zA-ZÀ-ÿ\s]{1,40}$/.test(valores.nombre)) {
-                  errores.nombre =
-                    "El nombre solo puede contener letras y espacios";
-                }
-
-                // Validacion correo
-                if (!valores.correo) {
-                  errores.correo = "Por favor ingresa un correo electronico";
-                } else if (
-                  !/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/.test(
-                    valores.correo
-                  )
-                ) {
-                  errores.correo =
-                    "El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.";
-                }
-                //Validacion telefono
-                if (!valores.phone) {
-                  errores.phone = "Por favor ingresa un numero telefonico";
-                } else if (!/^[0-9]{1,10}$/.test(valores.phone)) {
-                  errores.phone =
-                    "EL numero de telefono debe de ser de 10 digitos";
-                }
-
-                return errores;
-              }}
-              onSubmit={(valores, { resetForm }) => {
-                resetForm();
-                console.log("Formulario enviado");
-                cambiarFormularioEnviado(true);
-                setTimeout(() => cambiarFormularioEnviado(false), 5000);
-              }}
-            >
-              {({ errors }) => (
-                <Form
-                  className={style.formulario}
-                  ref={form}
-                  onSubmit={sendEmail}
-                >
-                  <div>
-                    <label htmlFor="nombre">Nombre</label>
-                    <Field
-                      type="text"
-                      id="nombre"
-                      name="nombre"
-                      placeholder="Helena "
-                    />
-                    <ErrorMessage
-                      name="nombre"
-                      component={() => (
-                        <div className={style.error}>{errors.nombre}</div>
-                      )}
-                    />
-                  </div>
-                  <div>
-                    <label htmlFor="correo">Correo</label>
-                    <Field
-                      type="text"
-                      id="correo"
-                      name="correo"
-                      placeholder="correo@correo.com"
-                    />
-                    <ErrorMessage
-                      name="correo"
-                      component={() => (
-                        <div className={style.error}>{errors.correo}</div>
-                      )}
-                    />
-                  </div>
-                  <div>
-                    <label htmlFor="phone">Teléfono</label>
-                    <Field
-                      type="tel"
-                      id="phone"
-                      name="phone"
-                      placeholder="55-5555-5555"
-                    />
-                    <ErrorMessage
-                      name="phone"
-                      component={() => (
-                        <div className={style.error}>{errors.phone}</div>
-                      )}
-                    />
-                  </div>
-
-                  <div>
-                    <Field name="mensaje" as="textarea" placeholder=" Mensaje" />
-                  </div>
-
-                  <button type="submit">Enviar</button>
-                  {formularioEnviado && (
-                    <p className={style.exito}>Formulario enviado con exito!</p>
-                  )}
-                </Form>
-              )}
-            </Formik>
-          </div>
+          <Footer styleFoo={style.foo} />
         </div>
-        <Footer styleFoo={style.foo} />
       </div>
 
 
