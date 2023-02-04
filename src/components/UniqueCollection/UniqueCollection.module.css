@@ -21,7 +21,7 @@
 @media screen and (max-width: 768px) {
   .img {
     display: inline-block;
-    max-width: 45%;
+    max-width: 46%;
     flex-wrap: nowrap;
     margin: 0%;
   }
