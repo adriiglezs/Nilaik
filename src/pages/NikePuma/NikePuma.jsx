@@ -7,6 +7,8 @@ export default function NikePuma() {
   return (<>
     <UniqueCollection />
     <SocialMedia />
+    <UniqueCollection />
+    <SocialMedia />
     <Footer styleFoo={style.foo} />
 
   </>)
