@@ -1,0 +1,66 @@
+.CardVision{
+  background-color: #F6D522;
+  max-width: 40%;
+  display: inline-block;
+  margin-top: 0%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 5%;
+
+
+}
+@media screen and (max-width: 768px) {
+  .CardVision {
+    display: inline-block;
+    max-width: 100%;
+    flex-wrap: nowrap;
+    margin: 20px 0px 20px 0px;
+  }
+}
+
+.CardMision{
+
+    max-width: 40%;
+    background-color: #A6B8D3;
+    display: inline-block;
+}
+
+@media screen and (max-width: 768px) {
+  .CardMision {
+    display: inline-block;
+    max-width: 100%;
+    flex-wrap: nowrap;
+    margin: 20px 0px 20px 0px;
+  }
+}
+
+
+.CardValores{
+    background-color: white;
+    display: inline-block;
+    margin-bottom: 10%;
+}
+
+@media screen and (max-width: 768px) {
+  .CardValores {
+    display: inline-block;
+    max-width: 100%;
+    flex-wrap: nowrap;
+    margin: 20px 0px 20px 0px;
+  }
+}
+
+.CardNosotros{
+    background-color: #F6D522;
+    display: inline-block;
+    max-width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .CardNosotros{
+    display: inline-block;
+    max-width: 100%;
+    flex-wrap: nowrap;
+    margin: 20px 0px 20px 0px;
+  }
+}

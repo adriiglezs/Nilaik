@@ -1,7 +1,8 @@
-import style from "./CardContact.module.css";
+import style from "./CardAboutNilaik.module.css";
+
 export default function CardNosotros({ tittle, content }) {
   return (
-    <div className={style.Nosotros}>
+    <div className={style.CardNosotros}>
 
       <h4>{tittle}</h4>
       <p>{content}</p>

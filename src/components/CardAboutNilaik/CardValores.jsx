@@ -1,4 +1,5 @@
-import style from "./CardContact.module.css";
+import style from "./CardAboutNilaik.module.css";
+
 export default function CardValores({ tittle, content }) {
   return (
     <div className={style.CardValores}>
