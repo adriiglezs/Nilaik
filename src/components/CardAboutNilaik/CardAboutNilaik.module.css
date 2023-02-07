@@ -1,12 +1,10 @@
 .CardVision{
   background-color: #F6D522;
-  max-width: 40%;
+  max-width: 60%;
+  padding: 5% 2% 5% 2%;
   display: inline-block;
-  margin-top: 0%;
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-bottom: 5%;
-
+  margin-right: 2%;
+  margin-bottom: 1%;
 
 }
 @media screen and (max-width: 768px) {
@@ -20,9 +18,11 @@
 
 .CardMision{
 
-    max-width: 40%;
+    max-width: 33%;
     background-color: #A6B8D3;
     display: inline-block;
+    padding: 4% 0% 4% 1%;
+
 }
 
 @media screen and (max-width: 768px) {
@@ -38,7 +38,9 @@
 .CardValores{
     background-color: white;
     display: inline-block;
-    margin-bottom: 10%;
+    margin-bottom: 2%;
+    padding: 9% 3% 9% 3%;
+    max-width: 100%;
 }
 
 @media screen and (max-width: 768px) {
@@ -54,6 +56,7 @@
     background-color: #F6D522;
     display: inline-block;
     max-width: 100%;
+    padding: 8% 3% 8% 3%;
 }
 
 @media screen and (max-width: 768px) {

@@ -1,12 +1,16 @@
 .content {
   margin: 50px 50px 50px 50px;
   display: inline-block;
-  align-content: center;
+
 }
 
+.tittleAboutNilaik{
+  text-align: center;
+  color: white;
+}
 
 .ValoresNosotros {
-  max-width: 50%;
+  max-width: 69%;
   display: inline-block;
 }
 
@@ -19,20 +23,24 @@
 }
 
 .aboutNilaikDiv{
-  margin-left: 5%;
+
+  background-color: white;
   display: inline-block;
-  margin-right: 5%;
-  max-width: 55%;
+  margin-right: 2%;
+  padding: 5% 0% 6.7% 0%;
+  max-width: 40%;
+
 }
 
 @media screen and (max-width: 768px) {
   .aboutNilaikDiv {
-    max-width: auto;
+    max-width: 100%;
     display: inline-block;
-    flex-wrap: nowrap;
+
   }
+
 }
 
 .AboutNilaikImg{
-  max-width: 100%;
+  max-width: auto;
 }

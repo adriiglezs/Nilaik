@@ -8,6 +8,9 @@ export default function AboutNilaik() {
   return (
     <div className={style.content}>
 
+    <h1 className={style.tittleAboutNilaik}>
+      Acerca de Nosotros
+    </h1>
 
       <CardVision
         tittle="Vision"
@@ -30,7 +33,7 @@ export default function AboutNilaik() {
       />
 
       <CardNosotros
-        tittle="Nosotros"
+        tittle="Sobre nosotros"
         content="Somos un proyecto que está enfocado en ofrecer productos de calidad a un precio bajo, nos caracterizamos por ser un proyecto con valores como, accesibilidad, medio ambiente, inclusión y diversidad." />
 </div>
 
