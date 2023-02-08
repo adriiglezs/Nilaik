@@ -1,5 +1,5 @@
 footer {
-  display:block;
+  position: relative;
   background-color: #2f5898;
   margin-top: auto;
   align-items: center;
@@ -19,6 +19,7 @@ footer {
 @media screen and (max-width: 768px) {
   footer {
     padding: 0%;
+    width: 100%;
   }
 }
 
@@ -43,9 +44,9 @@ footer {
   height: auto;
 }
 @media screen and (max-width: 768px) {
-  .Fsection2 {
+  .Fsection2, .Fsection {
     padding-left: 10px;
-    display: inline-block;
+    display:inline-table;
     align-items: flex-start;
     margin: 0%;
     width: 100%;
@@ -57,11 +58,12 @@ footer {
   align-items: flex-start;
   padding-left: 10px;
 }
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   .Faddress {
     font-size: 12px;
+    width: 100%;
   }
-}
+} */
 
 .Fcatalogue {
   margin-block-end: 20px;
@@ -89,6 +91,7 @@ footer {
     display: flex;
     justify-content: center;
     margin: 0%;
+    width: 100%;
   }
 }
 .Flis {
@@ -100,6 +103,7 @@ footer {
     margin-top: 10%;
     display: block;
     align-content:flex-end;
+    width: 100%; 
   }
 }
 
@@ -121,8 +125,4 @@ footer {
    color: #A6B8D3;
     justify-content: center;
 }
-
-.links{
-    justify-content: end;
-}
- */
+*/
