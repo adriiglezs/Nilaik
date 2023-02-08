@@ -1,77 +1,74 @@
 .content {
   margin-top: 2%;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
   margin-left: 10%;
   margin-right: 10%;
-  display: inline-block;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.tittleAboutNilaik{
+.tittleAboutNilaik {
   text-align: center;
   color: white;
 }
 
 .ValoresNosotros {
   display: inline-block;
-  max-width: 70%;
+  width: 60%;
 }
-
-
-
-.aboutNilaikImg{
-
-position: relative;
-  top: 50%;
-transform: translate(0,7%);
-  background-color: white;
-  display: inline-block;
-
-  
-  /*  
-  margin-top: -5px;
-  */
-  margin-bottom: 1%;
-  margin-left: 1%;
-  margin-right: 1%;
-  padding: 5% 0% 6.7% 0%;
-  max-height: 100%;
-
-}
-.principal{
-  display: inline-block;
-  max-width: 100%;
-}
-.aprincipal{
-  display: inline-block;
-  max-width: 30%;
-}
-
-
-
 @media screen and (max-width: 537px) {
-  .content {
+  .ValoresNosotros {
+    display: inline-block;
+    width: 100%;
+  }
+}
+
+.aboutNilaikImg {
+  display: flex;
+
+  width: 100%;
+}
+.principal {
+  display: inline-flex;
   max-width: 100%;
-  display: block;
+}
+@media screen and (max-width: 537px) {
+  .principal {
+    display: inline-block;
+    max-width: 100%;
+  }
+}
+.aprincipal {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 40%;
+  background-color: white;
+}
+@media screen and (max-width: 537px) {
+  .aprincipal {
+    display: flex;
+    max-width: 100%;
+    background-color: white;
   }
 }
 
 @media screen and (max-width: 537px) {
   .ValoresNosotros {
-  display: block;
-  max-width: 100%;
-
-  margin-left: 4%;
-  margin-right: 4%;
-
+    display: inline-block;
+    max-width: 100%;
   }
 }
 @media screen and (max-width: 537px) {
   .aboutNilaikImg {
-    align-items: center;
-    max-width: 90%;
-    display: block;
-    margin-left: 4%;
-    margin-right: 4%;
-
+    align-content: center;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    display: flex;
   }
+}
+.foo {
+  position: relative;
+  background-color: #2f5898;
 }
