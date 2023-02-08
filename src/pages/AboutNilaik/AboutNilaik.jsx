@@ -22,8 +22,10 @@ export default function AboutNilaik() {
         content="Somos un proyecto especialista en elevar el confort de la población infantil sin descartar el estilo, esto lo logramos ofreciendo diseños actuales y contemporáneos para que la ropa ayude a reflejar la personalidad de tus pequeños."
       />
 
+
+
       <div className={style.aboutNilaikDiv}>
-        <img className={style.AboutNilaikImg} src={walking} alt="personas caminando" />
+        <img  className={style.aboutNilaikImg} src={walking} alt="personas caminando" />
       </div>
 
 <div className={style.ValoresNosotros}>
@@ -36,6 +38,7 @@ export default function AboutNilaik() {
         tittle="Sobre nosotros"
         content="Somos un proyecto que está enfocado en ofrecer productos de calidad a un precio bajo, nos caracterizamos por ser un proyecto con valores como, accesibilidad, medio ambiente, inclusión y diversidad." />
 </div>
+
 
     </div>
   );

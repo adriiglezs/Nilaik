@@ -1,69 +1,87 @@
 .CardVision{
   background-color: #F6D522;
-  max-width: 60%;
-  padding: 5% 2% 5% 2%;
   display: inline-block;
-  margin-right: 2%;
+  max-width: 54%;
+  margin-top: 1%;
   margin-bottom: 1%;
-
+  margin-left: 1%;
+  margin-right: 0.3%;
+  padding: 3% 2% 3% 2%;
 }
-@media screen and (max-width: 768px) {
-  .CardVision {
-    display: inline-block;
-    max-width: 100%;
-    flex-wrap: nowrap;
-    margin: 20px 0px 20px 0px;
-  }
-}
-
 .CardMision{
-
-    max-width: 33%;
-    background-color: #A6B8D3;
-    display: inline-block;
-    padding: 4% 0% 4% 1%;
-
+  background-color: #A6B8D3;
+  display: inline-block;
+  max-width: 37%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  margin-left: 0.3%;
+  margin-right: 1%;
+  padding: 1.5% 0% 3% 2%;
 }
-
-@media screen and (max-width: 768px) {
-  .CardMision {
-    display: inline-block;
-    max-width: 100%;
-    flex-wrap: nowrap;
-    margin: 20px 0px 20px 0px;
-  }
-}
-
-
 .CardValores{
-    background-color: white;
-    display: inline-block;
-    margin-bottom: 2%;
-    padding: 9% 3% 9% 3%;
-    max-width: 100%;
+  background-color: white;
+  display: inline-block;
+  max-width: 100%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  margin-left: 1%;
+  margin-right: 1%;
+  padding: 7% 2% 7% 2%;
 }
+.CardNosotros{
+  background-color: #F6D522;
+  display: inline-block;
+  max-width: 100%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  margin-left: 1%;
+  margin-right: 1%;
+  padding: 7% 2% 7% 2%;
+  }
 
-@media screen and (max-width: 768px) {
-  .CardValores {
-    display: inline-block;
+
+
+@media screen and (max-width: 537px) {
+  .CardVision {
+    display: block;
     max-width: 100%;
-    flex-wrap: nowrap;
-    margin: 20px 0px 20px 0px;
+    padding: 3% 4% 3% 5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 4%;
+    margin-right: 4%;
+
+
   }
 }
-
-.CardNosotros{
-    background-color: #F6D522;
-    display: inline-block;
+@media screen and (max-width: 537px) {
+  .CardMision {
+    display: block;
     max-width: 100%;
-    padding: 8% 3% 8% 3%;
+    padding: 3% 4% 3% 5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 4%;
+    margin-right: 4%;
+  }
 }
-
-@media screen and (max-width: 768px) {
-  .CardNosotros{
-    display: inline-block;
+@media screen and (max-width: 537px) {
+  .CardValores {
+    display: block;
     max-width: 100%;
-    flex-wrap: nowrap;
-    margin: 20px 0px 20px 0px;
+    padding: 3% 4% 3% 5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+
+  }
+}
+@media screen and (max-width: 537px) {
+  .CardNosotros{
+    display: block;
+    max-width: 100%;
+    padding: 3% 4% 8% 5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+
   }
 }

@@ -1,5 +1,8 @@
 .content {
-  margin: 50px 50px 50px 50px;
+  margin-top: 2%;
+  margin-bottom: 10%;
+  margin-left: 10%;
+  margin-right: 10%;
   display: inline-block;
 
 }
@@ -10,37 +13,53 @@
 }
 
 .ValoresNosotros {
-  max-width: 69%;
   display: inline-block;
+  max-width: 65%;
 }
 
-@media screen and (max-width: 768px) {
-  .ValoresNosotros {
-    max-width: 100%;
-    display: inline-block;
-    flex-wrap: nowrap;
-  }
-}
 
 .aboutNilaikDiv{
-
+  
   background-color: white;
   display: inline-block;
-  margin-right: 2%;
+
+  margin-top: 1%;
+  margin-bottom: 1%;
+  margin-left: 1%;
+  margin-right: 1%;
   padding: 5% 0% 6.7% 0%;
-  max-width: 40%;
+  max-width: 25%;
 
 }
+.aboutNilaikImg{
+  max-width: 100%;
+}
 
-@media screen and (max-width: 768px) {
-  .aboutNilaikDiv {
-    max-width: 100%;
-    display: inline-block;
+
+
+@media screen and (max-width: 537px) {
+  .content {
+  max-width: 100%;
+  display: block;
+  }
+}
+
+@media screen and (max-width: 537px) {
+  .ValoresNosotros {
+  display: block;
+  max-width: 100%;
+
+  margin-left: 4%;
+  margin-right: 4%;
 
   }
-
 }
+@media screen and (max-width: 537px) {
+  .aboutNilaikDiv {
+    max-width: 100%;
+    display: block;
+    margin-left: 4%;
+    margin-right: 4%;
 
-.AboutNilaikImg{
-  max-width: auto;
+  }
 }
