@@ -10,6 +10,7 @@ import Characters from "./pages/Characters/Characters";
 import JordanAdidas from "./pages/JordanAdidas/JordanAdidas";
 import NikePuma from "./pages/NikePuma/NikePuma";
 import AboutNilaik from "./pages/AboutNilaik/AboutNilaik";
+import AskQuestions from "./pages/AskQuestions/AskQuestions";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
         <Route path="/nike-puma" element={<NikePuma />} />
 
         <Route path="*" element={<Error />} />
+        <Route path="/AskQuestions" element={<AskQuestions/>}/>
       </Routes>
     </>
   );

@@ -46,7 +46,7 @@ footer {
 @media screen and (max-width: 768px) {
   .Fsection2, .Fsection {
     padding-left: 10px;
-    display:inline-table;
+    display: block;
     align-items: flex-start;
     margin: 0%;
     width: 100%;
@@ -101,7 +101,7 @@ footer {
 @media screen and (max-width: 768px) {
   .Flis{
     margin-top: 10%;
-    display: block;
+    display: inline-block;
     align-content:flex-end;
     width: 100%; 
   }
