@@ -163,7 +163,7 @@ const Items = () => {
         <tbody>
           {items.map((item) => (
             <tr key={item.Codigo}>
-              <td>""</td>
+              <td>"Direccion de imagen"</td>
               <td>{item.Articulo}</td>
               <td>{item.Diseño}</td>
               <td>{item.Color}</td>
