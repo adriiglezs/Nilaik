@@ -37,6 +37,6 @@
   margin: 0;
 }
 .foo {
-  position: absolute;
+  position: relative;
   background-color: #2f5898;
 }

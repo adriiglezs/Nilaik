@@ -1,3 +1,4 @@
-export default function Characters(){
-  return(<></>)
+export default function Characters() {
+  return (<>
+  </>)
 }
