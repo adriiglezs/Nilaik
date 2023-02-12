@@ -1,0 +1,73 @@
+.loginCard {
+  width: 100%;
+  /* border: 2px solid #4f1f28;
+  border-radius: 4px; */
+  /* box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); */
+  overflow: hidden;
+  margin: 10px;
+  background-color: #f6d522;
+  height: 100%;
+  height: auto;
+  align-self: center;
+  display: inline-block;
+}
+
+.loginCardHeader,
+.LoginTextHeader {
+  margin: 0;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+}
+
+.loginCardBody {
+  padding: 1%;
+}
+
+.loginFormGroup {
+  inline-size: auto;
+}
+
+.loginFormGroup label {
+  padding: 2% 0% 0% 0%;
+  display: block;
+  font-size: 14px;
+  color: #4f1f28;
+  font-weight: bold;
+  margin-bottom: 1px;
+}
+
+.loginFormControl {
+  background-color: #a6b8d3;
+  border: 0;
+}
+
+.loginFormGroup input[type="text"],
+.loginFormGroup input[type="email"],
+.loginFormGroup input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+  /* border: 1px solid #4f1f28;
+  border-radius: 4px; */
+}
+
+.loginBtn {
+  padding: 12px 24px;
+  align-items: center;
+  text-align: center;
+  margin-left: 13px;
+  font-size: 16px;
+  border: none; /* 
+  border-radius: 4px; */
+  background-color: #fb9595;
+  color: #4f1f28;
+  text-transform: uppercase;
+  transition: background-color 0.2s ease-in-out;
+  cursor: pointer;
+  margin: 5%;
+}
+
+.loginBtn:hover {
+  background-color: #ccc;
+  color: #4f1f28;
+}

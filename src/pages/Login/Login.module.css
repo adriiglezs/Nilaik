@@ -1,0 +1,42 @@
+.LoginPageContainerGlobal {
+  width: 100%;
+  margin: 2% 0% 2% 0%;
+  align-self: center;
+  justify-content: center;
+  display: flex;
+}
+.LoginPageContainerLogin {
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  background-color: #f6d522;
+  margin: 0% 2% 0% 2%;
+  padding: 3% 3% 3% 3%;
+}
+
+.LoginPageContainerImg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  background-color: #f6d522;
+  margin: 0% 2% 0% 2%;
+  padding: 0% 3% 0% 3%;
+}
+
+.LoginPageImg {
+  width: 100%;
+  height: auto;
+  align-self: center;
+  display: inline-block;
+  margin: 0;
+}
+.foo {
+  position: absolute;
+  background-color: #2f5898;
+}

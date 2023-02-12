@@ -163,7 +163,7 @@ export default function Contact() {
                     <Field name="mensaje" as="textarea" placeholder=" Mensaje" />
                   </div>
 
-                  <button type="submit">Enviar</button>
+                  <button type="submit" >Enviar</button>
                   {formularioEnviado && (
                     <p className={style.exito}>Formulario enviado con exito!</p>
                   )}
