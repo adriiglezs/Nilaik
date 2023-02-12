@@ -14,30 +14,44 @@ const Formulario = () => {
   const [mostrar, setMostrar] = useState(false);
 
   useEffect(() => {
+    // obtiene lo que hay en la local
     const productosGuardados = localStorage.getItem("productos");
+    // vemos si hay datos guardados
     if (productosGuardados) {
+      //si hay datos guardados se convierten en json y luego se actualizan con setProductos
       setProductos(JSON.parse(productosGuardados));
     }
-  }, []);
+    // [] hace que solo se use una vez despues de montar ( crear componente y se agrega al DOM)
+  },  []);
 
   useEffect(() => {
     localStorage.setItem("productos", JSON.stringify(productos));
   }, [productos]);
 
-  const handleSubmit = (e) => {
+
+// funcion fecha que recibe e (datos del formulario)
+// preventDefault hace que al recargar la pagina no se pierdan los datos
+
+  const agregar = (e) => {
     e.preventDefault();
+
+    // ... es hacer una copa del arreglo existente
+    // luego se agrega el siguietne objeto
+
     setProductos([...productos, { nombre, precio }]);
+    
+    // se limpian los valores con lo siguiente despues de enviar los datos
     setNombre("");
     setPrecio("");
   };
 
-  const handleMostrar = () => {
+  const mmostrar = () => {
     setMostrar(!mostrar);
   };
 
   return (
     <div>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={agregar}>
         <input
           type="text"
           placeholder="Nombre del producto"
@@ -51,7 +65,7 @@ const Formulario = () => {
           onChange={(e) => setPrecio(e.target.value)}
         />
         <button type="submit">Agregar producto</button>
-        <button type="button" onClick={handleMostrar}>
+        <button type="button" onClick={mmostrar}>
           Mostrar productos
         </button>
       </form>
