@@ -3,6 +3,7 @@
   background-color: #2f5898;
 }
 .background {
+  display: flow-root;
   background-repeat: no-repeat;
   background-size: cover;
   background: rgb(255, 255, 255);
