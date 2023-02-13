@@ -18,7 +18,7 @@
 
 .cod {
   display: inline-block;
-  width: 40%;
+  width: 25%;
 
   color: #4f1f28;
 }
@@ -29,7 +29,7 @@
 }
 .name {
   display: inline-block;
-  width: 60%;
+  width: 75%;
 
   color: #4f1f28;
 }
