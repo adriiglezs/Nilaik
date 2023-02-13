@@ -8,7 +8,7 @@ import cart from '../../assets/cart.svg';
 function CarouselAdidasBi() {
   return (<>
     <h1 className={style.encabezado}>Adidas Bicolor</h1>
-    <Carousel show={3} slide={1} transition={0.5} infinite
+    <Carousel show={4} slide={2} transition={0.5} infinite
       responsive={[{
         breakpoint: 1024,
         settings: { slidesToShow: 3 }
