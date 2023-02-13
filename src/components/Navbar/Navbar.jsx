@@ -6,7 +6,7 @@ import user from "../../assets/user.svg";
 import menu from "../../assets/menu.svg"
 import { useState } from "react";
 function Navbar() {
-  const [isNavShow,setNavShow] = useState(false)
+  const [isNavShow, setNavShow] = useState(false)
   return (
     <nav className={style.nav}>
       <div className={style.logo}>
@@ -19,7 +19,7 @@ function Navbar() {
         </Link>
       </div>
       <div className={`${isNavShow ? style.false : style.true}`}>
-      <Link to="/">
+        <Link to="/">
           <h2>Inicio</h2>
         </Link>
         <Link to="/characters">
@@ -50,9 +50,9 @@ function Navbar() {
           <img src={cart} alt="carro de compra para añadir tus productos" />
         </Link>
       </div>
-        <div className={`${isNavShow} ${style.hamburger}`} onClick={()=> setNavShow(!isNavShow)}>
-          <img src={menu} className={`${isNavShow}`} alt="menu para desplegar opciones en dispositivos mobiles" />
-        </div>
+      <div className={`${isNavShow} ${style.hamburger}`} onClick={() => setNavShow(!isNavShow)}>
+        <img src={menu} className={`${isNavShow}`} alt="menu para desplegar opciones en dispositivos mobiles" />
+      </div>
     </nav>
   );
 }
