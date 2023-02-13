@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Carousel } from '@trendyol-js/react-carousel';
 import { adidasBicolor } from './data.js';
@@ -19,8 +18,6 @@ function CarouselAdidasBi() {
       dots={false}
       slidesToShow={4}
       slidesToScroll={1}
-      autoplay={2000}
-
     >
       {adidasBicolor.map(item => (
         <div key={item.id} className={style.target}>
