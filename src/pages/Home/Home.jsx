@@ -1,7 +1,6 @@
 import SocialMedia from "../../components/Social-Media/SocialMedia"
 import Footer from "../../components/Footer/Footer"
 import CarouselJordan from "../../components/Carousel/CarouselJordan"
-import CardProductAdidas3 from "../../components/CardProduct/CardProductAdidas3"
 import CarouselNike from "../../components/Carousel/CarouselNike"
 import CarouselPuma from "../../components/Carousel/CarouselPuma"
 import CarouselAdidasBi from "../../components/Carousel/Carousel"
