@@ -26,7 +26,6 @@ export default function AboutUs() {
 
         <Card
           name="Alan Ramos"
-          changeImage={true}
           instagramUrl="https://instagram.com/josafat_preciado_?igshid=Zjc2ZTc4Nzk="
           githubUrl="https://github.com/Alan-codigo"
           linkedinUrl="https://www.linkedin.com/in/alan-josafat-ramos-preciado-4625751b9/"

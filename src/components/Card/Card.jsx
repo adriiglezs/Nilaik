@@ -3,10 +3,10 @@ import instagram from "../../assets/social/instagram.svg"
 import github from "../../assets/social/github.svg"
 import linkedin from "../../assets/social/linkedin.svg"
 import cv from "../../assets/social/cv.svg"
-export default function Card({ name, photo, biography, instagramUrl, githubUrl, linkedinUrl, cvUrl, changeColor, changeImage }) {
+export default function Card({ name, photo, biography, instagramUrl, githubUrl, linkedinUrl, cvUrl, changeColor }) {
     return (<>
         <div className={style.mainContainer}>
-            <div className={style.photo}><img className={changeImage ? style.imageb : style.imagea} src={photo} /></div>
+            <div className={style.photo}><img className={changeColor ? style.imagea : style.imageb} src={photo} /></div>
             <div className={changeColor ? style.contentColor : style.content}>
                 <h3>{name}</h3>
                 <div>
