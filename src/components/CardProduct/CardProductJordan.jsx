@@ -1,13 +1,12 @@
 import style from "./CardProduct.module.css";
-import { adidasBicolor } from "../Carousel/data.js";
+import { jordan } from "../Carousel/data.js";
 import cart from '../../assets/cart.svg';
 
-export default function CardProduct() {
+export default function CardProductJordan() {
   return (<>
-    <h1 className={style.encabezado}>Adidas Bicolor</h1>
-    {adidasBicolor.map(item => (
+    <h1 className={style.encabezado}>Jordan</h1>
+    {jordan.map(item => (
       <div key={item.id} className={style.target}>
-
         <div className={style.background}>
           <img className={style.CardProduct} src={item.src} alt={item.name} />
           <div className={style.name}>

@@ -1,0 +1,276 @@
+export const adidasBicolor = [
+  {
+    id: 1,
+    name: "Adidas bicolor rosa",
+    src: "https://res.cloudinary.com/dwd3jknn9/image/upload/v1676247017/Nilaik/IMG_20230212_144103_z06myh.jpg",
+    category: "ADBRS",
+    price: "175.00",
+  },
+  {
+    id: 2,
+    name: "Adidas bicolor rojo",
+    src: "https://res.cloudinary.com/dwd3jknn9/image/upload/v1676247024/Nilaik/IMG_20230212_150020_x3xdca.jpg",
+    category: "ADBRJ",
+    price: "200.00",
+  },
+  {
+    id: 3,
+    name: "Adidas bicolor azul",
+    src: "https://res.cloudinary.com/dwd3jknn9/image/upload/v1676247024/Nilaik/IMG_20230212_145421_ekhl09.jpg",
+    category: "ADBAZ",
+    price: "150.00",
+  },
+  {
+    id: 4,
+    name: "Adidas bicolor mango",
+    src: "https://res.cloudinary.com/dwd3jknn9/image/upload/v1676247021/Nilaik/IMG_20230212_144529_lpkxss.jpg",
+    category: "ADBMA",
+    price: "175.00",
+  },
+  {
+    id: 5,
+    name: "Adidas bicolor blanco",
+    src: "https://res.cloudinary.com/dwd3jknn9/image/upload/v1676269648/Nilaik/IMG_20230212_150539_qrzcjg.jpg",
+    category: "ADBBL",
+    price: "200.00",
+  },
+  {
+    id: 6,
+    name: "Adidas bicolor camuflaje",
+    src: "https://res.cloudinary.com/dwd3jknn9/image/upload/v1676247023/Nilaik/IMG_20230212_145712_g9gh2o.jpg",
+    category: "ADBCA",
+    price: "175.00",
+  },
+  {
+    id: 7,
+    name: "Adidas bicolor menta",
+    src: "https://res.cloudinary.com/dwd3jknn9/image/upload/v1676269642/Nilaik/IMG_20230212_150304_aud8mi.jpg",
+    category: "ADBME",
+    price: "200.00",
+  },
+  {
+    id: 8,
+    name: "Adidas bicolor gris",
+    src: "https://res.cloudinary.com/dwd3jknn9/image/upload/v1676247022/Nilaik/IMG_20230212_145103_qd5a64.jpg",
+    category: "ADBGR",
+    price: "200.00",
+  },
+];
+
+export const nike = [
+  {
+    id: 1,
+    name: "Nike rosa",
+    src: "https://res.cloudinary.com/dwd3jknn9/image/upload/v1676271404/Nilaik/Nike/IMG_20230212_163235_oayovo.jpg",
+    category: "NIRS",
+    price: "175.00",
+  },
+  {
+    id: 2,
+    name: "Nike rojo",
+    src: "https://res.cloudinary.com/dwd3jknn9/image/upload/v1676271385/Nilaik/Nike/IMG_20230212_164139_ncsako.jpg",
+    category: "NIRJ",
+    price: "175.00",
+  },
+  {
+    id: 3,
+    name: "Nike azul",
+    src: "https://res.cloudinary.com/dwd3jknn9/image/upload/v1676271396/Nilaik/Nike/IMG_20230212_163712_i0nw7a.jpg",
+    category: "NIAZ",
+    price: "175.00",
+  },
+  {
+    id: 4,
+    name: "Nike mango",
+    src: "https://res.cloudinary.com/dwd3jknn9/image/upload/v1676271392/Nilaik/Nike/IMG_20230212_163846_elxrhc.jpg",
+    category: "NIMA",
+    price: "175.00",
+  },
+  {
+    id: 5,
+    name: "Nike blanco",
+    src: "https://res.cloudinary.com/dwd3jknn9/image/upload/v1676271401/Nilaik/Nike/IMG_20230212_163404_hl3xpv.jpg",
+    category: "NIBL",
+    price: "175.00",
+  },
+  {
+    id: 6,
+    name: "Nike menta",
+    src: "https://res.cloudinary.com/dwd3jknn9/image/upload/v1676271395/Nilaik/Nike/IMG_20230212_163550_ekewue.jpg",
+    category: "NIME",
+    price: "175.00",
+  },
+  {
+    id: 7,
+    name: "Nike gris",
+    src: "https://res.cloudinary.com/dwd3jknn9/image/upload/v1676271396/Nilaik/Nike/IMG_20230212_164023_zzte0v.jpg",
+    category: "NIGR",
+    price: "175.00",
+  },
+];
+
+export const jordan = [
+  {
+    id: 1,
+    name: "Jordan rosa",
+    src: "https://res.cloudinary.com/dwd3jknn9/image/upload/v1676271158/Nilaik/Jordan/IMG_20230212_165039_uctcaq.jpg",
+    category: "JORS",
+    price: "175.00",
+  },
+  {
+    id: 2,
+    name: "Jordan rojo",
+    src: "https://res.cloudinary.com/dwd3jknn9/image/upload/v1676271148/Nilaik/Jordan/IMG_20230212_164809_mw4kfy.jpg",
+    category: "JORJ",
+    price: "175.00",
+  },
+  {
+    id: 3,
+    name: "Jordan azul",
+    src: "https://res.cloudinary.com/dwd3jknn9/image/upload/v1676271144/Nilaik/Jordan/IMG_20230212_165200_jezmqf.jpg",
+    category: "JOAZ",
+    price: "175.00",
+  },
+  {
+    id: 4,
+    name: "Jordan mango",
+    src: "https://res.cloudinary.com/dwd3jknn9/image/upload/v1676271145/Nilaik/Jordan/IMG_20230212_164925_azfgoo.jpg",
+    category: "JOMA",
+    price: "175.00",
+  },
+  {
+    id: 5,
+    name: "Jordan blanco",
+    src: "https://res.cloudinary.com/dwd3jknn9/image/upload/v1676271163/Nilaik/Jordan/IMG_20230212_164358_m2m5c9.jpg",
+    category: "JOBL",
+    price: "175.00",
+  },
+  {
+    id: 6,
+    name: "Jordan menta",
+    src: "https://res.cloudinary.com/dwd3jknn9/image/upload/v1676271166/Nilaik/Jordan/IMG_20230212_152412_cx8pu0.jpg",
+    category: "JOME",
+    price: "175.00",
+  },
+  {
+    id: 7,
+    name: "Jordan gris",
+    src: "https://res.cloudinary.com/dwd3jknn9/image/upload/v1676271157/Nilaik/Jordan/IMG_20230212_164632_rtyc7y.jpg",
+    category: "JOGR",
+    price: "175.00",
+  },
+];
+
+export const adidas3 = [
+  {
+    id: 1,
+    name: "Adidas 3 rosa",
+    src: " https://res.cloudinary.com/dwd3jknn9/image/upload/v1676272034/Nilaik/Adidas%203/IMG_20230212_170556_zi8uob.jpg",
+    category: "A3RS",
+    price: "175.00",
+  },
+  {
+    id: 2,
+    name: "Adidas 3 rojo",
+    src: " https://res.cloudinary.com/dwd3jknn9/image/upload/v1676272030/Nilaik/Adidas%203/IMG_20230212_153003_cdokv5.jpg",
+    category: "A3RJ",
+    price: "175.00",
+  },
+  {
+    id: 3,
+    name: "Adidas 3 azul",
+    src: " https://res.cloudinary.com/dwd3jknn9/image/upload/v1676272036/Nilaik/Adidas%203/IMG_20230212_153157_dkfas0.jpg",
+    category: "A3AZ",
+    price: "175.00",
+  },
+  {
+    id: 4,
+    name: "Adidas 3 mango",
+    src: "https://res.cloudinary.com/dwd3jknn9/image/upload/v1676247019/Nilaik/AdidasBiocolor/IMG_20230212_144551_eliw3e.jpg",
+    category: "A3MA",
+    price: "175.00",
+  },
+  {
+    id: 5,
+    name: "Adidas 3 blanco",
+    src: "https://res.cloudinary.com/dwd3jknn9/image/upload/v1676269645/Nilaik/AdidasBiocolor/IMG_20230212_150543_islg5h.jpg",
+    category: "A3BL",
+    price: "175.00",
+  },
+  {
+    id: 6,
+    name: "Adidas 3 menta",
+    src: " https://res.cloudinary.com/dwd3jknn9/image/upload/v1676272031/Nilaik/Adidas%203/IMG_20230212_170706_cnajff.jpg",
+    category: "A3ME",
+    price: "175.00",
+  },
+];
+
+export const puma = [
+  {
+    id: 1,
+    name: "Puma rosa",
+    src: " https://res.cloudinary.com/dwd3jknn9/image/upload/v1676271844/Nilaik/Puma/IMG_20230212_170117_pknjfc.jpg",
+    category: "PURS",
+    price: "175.00",
+  },
+  {
+    id: 2,
+    name: "Puma rojo",
+    src: " https://res.cloudinary.com/dwd3jknn9/image/upload/v1676271856/Nilaik/Puma/IMG_20230212_165932_i1qvvx.jpg",
+    category: "PURJ",
+    price: "175.00",
+  },
+  {
+    id: 3,
+    name: "Puma azul",
+    src: " https://res.cloudinary.com/dwd3jknn9/image/upload/v1676271857/Nilaik/Puma/IMG_20230212_170018_fwwx5i.jpg",
+    category: "PUAZ",
+    price: "175.00",
+  },
+  {
+    id: 4,
+    name: "Puma mango",
+    src: " https://res.cloudinary.com/dwd3jknn9/image/upload/v1676271850/Nilaik/Puma/IMG_20230212_165848_mlbqfa.jpg",
+    category: "PUMA",
+    price: "175.00",
+  },
+  {
+    id: 5,
+    name: "Puma blanco",
+    src: " https://res.cloudinary.com/dwd3jknn9/image/upload/v1676271854/Nilaik/Puma/IMG_20230212_165730_qgilgq.jpg",
+    category: "PUBL",
+    price: "175.00",
+  },
+  {
+    id: 6,
+    name: "Puma menta",
+    src: " https://res.cloudinary.com/dwd3jknn9/image/upload/v1676271863/Nilaik/Puma/IMG_20230212_165636_daguoc.jpg",
+    category: "PUME",
+    price: "175.00",
+  },
+];
+
+export const pumaArlequin = [
+  {
+    id: 1,
+    name: "Puma arlequin rosa",
+    src: " https://res.cloudinary.com/dwd3jknn9/image/upload/v1676270990/Nilaik/Puma%20Arlequin/IMG_20230212_152118_ef2qpf.jpg",
+    category: "PARS",
+    price: "175.00",
+  },
+  {
+    id: 2,
+    name: "Puma arlequin mango",
+    src: " https://res.cloudinary.com/dwd3jknn9/image/upload/v1676270984/Nilaik/Puma%20Arlequin/IMG_20230212_151829_utio8y.jpg",
+    category: "PAMA",
+    price: "175.00",
+  },
+  {
+    id: 3,
+    name: "Puma arlequin blanco",
+    src: " https://res.cloudinary.com/dwd3jknn9/image/upload/v1676270982/Nilaik/Puma%20Arlequin/IMG_20230212_162940_pgiz4b.jpg",
+    category: "PABL",
+    price: "175.00",
+  },
+];

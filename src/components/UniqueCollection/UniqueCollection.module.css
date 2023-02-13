@@ -8,6 +8,7 @@
   display: inline-block;
   flex-direction: column;
   max-width: 30%;
+  color: #4f1f28;
   text-align: center;
 }
 
@@ -32,15 +33,16 @@
     display: inline-block;
     max-width: 90%;
     flex-wrap: nowrap;
-    color: azure;
+    color: #4f1f28;
     font-size: 12px;
   }
 }
 .content1 {
   display: flex;
+  align-items: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url("https://images.pexels.com/photos/1166209/pexels-photo-1166209.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-image: url("https://res.cloudinary.com/dwd3jknn9/image/upload/o_30/v1676281318/Nilaik/Colecci%C3%B3n%20%C3%BAnica/IMG_20230212_173120_v1qo6y.jpg");
   justify-content: space-evenly;
   margin: 0;
 }

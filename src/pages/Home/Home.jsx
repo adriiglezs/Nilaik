@@ -1,17 +1,26 @@
 import SocialMedia from "../../components/Social-Media/SocialMedia"
-
-
-import Descubre from "../../components/Descubre/Descubre"
-
 import Footer from "../../components/Footer/Footer"
+import CarouselJordan from "../../components/Carousel/CarouselJordan"
+import CardProductAdidas3 from "../../components/CardProduct/CardProductAdidas3"
+import CarouselNike from "../../components/Carousel/CarouselNike"
+import CarouselPuma from "../../components/Carousel/CarouselPuma"
+import CarouselAdidasBi from "../../components/Carousel/Carousel"
+import CarouselPumaArlequin from "../../components/Carousel/CarouselPumaArlequin"
+import style from "./Home.module.css";
+import CarouselAdidas3 from "../../components/Carousel/CarouselAdidas3"
 
-function Home(){
-    return(<>
+function Home() {
+    return (<>
+        <CarouselJordan />
+        <CarouselAdidas3 />
+        <CarouselAdidasBi />
+        <CarouselNike />
+        <CarouselPuma />
+        <CarouselPumaArlequin />
 
-    <Descubre/>
 
-    <SocialMedia/>
-    <Footer/>
+        <SocialMedia />
+        <Footer styleFoo={style.foo} />
     </>)
 }
 export default Home

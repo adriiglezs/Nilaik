@@ -1,4 +1,120 @@
 .background {
+  background-color: #f6d522;
+  padding: 3%;
+  width: 100%;
+  height: auto;
+  display: inline-block;
+}
+.encabezado {
+  margin: 3% 0 0 5%;
+  font-size: 35px;
+}
+@media screen and (max-width: 768px) {
+  .encabezado {
+    margin: 3% 0 0 5%;
+    font-size: 25px;
+  }
+}
+
+.cod {
+  display: inline-block;
+  width: 40%;
+}
+.codL {
+  font-size: 15px;
+}
+.name {
+  display: inline-block;
+  width: 60%;
+}
+.nameL {
+  font-display: 100%;
+  font-size: 25px;
+}
+.cost {
+  display: inline-block;
+  width: 50%;
+  margin: 0;
+  padding: 0;
+}
+.costL {
+  font-size: 20px;
+}
+.shopping {
+  text-align: right;
+  display: inline-block;
+  width: 50%;
+  height: 50%;
+}
+@media screen and (max-width: 768px) {
+  .cards {
+    width: 40%;
+    height: 40%;
+  }
+}
+.target {
+  width: 29%;
+  margin: 2%;
+  align-self: center;
+  justify-content: center;
+  display: inline-block;
+}
+
+.CardProduct {
+  width: 100%;
+  height: auto;
+  align-self: center;
+  display: inline-block;
+  margin: 0;
+}
+@media screen and (max-width: 810px) {
+  .cost,
+  .cod,
+  .name {
+    display: inline-block;
+    max-width: 90%;
+    flex-wrap: nowrap;
+  }
+}
+@media screen and (max-width: 512px) {
+  .cost,
+  .cod,
+  .name {
+    display: inline-block;
+    max-width: 90%;
+    flex-wrap: nowrap;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .costL,
+  .nameL {
+    color: black;
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .costL,
+  .nameL {
+    color: black;
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .costL,
+  .nameL {
+    color: black;
+    font-size: 8px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .codL {
+    color: black;
+    font-size: 5px;
+  }
+}
+
+/* .background {
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #f6d522;
@@ -73,3 +189,4 @@
     font-size: 5px;
   }
 }
+ */

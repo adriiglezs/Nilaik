@@ -2,3 +2,13 @@
   position: relative;
   background-color: #2f5898;
 }
+@media screen and (max-width: 768px) {
+  .card21 {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .card22 {
+    display: none;
+  }
+}
