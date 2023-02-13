@@ -1,4 +1,4 @@
-/* .image {
+.imagea {
   --glow-color: #fb9595;
   --glow-spread-color: #fb9599;
   --btn-color: none;
@@ -11,8 +11,8 @@
   height: 291px;
   width: 291px;
   padding: 25px;
-} */
-.image {
+}
+.imageb {
   --glow-color: #f6d522;
   --glow-spread-color: #f6d632;
   --btn-color: none;
@@ -27,7 +27,8 @@
   padding: 25px;
 }
 
-.image::after {
+.imagea ::after,
+.imageb ::after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -43,7 +44,8 @@
   transform: perspective(1.5em) rotateX(35deg) scale(1, 0.6);
 }
 
-.image:hover {
+.imagea:hover,
+.imageb:hover {
   background-color: var(--glow-color);
   -webkit-box-shadow: 0 0 0.5em 0.5em var(--glow-color),
     0 0 1em 1em var(--glow-spread-color),
