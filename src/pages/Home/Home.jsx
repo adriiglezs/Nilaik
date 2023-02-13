@@ -16,8 +16,6 @@ function Home() {
         <CarouselNike />
         <CarouselPuma />
         <CarouselPumaArlequin />
-
-
         <SocialMedia />
         <Footer styleFoo={style.foo} />
     </>)

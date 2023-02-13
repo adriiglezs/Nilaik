@@ -101,10 +101,12 @@ export default function Contact() {
                 return errores;
               }}
               onSubmit={(valores, { resetForm }) => {
-                resetForm();
                 console.log("Formulario enviado");
                 cambiarFormularioEnviado(true);
-                setTimeout(() => cambiarFormularioEnviado(false), 5000);
+                setTimeout(() => {
+                  resetForm();
+                  cambiarFormularioEnviado(false);
+                }, 5000);
               }}
             >
               {({ errors }) => (

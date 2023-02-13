@@ -8,17 +8,18 @@ import cart from '../../assets/cart.svg';
 function CarouselAdidasBi() {
   return (<>
     <h1 className={style.encabezado}>Adidas Bicolor</h1>
-    <Carousel show={3.5} slide={2} transition={0.5} infinite
+    <Carousel autoplay={2000} show={3} slide={1} transition={0.5} infinite
       responsive={[{
         breakpoint: 1024,
         settings: { slidesToShow: 3 }
       },
       { breakpoint: 600, settings: { slidesToShow: 2 } },
       { breakpoint: 480, settings: { slidesToShow: 1 } }]}
-      arrows={true}
+      /* arrows={true} */
       dots={false}
       slidesToShow={4}
       slidesToScroll={1}
+
     >
       {adidasBicolor.map(item => (
         <div key={item.id} className={style.target}>
