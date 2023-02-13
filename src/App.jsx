@@ -16,7 +16,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <Routes basename="your-react-project">
+      <Routes>
         <Route path="/" element={<Home />} exact />
         <Route path="/aboutus" element={<AboutUs />} />
         <Route path="/contact" element={<Contact />} />
