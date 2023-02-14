@@ -5,7 +5,7 @@ import nilaikFooter from "../../assets/nilaikFooter.png";
 
 export default function Footer({ styleFoo }) {
   return (
-    <footer className={styleFoo ? styleFoo : style.content}>
+    <footer className={style.content}>
       <div className={style.section}>
         <Link to="/">
           <img
@@ -47,6 +47,7 @@ export default function Footer({ styleFoo }) {
           <ul className={style.lis}>
             <Link to="/AskQuestions"><li>Preguntas frecuentes</li></Link>
             <Link to="/AskQuestions"><li>Rastreo de envío</li></Link>
+            <Link to="/Products"> <li>Productos</li></Link>
           </ul>
         </div>
       </div>

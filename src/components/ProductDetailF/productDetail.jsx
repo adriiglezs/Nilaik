@@ -1,4 +1,4 @@
-/* import React from "react"
+import React from "react"
 import {useParams} from "react-router-dom"
 import productsData from "./productsData"
 
@@ -15,4 +15,4 @@ function ProductDetail() {
     )
 }
 
-export default ProductDetail */
+export default ProductDetail 
