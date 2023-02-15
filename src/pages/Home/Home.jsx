@@ -11,10 +11,11 @@ import CarouselAdidas3 from "../../components/Carousel/CarouselAdidas3"
 function Home() {
     return (<>
         <CarouselJordan />
-        <CarouselAdidas3 />
         <CarouselAdidasBi />
-        <CarouselNike />
+        <CarouselAdidas3 />
         <CarouselPuma />
+        <CarouselNike />
+
         <CarouselPumaArlequin />
         <SocialMedia />
         <Footer styleFoo={style.foo} />

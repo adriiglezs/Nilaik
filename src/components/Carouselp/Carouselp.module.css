@@ -1,3 +1,9 @@
+.carousel,
+.control-arrow,
+.carousel.carousel-slider,
+.control-arrow {
+  background: black;
+}
 .carouselbackgroundJordan {
   background-color: #2f5898;
   padding: 3%;
@@ -97,15 +103,8 @@
 .carouselshopping {
   text-align: right;
   display: inline-block;
-  width: 50%;
-  height: 50%;
 }
-@media screen and (max-width: 768px) {
-  .carouselcards {
-    width: 40%;
-    height: 40%;
-  }
-}
+
 .carouseltarget {
   width: 90%;
   margin: 2%;
@@ -116,6 +115,13 @@
 
 .carouselCardProduct {
   width: 100%;
+  height: auto;
+  align-self: center;
+  display: inline-block;
+  margin: 0;
+}
+.carouselcards {
+  width: 30%;
   height: auto;
   align-self: center;
   display: inline-block;

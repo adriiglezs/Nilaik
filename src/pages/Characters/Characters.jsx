@@ -1,12 +1,11 @@
-import AppCarousel from "../../components/Carousel/Carousel";
-import CarouselNike from "../../components/Carousel/CarouselNike";
+
+import CarouselP from "../../components/CarouselP/Carouselp";
 import Footer from "../../components/Footer/Footer";
 import style from "./Characters.module.css";
 
 export default function Characters() {
   return (<>
-    <AppCarousel />
-    <CarouselNike />
+    <CarouselP />
     <Footer styleFoo={style.foo} />
   </>)
 }

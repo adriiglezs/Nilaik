@@ -2,7 +2,12 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: #fb9595;
+  background: rgb(255, 255, 255);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.7008053221288515) 0%,
+    rgba(251, 149, 149, 0.6867997198879552) 52%
+  );
   color: #4f1f28;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
