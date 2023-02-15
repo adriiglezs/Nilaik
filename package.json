@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "clean": "rmdir /s /q dist"
   },
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
