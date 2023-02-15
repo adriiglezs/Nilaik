@@ -5,7 +5,7 @@ import { puma } from '../Carousel/data';
 import style from './Carouselp.module.css';
 import cart from '../../assets/cart.svg';
 
-function CarouselNike() {
+function Carouselp() {
   return (<>
     <h1 className={style.carouselencabezado}>Nike</h1>
     <Carousel showThumbs={false} infiniteLoop={true} dynamicHeight={false} swipeable={true} emulateTouch={true} stopOnHover={true} transitionTime={500} interval={5000} selectedItem={0} showArrows={true} showStatus={false} showIndicators={false} centerMode={true} centerSlidePercentage={25}>
@@ -32,4 +32,4 @@ function CarouselNike() {
   </>);
 }
 
-export default CarouselNike;
+export default Carouselp;
