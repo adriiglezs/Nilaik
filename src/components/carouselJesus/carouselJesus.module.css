@@ -100,8 +100,11 @@
 }
 
 .carouseltarget {
-  width: 90%;
-  margin: 2%;
+  width: 100%;
+  padding-bottom: 10%;
+  padding-top: 5%;
+  padding-left: 10%;
+  padding-right: 10%;
   align-self: center;
   justify-content: center;
   display: inline-block;
