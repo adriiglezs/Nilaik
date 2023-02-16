@@ -49,3 +49,35 @@
   top: 57%;
   left: 78.5%;
 }
+.DescubreMovil {
+  display: flex;
+}
+
+@media screen and (min-width: 768px) {
+  .DescubreMovil {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contentDescubre {
+    display: none;
+  }
+}
+
+.ImgMovil {
+  height: 100px;
+  width: 25%;
+}
+
+@media screen and (min-width: 768px) {
+  .ImgMovil {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .h1Descubre {
+    font-size: small;
+  }
+}

@@ -249,13 +249,6 @@ export const puma = [
     category: "PUME",
     price: "175.00",
   },
-  {
-    id: 7,
-    name: "Puma menta",
-    src: " https://res.cloudinary.com/ddwq0ulee/image/upload/v1676403080/Nilaik/puma/IMG_20230212_165636-min_wxbko9.jpg",
-    category: "PUME",
-    price: "175.00",
-  },
 ];
 
 export const pumaArlequin = [

@@ -122,12 +122,12 @@ const responsive = {
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
     items: 4,
-    slidesToSlide: 3 // optional, default to 1.
+    slidesToSlide: 1 // optional, default to 1.
   },
   tablet: {
     breakpoint: { max: 1024, min: 464 },
     items: 2,
-    slidesToSlide: 2 // optional, default to 1.
+    slidesToSlide: 1 // optional, default to 1.
   },
   mobile: {
     breakpoint: { max: 464, min: 0 },
@@ -137,6 +137,7 @@ const responsive = {
 };
 export default function Example() {
   return (<>
+    <h1 className={style.carouselencabezado}>PUMA</h1>
     <Carousel
       swipeable={false}
       draggable={false}
@@ -145,8 +146,8 @@ export default function Example() {
       responsive={responsive}
       ssr={true} // means to render carousel on server-side.
       infinite={true}
-      autoPlay={true}
-      autoPlaySpeed={1000}
+      autoPlay={false}
+      autoPlaySpeed={false}
       keyBoardControl={true}
       customTransition="all .5"
       transitionDuration={1000}
