@@ -1,3 +1,12 @@
+.styles-module_carousel-arrow__26sRw {
+  z-index: none;
+  padding: 2vh;
+  background: url(https://cdn.dsmcdn.com/web/production/slick-arrow.svg) 50%
+    no-repeat;
+  border: none;
+  height: 100%;
+}
+
 .carouselbackgroundJordan {
   background-color: #2f5898;
   padding: 3%;
