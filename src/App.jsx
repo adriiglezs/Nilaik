@@ -17,20 +17,16 @@ function App() {
     <>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Home />} exact />
+        <Route path="/" element={<Home />} />
         <Route path="/aboutus" element={<AboutUs />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/login" element={<Login />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/about" element={<AboutNilaik />} />
-
         <Route path="/characters" element={<Characters />} />
-
         <Route path="/jordan-adidas" element={<JordanAdidas />} />
         <Route path="/nike-puma" element={<NikePuma />} />
         <Route path="/AskQuestions" element={<AskQuestions />} />
-
-
         <Route path="*" element={<Error />} />
       </Routes>
     </>
