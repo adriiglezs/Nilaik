@@ -1,0 +1,58 @@
+export const adidasBicolor = [
+  {
+    id: 1,
+    name: "Adidas bicolor rosa",
+    src: "https://res.cloudinary.com/ddwq0ulee/image/upload/v1676403119/Nilaik/adidas%20bicolor/IMG_20230212_170322-min_etzuwp.jpg",
+    category: "ADBRS",
+    price: "175.00",
+  },
+  {
+    id: 2,
+    name: "Adidas bicolor rojo",
+    src: "https://res.cloudinary.com/ddwq0ulee/image/upload/v1676402955/Nilaik/adidas%20bicolor/IMG_20230212_150000-min_moiwa9.jpg",
+    category: "ADBRJ",
+    price: "200.00",
+  },
+  {
+    id: 3,
+    name: "Adidas bicolor azul",
+    src: "https://res.cloudinary.com/ddwq0ulee/image/upload/v1676402954/Nilaik/adidas%20bicolor/IMG_20230212_145421-min_ejwx2r.jpg",
+    category: "ADBAZ",
+    price: "150.00",
+  },
+  {
+    id: 4,
+    name: "Adidas bicolor mango",
+    src: "https://res.cloudinary.com/ddwq0ulee/image/upload/v1676402954/Nilaik/adidas%20bicolor/IMG_20230212_144551-min_caljqe.jpg",
+    category: "ADBMA",
+    price: "175.00",
+  },
+  {
+    id: 5,
+    name: "Adidas bicolor blanco",
+    src: "https://res.cloudinary.com/ddwq0ulee/image/upload/v1676402952/Nilaik/adidas%20bicolor/IMG_20230212_150551-min_cgkpa9.jpg",
+    category: "ADBBL",
+    price: "200.00",
+  },
+  {
+    id: 6,
+    name: "Adidas bicolor camuflaje",
+    src: "https://res.cloudinary.com/ddwq0ulee/image/upload/v1676402954/Nilaik/adidas%20bicolor/IMG_20230212_145712-min_nublxu.jpg",
+    category: "ADBCA",
+    price: "175.00",
+  },
+  {
+    id: 7,
+    name: "Adidas bicolor menta",
+    src: "https://res.cloudinary.com/ddwq0ulee/image/upload/v1676402952/Nilaik/adidas%20bicolor/IMG_20230212_150246-min_kij1e3.jpg",
+    category: "ADBME",
+    price: "200.00",
+  },
+  {
+    id: 8,
+    name: "Adidas bicolor gris",
+    src: "https://res.cloudinary.com/ddwq0ulee/image/upload/v1676402954/Nilaik/adidas%20bicolor/IMG_20230212_145100-min_pxzw00.jpg",
+    category: "ADBGR",
+    price: "200.00",
+  },
+];

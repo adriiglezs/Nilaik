@@ -1,3 +1,7 @@
+import CheckoutPage from "../../components/CheckoutPage/CheckoutPage";
+
 export default function Cart(){
-    return(<></>)
+    return(<>
+    <CheckoutPage/>
+    </>)
 }
