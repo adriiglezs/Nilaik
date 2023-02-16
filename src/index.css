@@ -11,14 +11,7 @@ body {
   /* Medida mínima */
   min-height: 100vh;
 }
-footer {
-  /* Posicionar abajo */
-  position: absolute;
-  bottom: 0;
-  /* Ocupar todo el ancho disponible */
-  width: 100%;
-  min-height: 20vh;
-}
+
 h2 {
   font-size: 1em;
 }

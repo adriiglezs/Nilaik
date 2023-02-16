@@ -1,4 +1,5 @@
 footer {
+  position: relative;
   background-color: #2f5898;
   margin-top: auto;
   align-items: center;
@@ -18,33 +19,34 @@ footer {
 @media screen and (max-width: 768px) {
   footer {
     padding: 0%;
+    width: 100%;
   }
 }
 
-.img {
+.Fimg {
   max-height: 50px;
 }
 @media screen and (max-width: 768px) {
-  .img {
+  .Fimg {
     margin: 10px;
   }
 }
-.section {
+.Fsection {
   padding-left: 10px;
   align-items: flex-start;
   margin-block-end: 20px;
   width: 50%;
   height: auto;
 }
-.section2 {
+.Fsection2 {
   display: flex;
   width: 100%;
   height: auto;
 }
 @media screen and (max-width: 768px) {
-  .section2 {
+  .Fsection2, .Fsection {
     padding-left: 10px;
-    display: inline-block;
+    display: block;
     align-items: flex-start;
     margin: 0%;
     width: 100%;
@@ -52,44 +54,59 @@ footer {
   }
 }
 
-.address {
+.Faddress {
   align-items: flex-start;
   padding-left: 10px;
 }
-@media screen and (max-width: 768px) {
-  .address {
+/* @media screen and (max-width: 768px) {
+  .Faddress {
     font-size: 12px;
+    width: 100%;
   }
-}
+} */
 
-.catalogue {
+.Fcatalogue {
   margin-block-end: 20px;
   width: 100%;
   height: auto;
 }
 
-.links {
+.Flinks {
   margin-block-end: 20px;
   justify-content: end;
   width: 100%;
   height: auto;
 }
 
-.shipping {
+.Fshipping {
   margin-block-end: 20px;
   width: 100%;
   height: auto;
 }
 @media screen and (max-width: 768px) {
-  .catalogue,
-  .links,
-  .shipping {
+  .Fcatalogue,
+  .Flinks,
+  .Fshipping {
     font-size: 12px;
     display: flex;
     justify-content: center;
     margin: 0%;
+    width: 100%;
   }
 }
+.Flis {
+  list-style: none;
+}
+
+@media screen and (max-width: 768px) {
+  .Flis{
+    margin-top: 10%;
+    display: inline-block;
+    align-content:flex-end;
+    width: 100%; 
+  }
+}
+
 
 /* .content{
  
@@ -108,17 +125,4 @@ footer {
    color: #A6B8D3;
     justify-content: center;
 }
-
-.links{
-    justify-content: end;
-}
- */
-.lis {
-  list-style: none;
-}
-
-@media screen and (max-width: 768px) {
-  .lis {
-    display: none;
-  }
-}
+*/

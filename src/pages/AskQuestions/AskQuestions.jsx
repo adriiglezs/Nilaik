@@ -9,18 +9,18 @@ const AskQuestions = () => {
 
   return (
     <div>
-    <main>
-      <div className={style.container}>
-        <h3>Preguntas frecuentes</h3>
-        <section className={style.info}>
-          {questions.map((question) => (
-            <SingleQuestion key={question.id} {...question} />
-          ))}
-        </section>
-      </div>
-    </main>
+      <main>
+        <div className={style.container}>
+          <h3>Preguntas frecuentes</h3>
+          <section className={style.info}>
+            {questions.map((question) => (
+              <SingleQuestion key={question.id} {...question} />
+            ))}
+          </section>
+        </div>
+      </main>
       <Footer styleFoo={style.foo} />
-      </div>
+    </div>
   );
 };
 

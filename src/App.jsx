@@ -32,6 +32,7 @@ function App() {
         
 
         <Route path="*" element={<Error />} />
+        <Route path="/AskQuestions" element={<AskQuestions/>}/>
       </Routes>
     </>
   );

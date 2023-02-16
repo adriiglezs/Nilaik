@@ -5,13 +5,13 @@ import Descubre from "../../components/Descubre/Descubre"
 
 import Footer from "../../components/Footer/Footer"
 
-function Home(){
-    return(<>
+function Home() {
+    return (<>
 
-    <Descubre/>
+        <Descubre />
 
-    <SocialMedia/>
-    <Footer/>
+        <SocialMedia />
+        <Footer />
     </>)
 }
 export default Home
