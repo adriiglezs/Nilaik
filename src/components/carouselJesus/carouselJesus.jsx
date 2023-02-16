@@ -32,7 +32,7 @@ export default function Example() {
 
 import React from 'react';
 import Carousel from 'react-material-ui-carousel'
-import style from './CarouselJesus.module.css';
+import style from './carouselJesus.module.css';
 import { puma } from '../Carousel/data';
 import cart from '../../assets/cart.svg';
 
