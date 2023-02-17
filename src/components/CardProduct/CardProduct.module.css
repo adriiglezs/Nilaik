@@ -1,4 +1,4 @@
-.background {
+/* .background {
   background-color: #f6d522;
   border-radius: 3vh;
   border-color: black;
@@ -194,3 +194,191 @@
   }
 }
  */
+
+.cardProductbackgroundJordan {
+  background-color: #2f5898;
+  border-radius: 1vh;
+  border-radius: 1vh;
+  padding: 3%;
+  width: 100%;
+  height: auto;
+  display: inline-block;
+}
+.cardProductbackgroundAdidasBicolor {
+  background-color: #fb9595;
+  border-radius: 1vh;
+  padding: 3%;
+  width: 100%;
+  height: auto;
+  display: inline-block;
+}
+.cardProductbackgroundAdidas3 {
+  background-color: #fb9595;
+  border-radius: 1vh;
+  padding: 3%;
+  width: 100%;
+  height: auto;
+  display: inline-block;
+}
+.cardProductbackgroundEspeciales {
+  background-color: #fb9595;
+  border-radius: 1vh;
+  padding: 3%;
+  width: 100%;
+  height: auto;
+  display: inline-block;
+}
+.cardProductbackgroundNike {
+  background-color: #2f5898;
+  border-radius: 1vh;
+  padding: 3%;
+  width: 100%;
+  height: auto;
+  display: inline-block;
+}
+.cardProductbackgroundPuma {
+  background-color: #fb9595;
+  border-radius: 1vh;
+  padding: 3%;
+  width: 100%;
+  height: auto;
+  display: inline-block;
+}
+.cardProductbackgroundPumaArlequin {
+  background-color: #2f5898;
+  border-radius: 1vh;
+  padding: 3%;
+  width: 100%;
+  height: auto;
+  display: inline-block;
+}
+
+.cardProductencabezado {
+  margin: 3% 0 0 2%;
+  font-size: 40px;
+}
+@media screen and (max-width: 1024px) {
+  .cardProductencabezado {
+    margin: 3% 0 0 4%;
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 464px) {
+  .cardProductencabezado {
+    margin: 3% 0 0 10%;
+    font-size: 30px;
+  }
+}
+
+.cardProductcod {
+  display: inline-flex;
+  width: 25%;
+  height: 8vh;
+  font-size: 15px;
+  margin: 0;
+  font-weight: bold;
+  text-align: right;
+}
+@media screen and (max-width: 1024px) {
+  .cardProductcod {
+    font-size: 13px;
+    height: 6vh;
+  }
+}
+@media screen and (max-width: 464px) {
+  .cardProductcod {
+    font-size: 11px;
+    height: 4vh;
+  }
+}
+.cardProductname {
+  display: inline-flex;
+  width: 75%;
+  height: 8vh;
+  font-size: 23px;
+  margin: 0;
+  text-align: left;
+  font-weight: bold;
+}
+@media screen and (max-width: 1024px) {
+  .cardProductname {
+    font-size: 20px;
+    height: 6vh;
+  }
+}
+@media screen and (max-width: 464px) {
+  .cardProductname {
+    font-size: 18px;
+    height: 4vh;
+  }
+}
+.cardProductp {
+  margin: 0;
+  width: 100%;
+}
+.cardProductpj {
+  color: #a6b8d3;
+  margin: 0;
+  width: 100%;
+}
+
+.cardProductcost {
+  display: inline-block;
+  width: 50%;
+  font-size: 20px;
+  margin: 0;
+  text-align: left;
+  font-weight: bold;
+}
+@media screen and (max-width: 1024px) {
+  .cardProductcost {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 464px) {
+  .cardProductcost {
+    font-size: 16px;
+  }
+}
+
+.cardProductshopping {
+  width: 50%;
+  display: inline-block;
+  text-align: right;
+}
+.cardProductcards {
+  width: 20%;
+}
+.cardProducttarget {
+  width: 29%;
+  margin: 2%;
+  align-self: center;
+  justify-content: center;
+  display: inline-block;
+}
+
+@media screen and (max-width: 1024px) {
+  .cardProducttarget {
+    padding-bottom: 8%;
+    padding-top: 5%;
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+}
+@media screen and (max-width: 464px) {
+  .cardProducttarget {
+    padding-bottom: 10%;
+    padding-top: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+
+.cardProductCardProduct {
+  width: 100%;
+  height: auto;
+  align-self: center;
+  display: inline-block;
+  margin: 0;
+  border-radius: 1vh 1vh 0 0;
+}
