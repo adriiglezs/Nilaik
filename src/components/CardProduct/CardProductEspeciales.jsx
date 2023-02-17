@@ -4,22 +4,22 @@ import cart from '../../assets/cart.svg';
 
 export default function CardProductEspeciales() {
   return (<>
-    <h1 className={style.encabezado}>Personajes</h1>
+    <h1 className={style.cardProductencabezado}>Especiales</h1>
     {especiales.map(item => (
-      <div key={item.id} className={style.target}>
-        <div className={style.background}>
-          <img className={style.CardProduct} src={item.src} alt={item.name} />
-          <div className={style.name}>
-            <h1 className={style.nameL}>{item.name}</h1>
+      <div key={item.id} className={style.cardProducttarget}>
+        <div className={style.cardProductbackgroundEspeciales}>
+          <img className={style.cardProductCardProduct} src={item.src} alt={item.name} />
+          <div className={style.cardProductname}>
+            <p className={style.cardProductp}>{item.name}</p>
           </div>
-          <div className={style.cod}>
-            <h2 className={style.codL}>{item.category}</h2>
+          <div className={style.cardProductcod}>
+            <p className={style.cardProductp}>{item.category}</p>
           </div>
-          <div className={style.cost}>
-            <h3 className={style.costL}>{item.price}</h3>
+          <div className={style.cardProductcost}>
+            <p className={style.cardProductp}>{item.price}</p>
           </div>
-          <div className={style.shopping}>
-            <img className={style.cards} src={cart} alt="Shopping cart"></img>
+          <div className={style.cardProductshopping}>
+            <img className={style.cardProductcards} src={cart} alt="Shopping cart"></img>
           </div>
         </div>
       </div>

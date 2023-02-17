@@ -4,7 +4,7 @@ import cart from '../../assets/cart.svg';
 
 export default function CardProductAdidas3() {
   return (<>
-    <h1 className={style.encabezado}>Adidas 3</h1>
+    <h1 className={style.cardProductencabezado}>Adidas 3</h1>
     {adidas3.map(item => (
       <div key={item.id} className={style.cardProducttarget}>
         <div className={style.cardProductbackgroundAdidas3}>
