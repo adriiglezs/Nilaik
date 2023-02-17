@@ -22,7 +22,7 @@ const responsive = {
     slidesToSlide: 1 // optional, default to 1.
   }
 };
-export default function CaroucelAdidasBicolor() {
+export default function CarouselAdidasBicolor() {
   return (<>
     <h1 className={style.carouselencabezado}>Adidas Bicolor</h1>
     <Carousel

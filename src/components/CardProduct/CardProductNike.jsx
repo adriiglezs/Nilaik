@@ -10,13 +10,13 @@ export default function CardProductNike() {
         <div className={style.cardProductbackgroundNike}>
           <img className={style.cardProductCardProduct} src={item.src} alt={item.name} />
           <div className={style.cardProductname}>
-            <p className={style.cardProductp}>{item.name}</p>
+            <p className={style.cardProductpj}>{item.name}</p>
           </div>
           <div className={style.cardProductcod}>
-            <p className={style.cardProductp}>{item.category}</p>
+            <p className={style.cardProductpj}>{item.category}</p>
           </div>
           <div className={style.cardProductcost}>
-            <p className={style.cardProductp}>{item.price}</p>
+            <p className={style.cardProductpj}>{item.price}</p>
           </div>
           <div className={style.cardProductshopping}>
             <img className={style.cardProductcards} src={cart} alt="Shopping cart"></img>

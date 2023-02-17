@@ -3,13 +3,13 @@
   background-color: #2f5898;
 }
 
-/* @media screen and (max-width: 768px) {
-  .card21 {
+@media screen and (max-width: 464px) {
+  .card {
     display: none;
   }
 }
-@media screen and (min-width: 768px) {
-  .card22 {
+@media screen and (min-width: 464px) {
+  .cardmovil {
     display: none;
   }
-} */
+}

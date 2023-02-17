@@ -22,7 +22,7 @@ const responsive = {
     slidesToSlide: 1 // optional, default to 1.
   }
 };
-export default function CaroucelPumaArlequin() {
+export default function CarouselPumaArlequin() {
   return (<>
     <h1 className={style.carouselencabezado}>Puma Arlequin</h1>
     <Carousel

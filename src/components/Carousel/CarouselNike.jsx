@@ -22,7 +22,7 @@ const responsive = {
     slidesToSlide: 1 // optional, default to 1.
   }
 };
-export default function CaroucelNike() {
+export default function CarouselNike() {
   return (<>
     <h1 className={style.carouselencabezado}>Nike</h1>
     <Carousel

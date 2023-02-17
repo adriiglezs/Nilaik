@@ -22,7 +22,7 @@ const responsive = {
     slidesToSlide: 1 // optional, default to 1.
   }
 };
-export default function CaroucelJordan() {
+export default function CarouselJordan() {
   return (<>
     <h1 className={style.carouselencabezado}>Jordan</h1>
     <Carousel

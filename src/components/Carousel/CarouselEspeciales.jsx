@@ -22,7 +22,7 @@ const responsive = {
     slidesToSlide: 1 // optional, default to 1.
   }
 };
-export default function CaroucelEspeciales() {
+export default function CarouselEspeciales() {
   return (<>
     <h1 className={style.carouselencabezado}>Exclusivos</h1>
     <Carousel
