@@ -1,58 +1,58 @@
 export const adidasBicolor = [
   {
     id: 1,
-    name: "Adidas bicolor rosa",
-    src: "https://res.cloudinary.com/ddwq0ulee/image/upload/v1676403119/Nilaik/adidas%20bicolor/IMG_20230212_170322-min_etzuwp.jpg",
-    category: "ADBRS",
-    price: "175.00",
-  },
-  {
-    id: 2,
-    name: "Adidas bicolor rojo",
-    src: "https://res.cloudinary.com/ddwq0ulee/image/upload/v1676402955/Nilaik/adidas%20bicolor/IMG_20230212_150000-min_moiwa9.jpg",
-    category: "ADBRJ",
-    price: "200.00",
-  },
-  {
-    id: 3,
-    name: "Adidas bicolor azul",
-    src: "https://res.cloudinary.com/ddwq0ulee/image/upload/v1676402954/Nilaik/adidas%20bicolor/IMG_20230212_145421-min_ejwx2r.jpg",
-    category: "ADBAZ",
-    price: "150.00",
-  },
-  {
-    id: 4,
-    name: "Adidas bicolor mango",
-    src: "https://res.cloudinary.com/ddwq0ulee/image/upload/v1676402954/Nilaik/adidas%20bicolor/IMG_20230212_144551-min_caljqe.jpg",
-    category: "ADBMA",
-    price: "175.00",
-  },
-  {
-    id: 5,
-    name: "Adidas bicolor blanco",
-    src: "https://res.cloudinary.com/ddwq0ulee/image/upload/v1676402952/Nilaik/adidas%20bicolor/IMG_20230212_150551-min_cgkpa9.jpg",
-    category: "ADBBL",
-    price: "200.00",
-  },
-  {
-    id: 6,
     name: "Adidas bicolor camuflaje",
     src: "https://res.cloudinary.com/ddwq0ulee/image/upload/v1676402954/Nilaik/adidas%20bicolor/IMG_20230212_145712-min_nublxu.jpg",
     category: "ADBCA",
     price: "175.00",
   },
   {
-    id: 7,
+    id: 2,
     name: "Adidas bicolor menta",
     src: "https://res.cloudinary.com/ddwq0ulee/image/upload/v1676402952/Nilaik/adidas%20bicolor/IMG_20230212_150246-min_kij1e3.jpg",
     category: "ADBME",
     price: "200.00",
   },
   {
-    id: 8,
+    id: 3,
     name: "Adidas bicolor gris",
     src: "https://res.cloudinary.com/ddwq0ulee/image/upload/v1676402954/Nilaik/adidas%20bicolor/IMG_20230212_145100-min_pxzw00.jpg",
     category: "ADBGR",
+    price: "200.00",
+  },
+  {
+    id: 4,
+    name: "Adidas bicolor rosa",
+    src: "https://res.cloudinary.com/ddwq0ulee/image/upload/v1676403119/Nilaik/adidas%20bicolor/IMG_20230212_170322-min_etzuwp.jpg",
+    category: "ADBRS",
+    price: "175.00",
+  },
+  {
+    id: 5,
+    name: "Adidas bicolor rojo",
+    src: "https://res.cloudinary.com/ddwq0ulee/image/upload/v1676402955/Nilaik/adidas%20bicolor/IMG_20230212_150000-min_moiwa9.jpg",
+    category: "ADBRJ",
+    price: "200.00",
+  },
+  {
+    id: 6,
+    name: "Adidas bicolor azul",
+    src: "https://res.cloudinary.com/ddwq0ulee/image/upload/v1676402954/Nilaik/adidas%20bicolor/IMG_20230212_145421-min_ejwx2r.jpg",
+    category: "ADBAZ",
+    price: "150.00",
+  },
+  {
+    id: 7,
+    name: "Adidas bicolor mango",
+    src: "https://res.cloudinary.com/ddwq0ulee/image/upload/v1676402954/Nilaik/adidas%20bicolor/IMG_20230212_144551-min_caljqe.jpg",
+    category: "ADBMA",
+    price: "175.00",
+  },
+  {
+    id: 8,
+    name: "Adidas bicolor blanco",
+    src: "https://res.cloudinary.com/ddwq0ulee/image/upload/v1676402952/Nilaik/adidas%20bicolor/IMG_20230212_150551-min_cgkpa9.jpg",
+    category: "ADBBL",
     price: "200.00",
   },
 ];
@@ -60,9 +60,9 @@ export const adidasBicolor = [
 export const nike = [
   {
     id: 1,
-    name: "Nike rosa",
-    src: "https://res.cloudinary.com/ddwq0ulee/image/upload/v1676403055/Nilaik/nike/IMG_20230212_163235-min_pgk4ui.jpg",
-    category: "NIRS",
+    name: "Nike gris",
+    src: "https://res.cloudinary.com/ddwq0ulee/image/upload/v1676403055/Nilaik/nike/IMG_20230212_164023-min_ajjwq3.jpg",
+    category: "NIGR",
     price: "175.00",
   },
   {
@@ -102,9 +102,9 @@ export const nike = [
   },
   {
     id: 7,
-    name: "Nike gris",
-    src: "https://res.cloudinary.com/ddwq0ulee/image/upload/v1676403055/Nilaik/nike/IMG_20230212_164023-min_ajjwq3.jpg",
-    category: "NIGR",
+    name: "Nike rosa",
+    src: "https://res.cloudinary.com/ddwq0ulee/image/upload/v1676403055/Nilaik/nike/IMG_20230212_163235-min_pgk4ui.jpg",
+    category: "NIRS",
     price: "175.00",
   },
 ];
@@ -112,11 +112,12 @@ export const nike = [
 export const jordan = [
   {
     id: 1,
-    name: "Jordan rosa",
-    src: "https://res.cloudinary.com/ddwq0ulee/image/upload/v1676403031/Nilaik/jordan/IMG_20230212_165039-min_zkrzdl.jpg",
-    category: "JORS",
+    name: "Jordan azul",
+    src: "https://res.cloudinary.com/ddwq0ulee/image/upload/v1676403031/Nilaik/jordan/IMG_20230212_165201-min_mkptjz.jpg",
+    category: "JOAZ",
     price: "175.00",
   },
+
   {
     id: 2,
     name: "Jordan rojo",
@@ -126,11 +127,12 @@ export const jordan = [
   },
   {
     id: 3,
-    name: "Jordan azul",
-    src: "https://res.cloudinary.com/ddwq0ulee/image/upload/v1676403031/Nilaik/jordan/IMG_20230212_165201-min_mkptjz.jpg",
-    category: "JOAZ",
+    name: "Jordan rosa",
+    src: "https://res.cloudinary.com/ddwq0ulee/image/upload/v1676403031/Nilaik/jordan/IMG_20230212_165039-min_zkrzdl.jpg",
+    category: "JORS",
     price: "175.00",
   },
+
   {
     id: 4,
     name: "Jordan mango",
@@ -164,16 +166,16 @@ export const jordan = [
 export const adidas3 = [
   {
     id: 1,
-    name: "Adidas 3 rosa",
-    src: " https://res.cloudinary.com/ddwq0ulee/image/upload/v1676402924/Nilaik/adidas%203/IMG_20230212_170556-min_ewf4mn.jpg",
-    category: "A3RS",
+    name: "Adidas 3 rojo",
+    src: " https://res.cloudinary.com/ddwq0ulee/image/upload/v1676402924/Nilaik/adidas%203/IMG_20230212_153003-min_zwgojx.jpg",
+    category: "A3RJ",
     price: "175.00",
   },
   {
     id: 2,
-    name: "Adidas 3 rojo",
-    src: " https://res.cloudinary.com/ddwq0ulee/image/upload/v1676402924/Nilaik/adidas%203/IMG_20230212_153003-min_zwgojx.jpg",
-    category: "A3RJ",
+    name: "Adidas 3 rosa",
+    src: " https://res.cloudinary.com/ddwq0ulee/image/upload/v1676402924/Nilaik/adidas%203/IMG_20230212_170556-min_ewf4mn.jpg",
+    category: "A3RS",
     price: "175.00",
   },
   {
@@ -209,11 +211,12 @@ export const adidas3 = [
 export const puma = [
   {
     id: 1,
-    name: "Puma rosa",
-    src: " https://res.cloudinary.com/ddwq0ulee/image/upload/v1676403079/Nilaik/puma/IMG_20230212_170117_oaw07h.jpg",
-    category: "PURS",
+    name: "Puma blanco",
+    src: " https://res.cloudinary.com/ddwq0ulee/image/upload/v1676403079/Nilaik/puma/IMG_20230212_165730-min_e2kdue.jpg",
+    category: "PUBL",
     price: "175.00",
   },
+
   {
     id: 2,
     name: "Puma rojo",
@@ -237,11 +240,12 @@ export const puma = [
   },
   {
     id: 5,
-    name: "Puma blanco",
-    src: " https://res.cloudinary.com/ddwq0ulee/image/upload/v1676403079/Nilaik/puma/IMG_20230212_165730-min_e2kdue.jpg",
-    category: "PUBL",
+    name: "Puma rosa",
+    src: " https://res.cloudinary.com/ddwq0ulee/image/upload/v1676403079/Nilaik/puma/IMG_20230212_170117_oaw07h.jpg",
+    category: "PURS",
     price: "175.00",
   },
+
   {
     id: 6,
     name: "Puma menta",
@@ -254,18 +258,19 @@ export const puma = [
 export const pumaArlequin = [
   {
     id: 1,
-    name: "Puma arlequin rosa",
-    src: "https://res.cloudinary.com/ddwq0ulee/image/upload/v1676403102/Nilaik/puma%20arlequin/IMG_20230212_152125-min_qfj5hc.jpg",
-    category: "PARS",
-    price: "175.00",
-  },
-  {
-    id: 2,
     name: "Puma arlequin mango",
     src: " https://res.cloudinary.com/ddwq0ulee/image/upload/v1676403102/Nilaik/puma%20arlequin/IMG_20230212_151837-min_vmrmj7.jpg",
     category: "PAMA",
     price: "175.00",
   },
+  {
+    id: 2,
+    name: "Puma arlequin rosa",
+    src: "https://res.cloudinary.com/ddwq0ulee/image/upload/v1676403102/Nilaik/puma%20arlequin/IMG_20230212_152125-min_qfj5hc.jpg",
+    category: "PARS",
+    price: "175.00",
+  },
+
   {
     id: 3,
     name: "Puma arlequin blanco",
