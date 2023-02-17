@@ -5,9 +5,13 @@
   justify-content: center;
   display: flex;
 }
+@media screen and (max-width: 464px) {
+  .LoginPageContainerGlobal {
+    width: 100%;
+    display: inline-block;
+  }
+}
 .LoginPageContainerLogin {
-  background-repeat: no-repeat;
-  background-size: cover;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -16,10 +20,20 @@
   margin: 0% 2% 0% 2%;
   padding: 3% 3% 3% 3%;
 }
+@media screen and (max-width: 1024px) {
+  .LoginPageContainerLogin {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 464px) {
+  .LoginPageContainerLogin {
+    width: 95%;
+    display: inline-flex;
+    margin: 2% 2% 3% 2%;
+  }
+}
 
 .LoginPageContainerImg {
-  background-repeat: no-repeat;
-  background-size: cover;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -28,13 +42,32 @@
   margin: 0% 2% 0% 2%;
   padding: 0% 3% 0% 3%;
 }
+@media screen and (max-width: 1024px) {
+  .LoginPageContainerImg {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 464px) {
+  .LoginPageContainerImg {
+    width: 95%;
+    display: inline-flex;
+    margin: 2% 2% 3% 2%;
+  }
+}
 
 .LoginPageImg {
   width: 100%;
   height: auto;
   align-self: center;
-  display: inline-block;
+  display: inline-flex;
   margin: 0;
+}
+@media screen and (max-width: 464px) {
+  .LoginPageImg {
+    width: 95%;
+    display: inline-flex;
+    margin: 15%;
+  }
 }
 .foo {
   position: relative;
