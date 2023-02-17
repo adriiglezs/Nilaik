@@ -1,36 +1,59 @@
 import React from 'react';
-import { Carousel } from '@trendyol-js/react-carousel';
-import { nike } from './data.js';
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 import style from './Carousel.module.css';
+import { nike } from './data';
 import cart from '../../assets/cart.svg';
 
-function CarouselNike() {
+const responsive = {
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 4,
+    slidesToSlide: 1 // optional, default to 1.
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 464 },
+    items: 2,
+    slidesToSlide: 1 // optional, default to 1.
+  },
+  mobile: {
+    breakpoint: { max: 464, min: 0 },
+    items: 1,
+    slidesToSlide: 1 // optional, default to 1.
+  }
+};
+export default function CaroucelNike() {
   return (<>
     <h1 className={style.carouselencabezado}>Nike</h1>
-    <Carousel show={5} slide={2} transition={0.5} infinite
-      responsive={[{
-        breakpoint: 1024,
-        settings: { slidesToShow: 3 }
-      },
-      { breakpoint: 600, settings: { slidesToShow: 2 } },
-      { breakpoint: 480, settings: { slidesToShow: 1 } }]}
+    <Carousel
+      swipeable={false}
+      draggable={false}
+      showDots={true}
       arrows={true}
-      dots={false}
-      slidesToShow={4}
-      slidesToScroll={1}
+      responsive={responsive}
+      ssr={true} // means to render carousel on server-side.
+      infinite={true}
+      autoPlay={false}
+      autoPlaySpeed={false}
+      keyBoardControl={true}
+      customTransition="all .5"
+      transitionDuration={1000}
+      containerClass="carousel-container"
+      dotListClass="custom-dot-list-style"
+      itemClass="carousel-item-padding-40-px"
     >
       {nike.map(item => (
         <div key={item.id} className={style.carouseltarget}>
           <div className={style.carouselbackgroundNike}>
             <img className={style.carouselCardProduct} src={item.src} alt={item.name} />
             <div className={style.carouselname}>
-              <h1 className={style.carouselnameL}>{item.name}</h1>
+              <p className={style.carouselpj}>{item.name}</p>
             </div>
             <div className={style.carouselcod}>
-              <h2 className={style.carouselcodL}>{item.category}</h2>
+              <p className={style.carouselpj}>{item.category}</p>
             </div>
             <div className={style.carouselcost}>
-              <h3 className={style.carouselcostL}>{item.price}</h3>
+              <p className={style.carouselpj}>{item.price}</p>
             </div>
             <div className={style.carouselshopping}>
               <img className={style.carouselcards} src={cart} alt="Shopping cart"></img>
@@ -38,9 +61,6 @@ function CarouselNike() {
           </div>
         </div>
       ))}
-    </Carousel>
+    </Carousel>;
   </>);
 }
-
-export default CarouselNike;
-

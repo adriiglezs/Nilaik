@@ -1,21 +1,20 @@
 import SocialMedia from "../../components/Social-Media/SocialMedia"
 import Footer from "../../components/Footer/Footer"
-import CarouselJordan from "../../components/Carousel/CarouselJordan"
-import CarouselNike from "../../components/Carousel/CarouselNike"
-import CarouselPuma from "../../components/Carousel/CarouselPuma"
-import CarouselAdidasBi from "../../components/Carousel/Carousel"
 import CarouselPumaArlequin from "../../components/Carousel/CarouselPumaArlequin"
 import style from "./Home.module.css";
-import CarouselAdidas3 from "../../components/Carousel/CarouselAdidas3"
+import CaroucelPuma from "../../components/Carousel/CarouselPuma";
+import CaroucelJordan from "../../components/Carousel/CarouselJordan";
+import CaroucelAdidas3 from "../../components/Carousel/CarouselAdidas3";
+import CaroucelAdidasBicolor from "../../components/Carousel/CarouselAdidasBicolor";
+import CaroucelNike from "../../components/Carousel/CarouselNike";
 
 function Home() {
     return (<>
-        <CarouselJordan />
-        <CarouselAdidasBi />
-        <CarouselAdidas3 />
-        <CarouselPuma />
-        <CarouselNike />
-
+        <CaroucelAdidasBicolor />
+        <CaroucelNike />
+        <CaroucelPuma />
+        <CaroucelJordan />
+        <CaroucelAdidas3 />
         <CarouselPumaArlequin />
         <SocialMedia />
         <Footer styleFoo={style.foo} />

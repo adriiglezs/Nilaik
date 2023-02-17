@@ -1,14 +1,7 @@
-.styles-module_carousel-arrow__26sRw {
-  z-index: none;
-  padding: 2vh;
-  background: url(https://cdn.dsmcdn.com/web/production/slick-arrow.svg) 50%
-    no-repeat;
-  border: none;
-  height: 100%;
-}
-
 .carouselbackgroundJordan {
   background-color: #2f5898;
+  border-radius: 1vh;
+  border-radius: 1vh;
   padding: 3%;
   width: 100%;
   height: auto;
@@ -16,190 +9,176 @@
 }
 .carouselbackgroundAdidasBicolor {
   background-color: #fb9595;
+  border-radius: 1vh;
   padding: 3%;
   width: 100%;
   height: auto;
   display: inline-block;
 }
 .carouselbackgroundAdidas3 {
-  background-color: #a6b8d3;
+  background-color: #fb9595;
+  border-radius: 1vh;
   padding: 3%;
   width: 100%;
   height: auto;
   display: inline-block;
 }
 .carouselbackgroundEspeciales {
-  background-color: #f6d522;
+  background-color: #fb9595;
+  border-radius: 1vh;
   padding: 3%;
   width: 100%;
   height: auto;
   display: inline-block;
 }
 .carouselbackgroundNike {
-  background-color: #a6b8d3;
+  background-color: #2f5898;
+  border-radius: 1vh;
   padding: 3%;
   width: 100%;
   height: auto;
   display: inline-block;
 }
 .carouselbackgroundPuma {
-  background-color: #f6d522;
+  background-color: #fb9595;
+  border-radius: 1vh;
   padding: 3%;
   width: 100%;
   height: auto;
   display: inline-block;
 }
 .carouselbackgroundPumaArlequin {
-  background-color: #f6d522;
+  background-color: #2f5898;
+  border-radius: 1vh;
   padding: 3%;
   width: 100%;
   height: auto;
   display: inline-block;
 }
 .carouselencabezado {
-  margin: 3% 0 0 5%;
-  font-size: 35px;
+  margin: 3% 0 0 2%;
+  font-size: 40px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .carouselencabezado {
-    margin: 3% 0 0 5%;
-    font-size: 25px;
+    margin: 3% 0 0 4%;
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 464px) {
+  .carouselencabezado {
+    margin: 3% 0 0 10%;
+    font-size: 30px;
   }
 }
 
 .carouselcod {
-  display: inline-block;
+  display: inline-flex;
   width: 25%;
-
-  color: #4f1f28;
+  height: 8vh;
+  font-size: 15px;
+  margin: 0;
+  font-weight: bold;
+  text-align: right;
 }
-.carouselcodL {
-  font-size: 22px;
-
-  color: #4f1f28;
+@media screen and (max-width: 1024px) {
+  .carouselcod {
+    font-size: 13px;
+    height: 6vh;
+  }
+}
+@media screen and (max-width: 464px) {
+  .carouselcod {
+    font-size: 11px;
+    height: 4vh;
+  }
 }
 .carouselname {
-  display: inline-block;
+  display: inline-flex;
   width: 75%;
-
-  color: #4f1f28;
+  height: 8vh;
+  font-size: 23px;
+  margin: 0;
+  text-align: left;
+  font-weight: bold;
 }
-.carouselnameL {
-  font-display: 100%;
-  font-size: 25px;
-
-  color: #4f1f28;
+@media screen and (max-width: 1024px) {
+  .carouselname {
+    font-size: 20px;
+    height: 6vh;
+  }
 }
+@media screen and (max-width: 464px) {
+  .carouselname {
+    font-size: 18px;
+    height: 4vh;
+  }
+}
+.carouselp {
+  margin: 0;
+  width: 100%;
+}
+.carouselpj {
+  color: #a6b8d3;
+  margin: 0;
+  width: 100%;
+}
+
 .carouselcost {
   display: inline-block;
   width: 50%;
+  font-size: 20px;
   margin: 0;
-  padding: 0;
-
-  color: #4f1f28;
+  text-align: left;
+  font-weight: bold;
 }
-.carouselcostL {
-  font-size: 25px;
-
-  color: #4f1f28;
-}
-.carouselshopping {
-  text-align: right;
-  display: inline-block;
-  width: 50%;
-  height: 50%;
-}
-@media screen and (max-width: 768px) {
-  .carouselcards {
-    width: 40%;
-    height: 40%;
+@media screen and (max-width: 1024px) {
+  .carouselcost {
+    font-size: 18px;
   }
 }
-.carouseltarget {
-  width: 90%;
-  margin: 2%;
-  align-self: center;
-  justify-content: center;
+@media screen and (max-width: 464px) {
+  .carouselcost {
+    font-size: 16px;
+  }
+}
+
+.carouselshopping {
+  width: 50%;
   display: inline-block;
+  text-align: right;
+}
+.carouselcards {
+  width: 20%;
+}
+
+.carouseltarget {
+  width: 100%;
+  padding-bottom: 10%;
+  padding-top: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  display: inline-flex;
+}
+@media screen and (max-width: 1024px) {
+  .carouseltarget {
+    padding-bottom: 8%;
+    padding-top: 5%;
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+}
+@media screen and (max-width: 464px) {
+  .carouseltarget {
+    padding-bottom: 10%;
+    padding-top: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
 }
 
 .carouselCardProduct {
   width: 100%;
-  height: auto;
-  align-self: center;
-  display: inline-block;
   margin: 0;
-}
-
-@media screen and (max-width: 810px) {
-  .carouselcost,
-  .carouselcod,
-  .carouselname {
-    display: inline-block;
-    max-width: 90%;
-    flex-wrap: nowrap;
-
-    color: #4f1f28;
-  }
-}
-
-@media screen and (max-width: 512px) {
-  .carouselcost,
-  .carouselcod,
-  .carouselname {
-    display: inline-block;
-    max-width: 90%;
-    flex-wrap: nowrap;
-
-    color: #4f1f28;
-  }
-}
-
-@media screen and (max-width: 1100px) {
-  .carouselcostL,
-  .carouselnameL {
-    font-size: 20px;
-
-    color: #4f1f28;
-  }
-}
-
-@media screen and (max-width: 800px) {
-  .carouselcostL,
-  .carouselnameL {
-    font-size: 15px;
-
-    color: #4f1f28;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .carouselcostL,
-  .carouselnameL {
-    font-size: 12px;
-
-    color: #4f1f28;
-  }
-}
-
-@media screen and (max-width: 1100px) {
-  .carouselcodL {
-    font-size: 17px;
-
-    color: #4f1f28;
-  }
-}
-@media screen and (max-width: 800px) {
-  .carouselcodL {
-    font-size: 12px;
-
-    color: #4f1f28;
-  }
-}
-@media screen and (max-width: 500px) {
-  .carouselcodL {
-    font-size: 9px;
-
-    color: #4f1f28;
-  }
+  border-radius: 1vh 1vh 0 0;
 }

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import style from "./CardLogin.module.css";
 import { useState } from 'react';
 
@@ -61,6 +62,7 @@ export default function CardLogin() {
             {passwordClicked && password === '' && <span>Por favor ingrese su contraseña</span>}
           </div>
           <input type="submit" className={style.loginBtn} value="Ingresar" />
+          <Link to="/register "><label>Registrate</label></Link>
         </form>
         {isLoggedIn && <p>Ha iniciado sesión correctamente.</p>}
       </div>

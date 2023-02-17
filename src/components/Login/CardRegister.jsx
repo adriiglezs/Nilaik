@@ -109,7 +109,6 @@ export default function CardRegister() {
               />
             </div>
             <input type="submit" className={style.loginBtn} value="Registrar" />
-            <label>Ya tengo cuenta</label>
           </form>
         </div>
       </div>

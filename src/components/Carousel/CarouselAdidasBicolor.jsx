@@ -2,7 +2,7 @@ import React from 'react';
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import style from './Carousel.module.css';
-import { jordan } from './data';
+import { adidasBicolor } from './data';
 import cart from '../../assets/cart.svg';
 
 const responsive = {
@@ -22,9 +22,9 @@ const responsive = {
     slidesToSlide: 1 // optional, default to 1.
   }
 };
-export default function CaroucelJordan() {
+export default function CaroucelAdidasBicolor() {
   return (<>
-    <h1 className={style.carouselencabezado}>Jordan</h1>
+    <h1 className={style.carouselencabezado}>Adidas Bicolor</h1>
     <Carousel
       swipeable={false}
       draggable={false}
@@ -42,18 +42,18 @@ export default function CaroucelJordan() {
       dotListClass="custom-dot-list-style"
       itemClass="carousel-item-padding-40-px"
     >
-      {jordan.map(item => (
+      {adidasBicolor.map(item => (
         <div key={item.id} className={style.carouseltarget}>
-          <div className={style.carouselbackgroundJordan}>
+          <div className={style.carouselbackgroundAdidasBicolor}>
             <img className={style.carouselCardProduct} src={item.src} alt={item.name} />
             <div className={style.carouselname}>
-              <p className={style.carouselpj}>{item.name}</p>
+              <p className={style.carouselp}>{item.name}</p>
             </div>
             <div className={style.carouselcod}>
-              <p className={style.carouselpj}>{item.category}</p>
+              <p className={style.carouselp}>{item.category}</p>
             </div>
             <div className={style.carouselcost}>
-              <p className={style.carouselpj}>{item.price}</p>
+              <p className={style.carouselp}>{item.price}</p>
             </div>
             <div className={style.carouselshopping}>
               <img className={style.carouselcards} src={cart} alt="Shopping cart"></img>
