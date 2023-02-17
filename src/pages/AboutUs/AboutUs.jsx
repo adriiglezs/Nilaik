@@ -46,7 +46,7 @@ export default function AboutUs() {
           apasionado por las motocicletas, videojuegos, ejercicio y programación. Integrante del development team."
         />
 
-        <Card
+        {/* <Card
           name="Victoria Bolaños"
           instagramUrl="https://www.instagram.com/mexavictoria/"
           githubUrl="https://github.com/mexavictoriab"
@@ -54,10 +54,9 @@ export default function AboutUs() {
           cvUrl="https://www.canva.com/design/DAFYoAp9a6o/3c_dzHUU9D5QE8PKjmVzuw/view?utm_content=DAFYoAp9a6o&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"
           photo={victoria}
           biography="Amante de los libros, la danza, los idiomas, la tecnología y el diseño, licenciada en innovación de negocios y mercadotecnia. Mujer en búsqueda de respuestas a las mil y un preguntas formuladas cada día. Parte del development team en el proyecto."
-        />
+        /> */}
         <Card
           name="Jorge Hernandez"
-          changeColor={true}
           instagramUrl=""
           githubUrl="https://github.com/jorhdz"
           linkedinUrl="https://www.linkedin.com/in/jorge-hern%C3%A1ndez-46083425a/"
@@ -77,6 +76,7 @@ export default function AboutUs() {
 
         <Card
           name="Adrián González"
+          changeColor={true}
           instagramUrl="https://instagram.com/adrii_wings?igshid=NmQ2ZmYxZjA="
           githubUrl="https://github.com/adriiglezs"
           linkedinUrl="https://www.linkedin.com/in/adri%C3%A1n-gonz%C3%A1lez-s%C3%A1nchez-649141253"
