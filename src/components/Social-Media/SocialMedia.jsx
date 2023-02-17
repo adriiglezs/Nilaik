@@ -6,7 +6,12 @@ import FB from "../../assets/Íconos/FB-Icono.png";
 
 function SocialMedia() {
   return (
+
+
     <nav className={style.background}>
+
+      <h1 className={style.h1social}>Redes sociales</h1>
+
       <div className={style.SocialNetworksLogo}>
         <a href="https://www.instagram.com/mexavictoria/">
           <img
