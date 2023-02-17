@@ -13,8 +13,8 @@ const Total = () => {
 
   return (
     <div className={style.root}>
-      <h2>Total items : </h2>
-      <h2>5</h2>
+      <h2>Total items : 3</h2>
+      <h2>500</h2>
       <Button
         component={Link}
         to="/checkout"

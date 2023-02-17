@@ -1,4 +1,5 @@
 import Footer from "../../components/Footer/Footer";
+import Products from "../../components/Product/Products";
 
 import SocialMedia from "../../components/Social-Media/SocialMedia";
 import UniqueCollection from "../../components/UniqueCollection/UniqueCollection";
@@ -12,7 +13,7 @@ export default function NikePuma() {
      
       <UniqueCollection />
       
-      
+      <Products/>
       <UniqueCollection />
       <SocialMedia />
       

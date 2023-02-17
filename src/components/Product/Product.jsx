@@ -1,8 +1,21 @@
 import React from "react";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import style from "./Product.module.css";
+import { useStateValue } from "../../StateProvider";
+import { actionTypes } from "../../reducer";
 
 const Product = ({ item }) => {
+
+ const [{basket},dispatch] = useStateValue();
+
+  const addToBasket = () => {
+  dispatch({
+    type: actionTypes.ADD_TO_BASKET,
+    item
+  });
+};
+  
+
   return (
     <div className={style.target}>
       <div className={style.background}>

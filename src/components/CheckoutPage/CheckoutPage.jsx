@@ -1,23 +1,22 @@
-import React from "react";
-import Product from "../Product/Product";
-import Products from "../Product/Products";
-
-//import { useStateValue } from "../StateProvider";
-import CheckoutCard from "./CheckoutCard";
+//import Product from "../Product/Product";
+//import Products from "../Product/Products";
 //import Total from "./Total";
+//import {adidasBicolor, nike} from "./data";
 
-import {adidasBicolor, nike} from "./data";
+import React from "react";
+import { useStateValue } from '../../StateProvider';
+import CheckoutCard from "./CheckoutCard";
 import Total from "./Total";
 
 const CheckoutPage = () => {
-  //const [{ basket }, dispatch] = useStateValue();
+  const [{ basket }, dispatch] = useStateValue();
 
   function FormRow() {
     return (
       <div>
-        {nike.map((item) => (
+        {basket?.map((product) => (
           <div>
-            <Product key={item.id} item={item} />
+            <CheckoutCard key={product.id} item={product} />
           </div>
         ))}
       </div>
@@ -25,16 +24,18 @@ const CheckoutPage = () => {
   }
 
   return (
-    <div >
+    <div>
       <div>
         <div>
           <h1>Shopping Cart</h1>
         </div>
         <div>
-          <FormRow/>
+          <FormRow />
         </div>
         <div>
-          <div><Total/> </div>
+          <div>
+            <Total />{" "}
+          </div>
         </div>
       </div>
     </div>
