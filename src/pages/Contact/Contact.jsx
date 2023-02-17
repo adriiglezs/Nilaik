@@ -101,10 +101,12 @@ export default function Contact() {
                 return errores;
               }}
               onSubmit={(valores, { resetForm }) => {
-                resetForm();
                 console.log("Formulario enviado");
                 cambiarFormularioEnviado(true);
-                setTimeout(() => cambiarFormularioEnviado(false), 5000);
+                setTimeout(() => {
+                  resetForm();
+                  cambiarFormularioEnviado(false);
+                }, 5000);
               }}
             >
               {({ errors }) => (
@@ -163,7 +165,7 @@ export default function Contact() {
                     <Field name="mensaje" as="textarea" placeholder=" Mensaje" />
                   </div>
 
-                  <button type="submit">Enviar</button>
+                  <button type="submit" >Enviar</button>
                   {formularioEnviado && (
                     <p className={style.exito}>Formulario enviado con exito!</p>
                   )}

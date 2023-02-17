@@ -6,17 +6,26 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "clean": "rmdir /s /q dist"
   },
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
+    "@fortawesome/free-solid-svg-icons": "^6.3.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@mui/icons-material": "^5.11.9",
+    "@mui/material": "^5.11.9",
+    "@mui/styles": "^5.11.9",
     "@trendyol-js/react-carousel": "^3.0.2",
     "emailjs-com": "^3.2.0",
     "formik": "^2.2.9",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.7.1",
-    "react-router-dom": "^6.7.0",
+    "react-material-ui-carousel": "^3.4.2",
+    "react-multi-carousel": "^2.8.2",
+    "react-responsive-carousel": "^3.2.23",
+    "react-router-dom": "^6.8.1",
     "yup": "^0.32.11"
   },
   "devDependencies": {

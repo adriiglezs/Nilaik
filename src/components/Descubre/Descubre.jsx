@@ -5,6 +5,14 @@ import img2 from "../../assets/Descubre/imginfantil2.png";
 
 export default function Descubre() {
   return <>
+    <div className={style.DescubreMovil}>
+      <h1 className={style.h1Descubre} > Explora nuestros productos</h1>
+      <img className={style.ImgMovil} src={img} alt="" />
+      <img className={style.ImgMovil} src={img2} alt="" />
+      <img className={style.ImgMovil} src={img} alt="" />
+      <img className={style.ImgMovil} src={img2} alt="" />
+    </div>
+
 
     <div className={style.contentDescubre}>
       <div className={style.left}>
