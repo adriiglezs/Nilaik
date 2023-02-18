@@ -63,14 +63,14 @@ export const nike = [
     name: "Nike rosa",
     src: "https://res.cloudinary.com/ddwq0ulee/image/upload/v1676403055/Nilaik/nike/IMG_20230212_163235-min_pgk4ui.jpg",
     category: "NIRS",
-    price: "175.00",
+    price: 175.00,
   },
   {
     id: 2,
     name: "Nike rojo",
     src: "https://res.cloudinary.com/ddwq0ulee/image/upload/v1676403055/Nilaik/nike/IMG_20230212_164141-min_huld91.jpg",
     category: "NIRJ",
-    price: "175.00",
+    price: 175.00,
   },
   {
     id: 3,

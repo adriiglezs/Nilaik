@@ -6,7 +6,7 @@ import user from "../../assets/user.svg";
 import menu from "../../assets/menu.svg"
 import { useState } from "react";
 import { useStateValue } from "../../StateProvider";
-import { Badge, Button } from "@mui/material/";
+import  {Badge} from "@mui/material/";
 
 
 
@@ -67,7 +67,8 @@ function Navbar() {
           src={menu}
           className={`${isNavShow}`}
           alt="menu para desplegar opciones en dispositivos mobiles"
-        /></Badge>
+        />
+        </Badge>
       </div>
     </nav>
   );
