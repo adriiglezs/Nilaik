@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import style from "./CardLogin.module.css";
 import { useState, useEffect } from "react";
 
@@ -109,6 +110,7 @@ export default function CardRegister() {
               />
             </div>
             <input type="submit" className={style.loginBtn} value="Registrar" />
+            <Link to="/login "><label>Ya tengo cuenta</label></Link>
           </form>
         </div>
       </div>
