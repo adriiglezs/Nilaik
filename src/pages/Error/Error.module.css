@@ -1,19 +1,19 @@
         .p1error{
             font-size: 400%;
-            border: 1px solid black;
+
 
         }
         .p2error{
-            border: 1px solid black;
+
         }
         .izq404{
-            border: 1px solid black;
+
             width: 60%;
             height: 100%;
         }
         .der404{
             width: 38%;
-            border: 1px solid black;
+
         }
         .error404{
             background-color: #fb9595;
@@ -22,7 +22,6 @@
             height: 300px;
             align-items: center;
             text-align: center;
-            border: 1px solid black;
             margin-top: 25%;
             margin-left: 10%;
             margin-right: 30%
