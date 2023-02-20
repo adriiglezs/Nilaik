@@ -5,8 +5,13 @@ import cart from "../../assets/cart.svg";
 import user from "../../assets/user.svg";
 import menu from "../../assets/menu.svg"
 import { useState } from "react";
+import { useStateValue } from "../../StateProvider";
+import { Badge } from "@mui/material/";
+
+
 function Navbar() {
   const [isNavShow, setNavShow] = useState(false)
+  const [{ basket }, dispatch] = useStateValue();
   return (
     <nav className={style.nav}>
       <div className={style.logo}>
@@ -26,10 +31,10 @@ function Navbar() {
           <h2>Personajes</h2>
         </Link>
         <Link to="/nike-puma">
-          <h2>Nike   Puma</h2>
+          <h2>Nike Puma</h2>
         </Link>
         <Link to="/jordan-adidas">
-          <h2>Jordan   Adidas</h2>
+          <h2>Jordan Adidas</h2>
         </Link>
         <Link to="/aboutus">
           <h2>Sobre nosotros</h2>
@@ -47,11 +52,22 @@ function Navbar() {
           />
         </Link>
         <Link to="/Cart">
-          <img src={cart} alt="carro de compra para añadir tus productos" />
+          <Badge badgeContent={basket?.length} color="secondary">
+            <img src={cart} alt="carro de compra para añadir tus productos" />
+          </Badge>
         </Link>
       </div>
-      <div className={`${isNavShow} ${style.hamburger}`} onClick={() => setNavShow(!isNavShow)}>
-        <img src={menu} className={`${isNavShow}`} alt="menu para desplegar opciones en dispositivos mobiles" />
+      <div
+        className={`${isNavShow} ${style.hamburger}`}
+        onClick={() => setNavShow(!isNavShow)}
+      >
+        <Badge badgeContent={basket?.length} color="primary">
+          <img
+            src={menu}
+            className={`${isNavShow}`}
+            alt="menu para desplegar opciones en dispositivos mobiles"
+          />
+        </Badge>
       </div>
     </nav>
   );

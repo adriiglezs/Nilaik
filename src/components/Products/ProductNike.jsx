@@ -5,13 +5,7 @@ import { useStateValue } from "../../StateProvider";
 import { actionTypes } from "../../reducer";
 import cart from "../../assets/cart.svg";
 
-const Product = ({ item: { 
-  id, 
-  name, 
-  src, 
-  category, 
-  price } }) => {
-
+const ProductNike = ({ item: { id, name, src, category, price } }) => {
   const [{ basket }, dispatch] = useStateValue(0);
 
   const addToBasket = () => {
@@ -29,7 +23,7 @@ const Product = ({ item: {
 
   return (
     <div key={id} className={style.carouseltarget}>
-      <div className={style.carouselbackgroundAdidasBicolor}>
+      <div className={style.carouselbackgroundNike}>
         <img className={style.carouselCardProduct} src={src} alt={name} />
         <div className={style.carouselname}>
           <p className={style.carouselp}>{name}</p>
@@ -41,17 +35,15 @@ const Product = ({ item: {
           <p className={style.carouselp}>${price}.00</p>
         </div>
         <div className={style.carouselshopping} onClick={addToBasket}>
-        
-            <img
-              className={style.carouselcards}
-              src={cart}
-              alt="Shopping cart"
-            ></img>
-          
+          <img
+            className={style.carouselcards}
+            src={cart}
+            alt="Shopping cart"
+          ></img>
         </div>
       </div>
     </div>
   );
 };
 
-export default Product;
+export default ProductNike;

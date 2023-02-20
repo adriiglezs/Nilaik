@@ -4,6 +4,7 @@ import "react-multi-carousel/lib/styles.css";
 import style from './Carousel.module.css';
 import { adidas3 } from './data';
 import cart from '../../assets/cart.svg';
+import ProductAdidas3 from '../Products/ProductAdidas3';
 
 const responsive = {
   desktop: {
@@ -43,23 +44,7 @@ export default function CarouselAdidas3() {
       itemClass="carousel-item-padding-40-px"
     >
       {adidas3.map(item => (
-        <div key={item.id} className={style.carouseltarget}>
-          <div className={style.carouselbackgroundAdidas3}>
-            <img className={style.carouselCardProduct} src={item.src} alt={item.name} />
-            <div className={style.carouselname}>
-              <p className={style.carouselp}>{item.name}</p>
-            </div>
-            <div className={style.carouselcod}>
-              <p className={style.carouselp}>{item.category}</p>
-            </div>
-            <div className={style.carouselcost}>
-              <p className={style.carouselp}>{item.price}</p>
-            </div>
-            <div className={style.carouselshopping}>
-              <img className={style.carouselcards} src={cart} alt="Shopping cart"></img>
-            </div>
-          </div>
-        </div>
+        <ProductAdidas3 item={item} key={item.id} />
       ))}
     </Carousel>;
   </>);

@@ -4,6 +4,7 @@ import "react-multi-carousel/lib/styles.css";
 import style from './Carousel.module.css';
 import { puma } from './data';
 import cart from '../../assets/cart.svg';
+import Product from '../Products/Product';
 
 const responsive = {
   desktop: {
@@ -43,23 +44,7 @@ export default function CarouselPuma() {
       itemClass="carousel-item-padding-40-px"
     >
       {puma.map(item => (
-        <div key={item.id} className={style.carouseltarget}>
-          <div className={style.carouselbackgroundPuma}>
-            <img className={style.carouselCardProduct} src={item.src} alt={item.name} />
-            <div className={style.carouselname}>
-              <p className={style.carouselp}>{item.name}</p>
-            </div>
-            <div className={style.carouselcod}>
-              <p className={style.carouselp}>{item.category}</p>
-            </div>
-            <div className={style.carouselcost}>
-              <p className={style.carouselp}>{item.price}</p>
-            </div>
-            <div className={style.carouselshopping}>
-              <img className={style.carouselcards} src={cart} alt="Shopping cart"></img>
-            </div>
-          </div>
-        </div>
+        <Product item={item} key={item.id}/>
       ))}
     </Carousel>;
   </>);
