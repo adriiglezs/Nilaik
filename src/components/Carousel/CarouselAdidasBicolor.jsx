@@ -5,6 +5,8 @@ import style from './Carousel.module.css';
 import { adidasBicolor } from './data';
 import cart from '../../assets/cart.svg';
 
+import Product from '../Products/Product';
+
 const responsive = {
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
@@ -23,44 +25,33 @@ const responsive = {
   }
 };
 export default function CarouselAdidasBicolor() {
-  return (<>
-    <h1 className={style.carouselencabezado}>Adidas Bicolor</h1>
-    <Carousel
-      swipeable={false}
-      draggable={false}
-      showDots={true}
-      arrows={true}
-      responsive={responsive}
-      ssr={true} // means to render carousel on server-side.
-      infinite={true}
-      autoPlay={false}
-      autoPlaySpeed={false}
-      keyBoardControl={true}
-      customTransition="all .5"
-      transitionDuration={1000}
-      containerClass="carousel-container"
-      dotListClass="custom-dot-list-style"
-      itemClass="carousel-item-padding-40-px"
-    >
-      {adidasBicolor.map(item => (
-        <div key={item.id} className={style.carouseltarget}>
-          <div className={style.carouselbackgroundAdidasBicolor}>
-            <img className={style.carouselCardProduct} src={item.src} alt={item.name} />
-            <div className={style.carouselname}>
-              <p className={style.carouselp}>{item.name}</p>
-            </div>
-            <div className={style.carouselcod}>
-              <p className={style.carouselp}>{item.category}</p>
-            </div>
-            <div className={style.carouselcost}>
-              <p className={style.carouselp}>{item.price}</p>
-            </div>
-            <div className={style.carouselshopping}>
-              <img className={style.carouselcards} src={cart} alt="Shopping cart"></img>
-            </div>
-          </div>
-        </div>
-      ))}
-    </Carousel>;
-  </>);
+
+     
+  return (
+    <>
+      <h1 className={style.carouselencabezado}>Adidas Bicolor</h1>
+      <Carousel
+        swipeable={false}
+        draggable={false}
+        showDots={true}
+        arrows={true}
+        responsive={responsive}
+        ssr={true} // means to render carousel on server-side.
+        infinite={true}
+        autoPlay={false}
+        autoPlaySpeed={false}
+        keyBoardControl={true}
+        customTransition="all .5"
+        transitionDuration={1000}
+        containerClass="carousel-container"
+        dotListClass="custom-dot-list-style"
+        itemClass="carousel-item-padding-40-px"
+      >
+        {adidasBicolor.map((item) => (
+          <Product item={item} key={item.id} />
+        ))}
+      </Carousel>
+      
+    </>
+  );
 }

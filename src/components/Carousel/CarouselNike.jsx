@@ -4,6 +4,7 @@ import "react-multi-carousel/lib/styles.css";
 import style from './Carousel.module.css';
 import { nike } from './data';
 import cart from '../../assets/cart.svg';
+import ProductNike from '../Products/ProductNike';
 
 const responsive = {
   desktop: {
@@ -43,23 +44,7 @@ export default function CarouselNike() {
       itemClass="carousel-item-padding-40-px"
     >
       {nike.map(item => (
-        <div key={item.id} className={style.carouseltarget}>
-          <div className={style.carouselbackgroundNike}>
-            <img className={style.carouselCardProduct} src={item.src} alt={item.name} />
-            <div className={style.carouselname}>
-              <p className={style.carouselpj}>{item.name}</p>
-            </div>
-            <div className={style.carouselcod}>
-              <p className={style.carouselpj}>{item.category}</p>
-            </div>
-            <div className={style.carouselcost}>
-              <p className={style.carouselpj}>{item.price}</p>
-            </div>
-            <div className={style.carouselshopping}>
-              <img className={style.carouselcards} src={cart} alt="Shopping cart"></img>
-            </div>
-          </div>
-        </div>
+        <ProductNike item={item} key={item.id}/>
       ))}
     </Carousel>;
   </>);

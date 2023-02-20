@@ -1,0 +1,12 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  font-size: 50px;
+}
+.btn {
+  width: 300px;
+  margin-top: 2rem;
+}
