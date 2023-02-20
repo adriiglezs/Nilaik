@@ -40,3 +40,16 @@
     height: auto;
   }
 }
+
+.h1social{
+  text-align: center;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px){
+  .h1social{
+    text-align: center;
+  width: 100%;
+  font-size: medium;
+  } 
+}
