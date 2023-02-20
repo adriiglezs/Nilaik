@@ -1,3 +1,11 @@
-export default function Characters(){
-  return(<></>)
+import CarouselEspeciales from "../../components/Carousel/CarouselEspeciales";
+import Footer from "../../components/Footer/Footer";
+import style from "./Characters.module.css";
+
+export default function Characters() {
+  return (<>
+
+   
+    <Footer styleFoo={style.foo} />
+  </>)
 }
