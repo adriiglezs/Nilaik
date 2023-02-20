@@ -1,9 +1,18 @@
 .background {
-  background-color: #f6d522;
-  padding: 3%;
+  background-color: #f67;
+  padding: 2%;
   width: 100%;
   height: auto;
-  display: inline-block;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.TituloCart{
+  margin-top: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 .encabezado {
   margin: 3% 0 0 5%;
@@ -15,57 +24,70 @@
     font-size: 25px;
   }
 }
+.tallas {
+  width: 7%;
+}
 
 .cod {
-  display: inline-block;
-  width: 25%;
+  width: 10%;
 }
 .codL {
   font-size: 15px;
 }
 .name {
-  display: inline-block;
-  width: 75%;
+  width: 28%;
 }
 .nameL {
   font-display: 100%;
   font-size: 25px;
 }
 .cost {
-  display: inline-block;
-  width: 50%;
-  margin: 0;
-  padding: 0;
+  width: 10%;
 }
 .costL {
   font-size: 20px;
 }
 .shopping {
-  text-align: right;
-  display: inline-block;
-  width: 50%;
+  width: 5%;
+}
+.labelNum {
+  display: inline-flex;
+  width: 100%;
+  padding: 0 5% 0 5%;
+}
+.labelNumC {
+  width: 60%;
+  margin: 5%;
+  background-color: white;
+}
+.tallasB {
+  width: 20%;
+}
+.labelNumT {
+  width: 100%;
   height: 50%;
 }
-@media screen and (max-width: 768px) {
-  .cards {
-    width: 40%;
-    height: 40%;
-  }
+
+.btnCart {
+  width: 100%;
 }
+
 .target {
-  width: 29%;
-  margin: 2%;
-  align-self: center;
-  justify-content: center;
-  display: inline-block;
+  width: 98%;
+  margin: 0 1% 0 1%;
 }
 
 .CardProduct {
-  width: 100%;
+  width: 5%;
   height: auto;
-  align-self: center;
-  display: inline-block;
   margin: 0;
+}
+
+.btnCart{
+  background-color: #fff;
+  width: 50px;
+  height: 30px;
+  border-color: #fff;
 }
 @media screen and (max-width: 810px) {
   .cost,

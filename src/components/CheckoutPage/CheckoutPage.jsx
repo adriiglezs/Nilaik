@@ -7,6 +7,7 @@ import React from "react";
 import { useStateValue } from '../../StateProvider';
 import CheckoutCard from "./CheckoutCard";
 import Total from "./Total";
+import style from "./CheckoutCard.module.css"
 
 const CheckoutPage = () => {
   const [{ basket }, dispatch] = useStateValue();
@@ -26,7 +27,7 @@ const CheckoutPage = () => {
   return (
     <div>
       <div>
-        <div>
+        <div className={style.TituloCart}>
           <h1>Shopping Cart</h1>
         </div>
         <div>
@@ -34,7 +35,7 @@ const CheckoutPage = () => {
         </div>
         <div>
           <div>
-            <Total />{" "}
+            <Total />
           </div>
         </div>
       </div>
