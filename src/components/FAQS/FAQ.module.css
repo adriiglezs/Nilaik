@@ -1,0 +1,44 @@
+
+/*
+ .faq {
+  margin: 15px;
+  padding: 15px;
+  background-color: aqua;
+  border-radius: 8px;
+
+  box-shadow: 0px 0px 10px #f6f6f6;
+
+}
+
+.faq, .faqQuestion {
+  position: relative;
+  font-size: 20px;
+  padding-right: 80px;
+  
+}
+
+ .faq, .faqQuestion::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+
+
+  /*background-image: url('');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;*/
+/*
+  transition:  all 0.4s ease;
+}
+
+
+ .faq .faqAnswer{
+    opacity: 0;
+    max-height: 0;
+    overflow-y: hidden;
+    transition: all 0.4s ease;
+}*/

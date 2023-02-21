@@ -1,0 +1,193 @@
+.carouselbackgroundJordan {
+  background-color: #2f5898;
+  border-radius: 1vh;
+  border-radius: 1vh;
+  padding: 3%;
+  width: 100%;
+  height: auto;
+  display: inline-block;
+}
+.carouselbackgroundAdidasBicolor {
+  background-color: #fb9595;
+  border-radius: 1vh;
+  padding: 3%;
+  width: 100%;
+  height: auto;
+  display: inline-block;
+}
+.carouselbackgroundAdidas3 {
+  background-color: #fb9595;
+  border-radius: 1vh;
+  padding: 3%;
+  width: 100%;
+  height: auto;
+  display: inline-block;
+}
+.carouselbackgroundEspeciales {
+  background-color: #fb9595;
+  border-radius: 1vh;
+  padding: 3%;
+  width: 100%;
+  height: auto;
+  display: inline-block;
+}
+.carouselbackgroundNike {
+  background-color: #2f5898;
+  border-radius: 1vh;
+  padding: 3%;
+  width: 100%;
+  height: auto;
+  display: inline-block;
+  color: #a6b8d3;
+}
+.carouselbackgroundPuma {
+  background-color: #fb9595;
+  border-radius: 1vh;
+  padding: 3%;
+  width: 100%;
+  height: auto;
+  display: inline-block;
+}
+.carouselbackgroundPumaArlequin {
+  background-color: #2f5898;
+  border-radius: 1vh;
+  padding: 3%;
+  width: 100%;
+  height: auto;
+  display: inline-block;
+}
+.carouselencabezado {
+  margin: 3% 0 0 2%;
+  font-size: 40px;
+}
+@media screen and (max-width: 1024px) {
+  .carouselencabezado {
+    margin: 3% 0 0 4%;
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 464px) {
+  .carouselencabezado {
+    margin: 3% 0 0 10%;
+    font-size: 30px;
+  }
+}
+
+.carouselcod {
+  display: inline-flex;
+  width: 25%;
+  height: 8vh;
+  font-size: 15px;
+  margin: 0;
+  font-weight: bold;
+  text-align: right;
+}
+@media screen and (max-width: 1024px) {
+  .carouselcod {
+    font-size: 13px;
+    height: 6vh;
+  }
+}
+@media screen and (max-width: 464px) {
+  .carouselcod {
+    font-size: 11px;
+    height: 4vh;
+  }
+}
+.carouselname {
+  display: inline-flex;
+  width: 75%;
+  height: 8vh;
+  font-size: 23px;
+  margin: 0;
+  text-align: left;
+  font-weight: bold;
+}
+@media screen and (max-width: 1024px) {
+  .carouselname {
+    font-size: 20px;
+    height: 6vh;
+  }
+}
+@media screen and (max-width: 464px) {
+  .carouselname {
+    font-size: 18px;
+    height: 4vh;
+  }
+}
+.carouselp {
+  margin: 0;
+  width: 100%;
+}
+.carouselpj {
+  color: #a6b8d3;
+  margin: 0;
+  width: 100%;
+}
+
+.carouselcost {
+  display: inline-block;
+  width: 50%;
+  font-size: 20px;
+  margin: 0;
+  text-align: left;
+  font-weight: bold;
+}
+@media screen and (max-width: 1024px) {
+  .carouselcost {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 464px) {
+  .carouselcost {
+    font-size: 16px;
+  }
+}
+
+.carouselshopping {
+  width: 50%;
+  display: inline-block;
+  text-align: right;
+}
+.carouselcards {
+  width: 20%;
+  
+  transition: background-color .5s;
+}
+
+.carouselcards:hover{
+  background-color: rgba(85, 83, 83, 0.836);
+  border-radius: 5px;
+   cursor: pointer;
+}
+
+.carouseltarget {
+  width: 100%;
+  padding-bottom: 10%;
+  padding-top: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  display: inline-flex;
+}
+@media screen and (max-width: 1024px) {
+  .carouseltarget {
+    padding-bottom: 8%;
+    padding-top: 5%;
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+}
+@media screen and (max-width: 464px) {
+  .carouseltarget {
+    padding-bottom: 10%;
+    padding-top: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+
+.carouselCardProduct {
+  width: 100%;
+  margin: 0;
+  border-radius: 1vh 1vh 0 0;
+}

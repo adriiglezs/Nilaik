@@ -1,0 +1,85 @@
+.CardVision {
+  background-color: #f6d522;
+  display: inline-block;
+  max-width: 54%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  margin-left: 1%;
+  margin-right: 0.3%;
+  padding: 3% 2% 3% 2%;
+}
+.CardMision {
+  background-color: #a6b8d3;
+  display: inline-block;
+  max-width: 37%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  margin-left: 1%;
+  margin-right: 0.3%;
+  padding: 1.5% 0% 3% 2%;
+}
+.CardValores {
+  background-color: white;
+  display: inline-block;
+  max-width: 100%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  margin-left: 1%;
+  margin-right: 0.3%;
+  padding: 7% 2% 7% 2%;
+}
+.CardNosotros {
+  background-color: #f6d522;
+  display: inline-block;
+  max-width: 100%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  margin-left: 1%;
+  margin-right: 0.3%;
+  padding: 7% 2% 7% 2%;
+}
+
+@media screen and (max-width: 537px) {
+  .CardVision {
+    display: block;
+    max-width: 100%;
+    padding: 3% 4% 3% 5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 537px) {
+  .CardMision {
+    display: block;
+    max-width: 100%;
+    padding: 3% 4% 3% 5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 537px) {
+  .CardValores {
+    display: block;
+    max-width: 100%;
+    padding: 3% 4% 3% 5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 537px) {
+  .CardNosotros {
+    display: block;
+    max-width: 100%;
+    padding: 3% 4% 8% 5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}

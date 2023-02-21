@@ -31,7 +31,7 @@ export default function AboutUs() {
           linkedinUrl="https://www.linkedin.com/in/alan-josafat-ramos-preciado-4625751b9/"
           cvUrl=""
           photo={alan}
-          biography="Estudiante de ingenieria en informatica, originario de GDL. Me gusta la natacion, la mixologia y salir a conocer restaurantes bonitos. Rol Develop team."
+          biography="Estudiante de ingeniería en informática, originario de Guadalajara. Me gusta la natación, la mixología y salir a conocer restaurantes bonitos. Integrante del development team."
         />
 
         <Card
@@ -42,27 +42,27 @@ export default function AboutUs() {
           linkedinUrl="https://www.linkedin.com/in/axel-joshua-mercado-moreno"
           cvUrl="https://drive.google.com/file/d/17Xi2tEFIohG9Lfw-ZzDHH74SUzGk5CsI/view?usp=sharing"
           photo={axel}
-          biography="23 años, Vive en CDMX, Pasante de ingeniería en sistemas automotrices, apasionado por las motocicletas, videojuegos, ejercicio y programación. Rol en el proyecto Develop team."
+          biography="23 años, residente de la Ciudad de México, pasante de ingeniería en sistemas automotrices, 
+          apasionado por las motocicletas, videojuegos, ejercicio y programación. Integrante del development team."
         />
 
-        <Card
+        {/* <Card
           name="Victoria Bolaños"
           instagramUrl="https://www.instagram.com/mexavictoria/"
           githubUrl="https://github.com/mexavictoriab"
           linkedinUrl="https://www.linkedin.com/in/mexavictoria/"
           cvUrl="https://www.canva.com/design/DAFYoAp9a6o/3c_dzHUU9D5QE8PKjmVzuw/view?utm_content=DAFYoAp9a6o&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"
           photo={victoria}
-          biography="Amante de los libros, la danza, los idiomas, la tecnología y el diseño, licenciada en innovación de negocios y mercadotecnia, mujer en búsqueda de respuestas a las mil y un preguntas formuladas cada día. Parte del Development Team en el proyecto."
-        />
+          biography="Amante de los libros, la danza, los idiomas, la tecnología y el diseño, licenciada en innovación de negocios y mercadotecnia. Mujer en búsqueda de respuestas a las mil y un preguntas formuladas cada día. Parte del development team en el proyecto."
+        /> */}
         <Card
           name="Jorge Hernandez"
-          changeColor={true}
           instagramUrl=""
           githubUrl="https://github.com/jorhdz"
           linkedinUrl="https://www.linkedin.com/in/jorge-hern%C3%A1ndez-46083425a/"
           cvUrl="https://drive.google.com/drive/folders/18bL-lw_zD8LYwXaqqxUf66TCYzZBDXEM"
           photo={jorge}
-          biography="Cocinero por profesión en búsqueda de nuevos aires y nuevos retos. Originario de Guadalajara, Jalisco. Tragón por excelencia. Integrante del dev-team."
+          biography="Cocinero por profesión en búsqueda de nuevos aires y nuevos retos. Originario de Guadalajara, Jalisco. Tragón por excelencia. Integrante del development team."
         />
         {/* <Card
           name="Diego Pahua"
@@ -76,12 +76,13 @@ export default function AboutUs() {
 
         <Card
           name="Adrián González"
+          changeColor={true}
           instagramUrl="https://instagram.com/adrii_wings?igshid=NmQ2ZmYxZjA="
           githubUrl="https://github.com/adriiglezs"
           linkedinUrl="https://www.linkedin.com/in/adri%C3%A1n-gonz%C3%A1lez-s%C3%A1nchez-649141253"
           cvUrl="https://drive.google.com/file/d/1vlJgcxMdQ644m2vCBInBFGT8dkn_5bKt/view?usp=sharing"
           photo={adrian}
-          biography="Originaria del estado de Meéxico, estudiante de M. en Cs. en Ingenieria de Sistemas y egeresado de la Ing. Matematica, mantengo un alto interés en el aprendizaje del desarrollo web, dispuesto a aprender cosas nuevas y desarrollar soluciones de forma óptima, manteniendo comunicación, iniciativa y trabajo en equipo."
+          biography="Originario del Estado de México, estudiante de la M. en Cs. en Ingeniería de Sistemas y egresado de la Ing. Matemática, mantengo un alto interés en el desarrollo web. Dispuesto a aprender cosas nuevas y desarrollar soluciones de forma óptima, manteniendo comunicación, iniciativa y disponibilidad para el trabajo en equipo. Integrante del development team."
         />
       </div>
       <Footer styleFoo={style.foo} />

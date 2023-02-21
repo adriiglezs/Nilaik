@@ -8,7 +8,7 @@ function SocialMedia() {
   return (
     <nav className={style.background}>
       <div className={style.SocialNetworksLogo}>
-        <a href="https://www.instagram.com/mexavictoria/">
+        <a href="https://wa.me/525513513242">
           <img
             className={style.imgWA}
             src={WA}
