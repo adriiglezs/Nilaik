@@ -19,11 +19,16 @@
             height: 300px;
             align-items: center;
             text-align: center;
-            margin-top: 25%;
+            margin-top: 10%;
             margin-left: 10%;
-            margin-right: 30%
+            margin-right: 30%;
+            margin-bottom: 10%;
         }
         .imgerror{
             height: 100%;
             width: 100%;
         }
+        .foo {
+         position: relative;
+         background-color: #2f5898;
+}

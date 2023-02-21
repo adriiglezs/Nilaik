@@ -284,7 +284,7 @@ export const pumaArlequin = [
   },
 ];
 
-export const especiales = [
+export const personajes = [
   {
     id: uuid(),
     name: "Paris",
