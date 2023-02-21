@@ -1,4 +1,4 @@
-/* import React from "react";
+ import React from "react";
 import productsData from "./productsData";
 import { Link } from "react-router-dom";
 
@@ -23,4 +23,4 @@ const Products = () => {
   );
 };
 
-export default Products; */
+export default Products;

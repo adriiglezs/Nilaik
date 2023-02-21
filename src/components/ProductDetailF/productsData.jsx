@@ -1,51 +1,51 @@
 export default
 [
   {
-    "Nombre": "Conjunto Jordan Rosa talla 2",
-    "Codigo": "CJRS2",
-    "Menudeo": 175,
-    "Mayoreo": 160
+    name: "Conjunto Jordan Rosa talla 2",
+    id: "CJRS2",
+    priceretail: 175,
+    pricewholesale: 160
   },
   {
-    "Nombre": "Conjunto Jordan Rosa talla 4",
-    "Codigo": "CJRS4",
-    "Menudeo": 175,
-    "Mayoreo": 160
+    name: "Conjunto Jordan Rosa talla 4",
+    id: "CJRS4",
+    priceretail: 175,
+    pricewholesale: 160
   },
   {
-    "Nombre": "Conjunto Jordan Rosa talla 6",
-    "Codigo": "CJRS6",
-    "Menudeo": 175,
-    "Mayoreo": 160
+    name: "Conjunto Jordan Rosa talla 6",
+    id: "CJRS6",
+    priceretail: 175,
+    pricewholesale: 160
   },
   {
-    "Nombre": "Conjunto Jordan Rosa talla 8",
-    "Codigo": "CJRS8",
-    "Menudeo": 175,
-    "Mayoreo": 160
+    name: "Conjunto Jordan Rosa talla 8",
+    id: "CJRS8",
+   priceretail: 175,
+    pricewholesale: 160
   },
   {
-    "Nombre": "Conjunto Jordan Rosa talla 10",
-    "Codigo": "CJRS10",
-    "Menudeo": 175,
-    "Mayoreo": 160
+    name: "Conjunto Jordan Rosa talla 10",
+    id: "CJRS10",
+    priceretail: 175,
+    pricewholesale: 160
   },
   {
-    "Nombre": "Conjunto Jordan Rosa talla 12",
-    "Codigo": "CJRS12",
-    "Menudeo": 175,
-    "Mayoreo": 160
+    name: "Conjunto Jordan Rosa talla 12",
+    id: "CJRS12",
+    priceretail: 175,
+    pricewholesale: 160
   },
   {
-    "Nombre": "Conjunto Nike Rosa talla 2",
-    "Codigo": "CNRS2",
-    "Menudeo": 175,
-    "Mayoreo": 160
+    name: "Conjunto Nike Rosa talla 2",
+    id: "CNRS2",
+    priceretail: 175,
+    pricewholesale: 160
   },
   {
-    "Nombre": "Conjunto Nike Rosa talla 4",
-    "Codigo": "CNRS4",
-    "Menudeo": 175,
-    "Mayoreo": 160
+    name: "Conjunto Nike Rosa talla 4",
+    id: "CNRS4",
+    priceretail: 175,
+    pricewholesale: 160
   }
 ] 

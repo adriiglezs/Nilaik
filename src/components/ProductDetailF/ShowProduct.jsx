@@ -1,6 +1,6 @@
 import style from "../../components/ProductDetailF/ShowProduct.module.css"
 
-function ShowProduct(){
+export default function ShowProduct(){
   return (<>
     <div className={style.ShowProductContainer}>
       <h1>{productName}</h1>
