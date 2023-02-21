@@ -24,6 +24,7 @@
 .imgDescubre {
   width: 100%;
   height: 400px;
+
   opacity: 1;
 }
 
@@ -82,6 +83,7 @@
   .h1Descubre {
     width: 100%;
     display: inline-block;
+
     font-size: small;
   }
 }

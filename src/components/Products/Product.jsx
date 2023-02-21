@@ -5,16 +5,19 @@ import { useStateValue } from "../../StateProvider";
 import { actionTypes } from "../../reducer";
 import cart from "../../assets/cart.svg";
 
-const Product = ({ item: { 
-  id, 
-  name, 
-  src, 
-  category, 
+const Product = ({ item: {
+  id,
+  name,
+  src,
+  category,
   price } }) => {
 
   const [{ basket }, dispatch] = useStateValue(0);
-
+  /* const setotal = () => {
+  
+  } */
   const addToBasket = () => {
+    if (basket?.filter((product) => (product?.id === id))?.length > 0) return;
     dispatch({
       type: actionTypes.ADD_TO_BASKET,
       item: {
@@ -41,13 +44,13 @@ const Product = ({ item: {
           <p className={style.carouselp}>${price}.00</p>
         </div>
         <div className={style.carouselshopping} onClick={addToBasket}>
-        
-            <img
-              className={style.carouselcards}
-              src={cart}
-              alt="Shopping cart"
-            ></img>
-          
+
+          <img
+            className={style.carouselcards}
+            src={cart}
+            alt="Shopping cart"
+          ></img>
+
         </div>
       </div>
     </div>

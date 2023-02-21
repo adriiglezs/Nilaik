@@ -7,44 +7,32 @@
   justify-content: space-between;
   align-items: center;
   text-align: center;
-}
-.TituloCart {
-  margin-top: 10px;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-.encabezado {
-  margin: 3% 0 0 5%;
-  font-size: 35px;
-}
-@media screen and (max-width: 768px) {
-  .encabezado {
-    margin: 3% 0 0 5%;
-    font-size: 25px;
-  }
-}
-.tallas {
-  width: 7%;
+  border-bottom: 2px dashed #4f1f28;
 }
 
-.cod {
-  width: 10%;
+.target {
+  width: 98%;
+  margin: 0 1% 0 1%;
 }
-.codL {
-  font-size: 15px;
+.CardProduct {
+  width: 5%;
+  height: auto;
 }
 .name {
   width: 28%;
 }
 .nameL {
-  font-display: 100%;
   font-size: 25px;
+}
+.cod {
+  width: 10%;
+  font-size: 15px;
+}
+.tallas {
+  width: 7%;
 }
 .cost {
   width: 10%;
-}
-.costL {
   font-size: 20px;
 }
 .shopping {
@@ -67,71 +55,91 @@
   width: 100%;
   height: 50%;
 }
-
 .btnCart {
   width: 100%;
 }
 
-.target {
-  width: 98%;
-  margin: 0 1% 0 1%;
-}
+/*///////////////////////////// styles 464px///////////////////*/
 
-.CardProduct {
-  width: 5%;
-  height: auto;
-  margin: 0;
+@media screen and (max-width: 464px) {
+  .background {
+    background-color: #f67;
+    padding: 2%;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+  }
 }
-
-.btnCart {
-  background-color: #fff;
-  width: 50px;
-  height: 30px;
-  border-color: #fff;
+@media screen and (max-width: 464px) {
+  .CardProduct {
+    width: 10%;
+    height: auto;
+  }
 }
-@media screen and (max-width: 810px) {
-  .cost,
-  .cod,
+@media screen and (max-width: 464px) {
   .name {
-    display: inline-block;
-    max-width: 90%;
-    flex-wrap: nowrap;
+    width: 70%;
   }
 }
-@media screen and (max-width: 512px) {
-  .cost,
-  .cod,
-  .name {
-    display: inline-block;
-    max-width: 90%;
-    flex-wrap: nowrap;
-  }
-}
-
-@media screen and (max-width: 1100px) {
-  .costL,
+@media screen and (max-width: 464px) {
   .nameL {
-    color: black;
-    font-size: 17px;
+    font-size: 25px;
   }
 }
-@media screen and (max-width: 800px) {
-  .costL,
-  .nameL {
-    color: black;
-    font-size: 12px;
+@media screen and (max-width: 464px) {
+  .cod {
+    width: 20%;
+    font-size: 15px;
   }
 }
-@media screen and (max-width: 500px) {
-  .costL,
-  .nameL {
-    color: black;
-    font-size: 8px;
+@media screen and (max-width: 464px) {
+  .tallas {
+    width: 12%;
   }
 }
-@media screen and (max-width: 1100px) {
-  .codL {
-    color: black;
-    font-size: 10px;
+@media screen and (max-width: 464px) {
+  .cost {
+    width: 18%;
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 464px) {
+  .shopping {
+    width: 10%;
+  }
+}
+@media screen and (max-width: 464px) {
+  .labelNum {
+    display: inline-flex;
+    width: 100%;
+    padding: 0 5% 0 5%;
+  }
+}
+@media screen and (max-width: 464px) {
+  .labelNumC {
+    width: 60%;
+    margin: 5%;
+    background-color: white;
+  }
+}
+@media screen and (max-width: 464px) {
+  .tallasB {
+    width: 20%;
+  }
+}
+@media screen and (max-width: 464px) {
+  .labelNumT {
+    width: 100%;
+    height: 50%;
+  }
+}
+@media screen and (max-width: 464px) {
+  .btnCart {
+    width: 100%;
   }
 }

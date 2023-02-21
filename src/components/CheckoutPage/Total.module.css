@@ -3,7 +3,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 20vh;
+  height: 20%;
+  margin-top: 5%;
   font-size: 50px;
 }
 .btn {
