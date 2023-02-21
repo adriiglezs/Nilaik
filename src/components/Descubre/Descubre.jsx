@@ -8,9 +8,9 @@ export default function Descubre() {
     <div className={style.DescubreMovil}>
       <h1 className={style.h1Descubre} > Explora nuestros productos</h1>
       <img className={style.ImgMovil} src={img} alt="" />
-      <img className={style.ImgMovil} src={img2} alt="" />
+      <img className={style.ImgMovil2} src={img2} alt="" />
       <img className={style.ImgMovil} src={img} alt="" />
-      <img className={style.ImgMovil} src={img2} alt="" />
+      <img className={style.ImgMovil2} src={img2} alt="" />
     </div>
 
 
@@ -36,7 +36,7 @@ export default function Descubre() {
         <div className={style.top}>
           <div>
             <img className={style.imgDescubreOpc} src={img} alt="" />
-            <h1 className={style.centerTexTop}>Diseños <br />  exclusivos</h1>
+
           </div>
           <div>
             <img className={style.imgDescubre} src={img} alt="" />
@@ -49,7 +49,7 @@ export default function Descubre() {
           </div>
           <div>
             <img className={style.imgDescubreOpc} src={img2} alt="" />
-            <h1 className={style.centerTexBottom}>Materiales <br /> de alta calidad</h1>
+
           </div>
         </div>
       </div>

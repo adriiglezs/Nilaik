@@ -7,6 +7,7 @@ import CaroucelJordan from "../../components/Carousel/CarouselJordan";
 import CaroucelAdidas3 from "../../components/Carousel/CarouselAdidas3";
 import CaroucelAdidasBicolor from "../../components/Carousel/CarouselAdidasBicolor";
 import CaroucelNike from "../../components/Carousel/CarouselNike";
+import Descubre from "../../components/Descubre/Descubre"
 
 function Home() {
     return (<>
@@ -16,6 +17,7 @@ function Home() {
         <CaroucelJordan />
         <CaroucelAdidas3 />
         <CarouselPumaArlequin />
+        <Descubre/>
         <SocialMedia />
         <Footer styleFoo={style.foo} />
     </>)
