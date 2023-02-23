@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import {Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 import AboutUs from "./pages/AboutUs/AboutUs";
 import Error from "./pages/Error/Error";
@@ -13,6 +13,7 @@ import AboutNilaik from "./pages/AboutNilaik/AboutNilaik";
 import AskQuestions from "./pages/AskQuestions/AskQuestions";
 import Register from "./pages/LoginRegister/LoginRegister";
 import Products from "./pages/Products/Products";
+
 
 function App() {
   return (
@@ -32,6 +33,8 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="*" element={<Error />} />
         <Route path="/Products" element={<Products />} />
+       
+       
       </Routes>
     </>
   );
