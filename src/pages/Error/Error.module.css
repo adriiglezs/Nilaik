@@ -1,9 +1,32 @@
-.container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.svg{
-    min-height: 10em;
-}
+        .p1error{
+            font-size: 400%;
+
+
+        }
+        .p2error{
+
+        }
+        .izq404{
+
+            width: 60%;
+            height: 100%;
+        }
+        .der404{
+            width: 38%;
+
+        }
+        .error404{
+            background-color: #fb9595;
+            display: flex;
+            width: 80%;
+            height: 300px;
+            align-items: center;
+            text-align: center;
+            margin-top: 25%;
+            margin-left: 10%;
+            margin-right: 30%
+        }
+        .imgerror{
+            height: 100%;
+            width: 100%;
+        }

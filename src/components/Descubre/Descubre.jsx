@@ -8,9 +8,9 @@ export default function Descubre() {
     <div className={style.DescubreMovil}>
       <h1 className={style.h1Descubre} > Explora nuestros productos</h1>
       <img className={style.ImgMovil} src={img} alt="" />
-      <img className={style.ImgMovil} src={img2} alt="" />
+      <img className={style.ImgMovil2} src={img2} alt="" />
       <img className={style.ImgMovil} src={img} alt="" />
-      <img className={style.ImgMovil} src={img2} alt="" />
+      <img className={style.ImgMovil2} src={img2} alt="" />
     </div>
 
 

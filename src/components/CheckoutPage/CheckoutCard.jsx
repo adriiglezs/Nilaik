@@ -7,6 +7,7 @@ import React, { useState } from "react";
 import { actionTypes } from "../../reducer";
 import style from "./CheckoutCard.module.css";
 
+
 const CheckoutCard = ({ item: { id, name, src, category, price } }) => {
   const [{ basket }, dispatch] = useStateValue();
 

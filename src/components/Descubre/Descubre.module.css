@@ -23,13 +23,13 @@
 
 .imgDescubre {
   width: 100%;
-  height: 500px;
+  height: 400px;
   opacity: 1;
 }
 
 .imgDescubreOpc {
   width: 100%;
-  height: 500px;
+  height: 400px;
   opacity: 0.5;
 }
 
@@ -38,19 +38,23 @@
 }
 
 .centerTexTop {
+  font-size: xx-large;
   position: absolute;
   top: 17%;
-
-  right: 31%;
+  right: 29%;
 }
 
 .centerTexBottom {
+  font-size: xx-large;
   position: absolute;
   top: 57%;
-  left: 78.5%;
+  left: 77.5%;
 }
+
 .DescubreMovil {
-  display: flex;
+  display: inline;
+  align-items: center;
+  text-align: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -76,8 +80,22 @@
   }
 }
 
+.ImgMovil2 {
+  height: 100px;
+  width: 25%;
+  opacity: 0.5;
+}
+
+@media screen and (min-width: 768px) {
+  .ImgMovil2 {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .h1Descubre {
+    width: 100%;
+    display: inline-block;
     font-size: small;
   }
 }

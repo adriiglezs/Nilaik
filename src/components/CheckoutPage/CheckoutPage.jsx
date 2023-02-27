@@ -11,8 +11,8 @@ const CheckoutPage = () => {
     return (
       <div>
         {basket?.map((product) => (
-          <div>
-            <CheckoutCard key={product.id} item={product} />
+          <div key={product.id}>
+            <CheckoutCard item={product} />
           </div>
         ))}
       </div>
