@@ -2,7 +2,7 @@ import React from 'react';
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import style from './Carousel.module.css';
-import { especiales } from './data';
+import { personajes } from './data';
 import cart from '../../assets/cart.svg';
 import Product from '../Products/Product';
 
@@ -44,7 +44,7 @@ export default function CarouselEspeciales() {
         dotListClass="custom-dot-list-style"
         itemClass="carousel-item-padding-40-px"
       >
-        {especiales.map((item) => (
+        {personajes.map((item) => (
           <Product item={item} key={item.id} />
         ))}
       </Carousel>

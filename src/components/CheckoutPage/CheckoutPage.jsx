@@ -24,6 +24,7 @@ const CheckoutPage = () => {
       <div>
         <div className={style.TituloCart}>
           <h1>Shopping Cart</h1>
+          <h2>____________________________</h2>
         </div>
         <div>
           <FormRow />

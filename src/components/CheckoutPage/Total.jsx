@@ -10,8 +10,8 @@ const Total = () => {
 
   return (
     <div className={style.root}>
-      <h2>Total items : {basket?.length}</h2>
-      <h2>{getBasketTotal(basket)}</h2>
+      <h2>Items: {basket?.length}</h2>
+      <h2>Total: {getBasketTotal(basket)}</h2>
       <Button
         component={Link}
         to="/checkout"

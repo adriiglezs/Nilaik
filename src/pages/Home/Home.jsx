@@ -7,9 +7,11 @@ import CaroucelJordan from "../../components/Carousel/CarouselJordan";
 import CaroucelAdidas3 from "../../components/Carousel/CarouselAdidas3";
 import CaroucelAdidasBicolor from "../../components/Carousel/CarouselAdidasBicolor";
 import CaroucelNike from "../../components/Carousel/CarouselNike";
+import PrimerComponente from "../../components/Home-Primer-Componente/home-primer-componente";
 
 function Home() {
     return (<>
+        <PrimerComponente/>
         <CaroucelAdidasBicolor />
         <CaroucelNike />
         <CaroucelPuma />
