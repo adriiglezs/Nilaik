@@ -194,13 +194,13 @@ export const adidas3 = [
     category: "A3MA",
     price: 175.0,
   },
-  {
+  /* {
     id: uuid(),
     name: "Adidas 3 blanco",
     src: "https://res.cloudinary.com/dwd3jknn9/image/upload/v1676269645/Nilaik/AdidasBiocolor/IMG_20230212_150543_islg5h.jpg",
     category: "A3BL",
     price: 175.0,
-  },
+  }, */
   {
     id: uuid(),
     name: "Adidas 3 menta",
