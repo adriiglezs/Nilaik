@@ -19,6 +19,8 @@
   display: inline-block;
   width: 50%;
   height: 100%;
+
+  font-size: 20px;
   text-align: center;
 }
 .ParteB {
@@ -26,6 +28,7 @@
   width: 50%;
   height: 50vh;
 
+  font-size: 20px;
   text-align: center;
 }
 
@@ -33,6 +36,7 @@
   .ParteA,
   .ParteB {
     width: 100%;
+    font-size: 20px;
   }
 }
 
