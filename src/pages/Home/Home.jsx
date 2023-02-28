@@ -1,4 +1,5 @@
 import SocialMedia from "../../components/Social-Media/SocialMedia"
+import PrimerComponente from "../../components/Home-Primer-Componente/home-primer-componente"
 import Footer from "../../components/Footer/Footer"
 import CarouselPumaArlequin from "../../components/Carousel/CarouselPumaArlequin"
 import style from "./Home.module.css";
@@ -10,6 +11,7 @@ import CaroucelNike from "../../components/Carousel/CarouselNike";
 
 function Home() {
     return (<>
+        <PrimerComponente />
         <CaroucelAdidasBicolor />
         <CaroucelNike />
         <CaroucelPuma />
