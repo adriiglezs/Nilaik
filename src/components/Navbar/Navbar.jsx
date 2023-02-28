@@ -27,9 +27,9 @@ function Navbar() {
         <Link to="/">
           <h2>Inicio</h2>
         </Link>
-        <Link to="/characters">
+        {/* <Link to="/characters">
           <h2>Personajes</h2>
-        </Link>
+        </Link> */}
         <Link to="/nike-puma">
           <h2>Nike Puma</h2>
         </Link>
