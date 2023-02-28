@@ -17,7 +17,7 @@ return(
 
     </div>
 
-<Footer/>
+<Footer  styleFoo={style.foo}/>
 </div>
     
     )
