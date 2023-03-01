@@ -199,7 +199,7 @@ export const adidas3 = [
   {
     id: uuid(),
     name: "Adidas 3 blanco",
-    src: "https://res.cloudinary.com/dwd3jknn9/image/upload/v1676269645/Nilaik/AdidasBiocolor/IMG_20230212_150543_islg5h.jpg",
+    src: "https://res.cloudinary.com/ddwq0ulee/image/upload/v1676402924/Nilaik/adidas%203/IMG_20230212_152752-min_fubef9.jpg",
     category: "A3BL",
     price: 175.0,
   },
