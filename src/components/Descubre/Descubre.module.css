@@ -24,6 +24,7 @@
 .imgDescubre {
   width: 100%;
   height: 400px;
+
   opacity: 1;
 }
 
@@ -35,20 +36,6 @@
 
 .top {
   margin: 0% 3% 0% 1%;
-}
-
-.centerTexTop {
-  font-size: xx-large;
-  position: absolute;
-  top: 17%;
-  right: 29%;
-}
-
-.centerTexBottom {
-  font-size: xx-large;
-  position: absolute;
-  top: 57%;
-  left: 77.5%;
 }
 
 .DescubreMovil {
@@ -70,7 +57,7 @@
 }
 
 .ImgMovil {
-  height: 100px;
+  height: 150px;
   width: 25%;
 }
 
@@ -81,7 +68,7 @@
 }
 
 .ImgMovil2 {
-  height: 100px;
+  height: 150px;
   width: 25%;
   opacity: 0.5;
 }
@@ -96,6 +83,7 @@
   .h1Descubre {
     width: 100%;
     display: inline-block;
+
     font-size: small;
   }
 }

@@ -3,9 +3,7 @@ import uuid from "react-uuid";
 export const adidasBicolor = [
   {
     id: uuid(),
-    model: "Adidas",
-    disigner: "Bicolor",
-    color: "Camuflaje",
+    name: "Adidas bicolor camuflaje",
     src: "https://res.cloudinary.com/ddwq0ulee/image/upload/v1676402954/Nilaik/adidas%20bicolor/IMG_20230212_145712-min_nublxu.jpg",
     code: "ADBCA",
     price: 175.0,
@@ -196,13 +194,13 @@ export const adidas3 = [
     category: "A3MA",
     price: 175.0,
   },
-  {
+  /* {
     id: uuid(),
     name: "Adidas 3 blanco",
     src: "https://res.cloudinary.com/ddwq0ulee/image/upload/v1676402924/Nilaik/adidas%203/IMG_20230212_152752-min_fubef9.jpg",
     category: "A3BL",
     price: 175.0,
-  },
+  }, */
   {
     id: uuid(),
     name: "Adidas 3 menta",
@@ -284,7 +282,7 @@ export const pumaArlequin = [
   },
 ];
 
-export const especiales = [
+export const personajes = [
   {
     id: uuid(),
     name: "Paris",
