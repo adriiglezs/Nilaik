@@ -46,6 +46,6 @@ export default function CarouselAdidas3() {
       {adidas3.map(item => (
         <ProductAdidas3 item={item} key={item.id} />
       ))}
-    </Carousel>;
+    </Carousel>
   </>);
 }

@@ -48,7 +48,7 @@ export default function CarouselEspeciales() {
           <Product item={item} key={item.id} />
         ))}
       </Carousel>
-      ;
+      
     </>
   );
 }

@@ -12,18 +12,18 @@ import style from "./NikePuma.module.css";
 export default function NikePuma() {
   return (<>
     <div className={style.card}>
-      <CardProductPumaArlequin />
-      <CardProductPuma />
+      <CarouselNike/>
       <UniqueCollection />
-      <CardProductNike />
+      <CarouselPuma/>
+      
     </div>
-    <div className={style.cardmovil}>
+    {/*<div className={style.cardmovil}>
       <CarouselPumaArlequin />
       <CarouselPuma />
       <UniqueCollection />
-      <CarouselNike />
+  <CarouselNike />
 
-    </div>
+  </div>*/}
     <SocialMedia />
     <Footer styleFoo={style.foo} />
 

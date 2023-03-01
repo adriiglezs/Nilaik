@@ -12,18 +12,18 @@ import CarouselAdidasBicolor from "../../components/Carousel/CarouselAdidasBicol
 export default function JordanAdidas() {
   return (<>
     <div className={style.card}>
-      <CardProductAdidasBicolor />
-      <CardProductJordan />
-      <CardProductAdidas3 />
+      <CarouselAdidasBicolor />
+      <CarouselJordan />
+      <CarouselAdidas3 />
 
     </div>
-    <div className={style.cardmovil}>
+    {/*<div className={style.cardmovil}>
       <CarouselAdidasBicolor />
       <CarouselJordan />
       <CarouselAdidas3 />
 
 
-    </div>
+  </div>*/}
     <UniqueCollection />
     <SocialMedia />
     <Footer styleFoo={style.foo} />

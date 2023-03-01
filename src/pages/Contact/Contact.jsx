@@ -26,11 +26,11 @@ export default function Contact() {
               />
             </div>
 
-            <h2 className={style.Mh2}>
+            <p className={style.Mh2}>
               Si tienes alguna duda o necesitas contactarte directamente con
               nosotros. Por favor llena el formulario y nos pondremos en
               contacto contigo.
-            </h2>
+            </p>
           </div>
 
           <div className={style.container}>

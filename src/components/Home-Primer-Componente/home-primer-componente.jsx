@@ -51,7 +51,7 @@ function PrimerComponente() {
 
 export default PrimerComponente;
 
-import style from "./home-primer-componente.module.css";
+/*import style from "./home-primer-componente.module.css";
 import { Link } from "react-router-dom";
 
 function PrimerComponente() {
@@ -115,4 +115,4 @@ function PrimerComponente() {
   );
 }
 
-export default PrimerComponente;
+export default PrimerComponente;*/

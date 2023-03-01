@@ -2,16 +2,21 @@
   background-color: FB9595;
   display: inline-flex;
   text-align: center;
+  margin-left: 10px;
+  margin-top: 20px;
+  margin-right: 10px;
 }
 
 .left {
   text-align: center;
   justify-content: center;
   max-width: 50%;
-  padding-top: 20%;
+  padding-top: 10%;
   padding-right: 7%;
   padding-left: 7%;
   padding-bottom: 10%;
+  
+  
 }
 
 .rigth {

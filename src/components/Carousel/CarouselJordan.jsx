@@ -49,7 +49,7 @@ export default function CarouselJordan() {
           <ProductNike item={item} key={item.id} />
         ))}
       </Carousel>
-      ;
+      
     </>
   );
 }

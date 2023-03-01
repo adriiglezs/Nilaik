@@ -9,6 +9,28 @@
   text-align: center;
   border-bottom: 2px dashed #4f1f28;
 }
+.prueba{
+  margin-left: 10px;
+  margin-right: 10px;
+  height: auto;
+  display: flex;
+  
+  align-items: center;
+  text-align: center;
+  
+
+}
+.TituloCart{
+  justify-content: center;
+  text-align: center;
+}
+
+.linea{
+   border-top: 5px solid #4f1f28;
+  height: 2px;
+  padding: 0;
+  margin: 20px 20px 20px 20px;
+}
 
 .target {
   width: 98%;
@@ -142,4 +164,88 @@
   .btnCart {
     width: 100%;
   }
+}
+
+.Carro1{
+ 
+margin-left: 20px;
+margin-right: 250px;
+}
+.Carro2{
+ margin-right: 280px;
+}
+.Carro3{
+ margin-right: 300px;
+}
+.Carro4{
+  margin-right: 550px;
+}
+
+.Carro5{
+ margin-right: 100px;
+ 
+}
+.Carro6{
+ margin-right: 15px;
+}
+
+
+@media screen and (max-width: 464px) {
+  .Carro1{
+ 
+margin-left: 10px;
+margin-right: 80px;
+}
+.Carro2{
+ margin-right: 80px;
+}
+.Carro3{
+ margin-right: 20px;
+}
+
+.Carro4{
+  display: none;
+}
+.Carro5{
+ display: none;
+}
+.Carro6{
+ display: none;
+}
+.CardProduct {
+  margin-left: 10px;
+}
+}
+@media screen and (max-width: 768px) {
+.Carro1{
+ 
+margin-left: 20px;
+margin-right: 80px;
+}
+.Carro2{
+ margin-right: 80px;
+}
+.Carro3{
+ margin-right: 100px;
+}
+.Carro4{
+  margin-right: 100px;
+}
+
+.Carro5{
+ margin-right: 25px;
+ 
+}
+.Carro6{
+ margin-right: 15px;
+}
+
+
+
+.CardProduct {
+  margin-left: 5px;
+}
+.nameL{
+  font-size: 80%;
+}
 }

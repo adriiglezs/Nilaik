@@ -48,7 +48,7 @@ export default function CarouselPumaArlequin() {
           <ProductNike item={item} key={item.id} />
         ))}
       </Carousel>
-      ;
+      
     </>
   );
 }

@@ -46,6 +46,6 @@ export default function CarouselPuma() {
       {puma.map(item => (
         <Product item={item} key={item.id}/>
       ))}
-    </Carousel>;
+    </Carousel>
   </>);
 }

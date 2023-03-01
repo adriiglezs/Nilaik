@@ -23,10 +23,21 @@ const CheckoutPage = () => {
     <div>
       <div>
         <div className={style.TituloCart}>
-          <h1>Shopping Cart</h1>
-          <h2>____________________________</h2>
+          <h1>Carrito de compra</h1>
+          <div className={style.linea}></div>
         </div>
         <div>
+          <div className={style.prueba}>
+            <h2 className={style.Carro1}> Imagen </h2>
+            <h2 className={style.Carro2}> Nombre </h2>
+            <h2 className={style.Carro3}> Categoria </h2>
+
+            <h2 className={style.Carro4}> Tallas </h2>
+
+            <h2 className={style.Carro5}> precio </h2>
+
+            <h2 className={style.Carro6}> Borrar </h2>
+          </div>
           <FormRow />
         </div>
         <div>

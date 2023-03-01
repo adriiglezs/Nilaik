@@ -46,6 +46,6 @@ export default function CarouselNike() {
       {nike.map(item => (
         <ProductNike item={item} key={item.id}/>
       ))}
-    </Carousel>;
+    </Carousel>
   </>);
 }
