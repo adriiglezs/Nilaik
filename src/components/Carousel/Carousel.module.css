@@ -151,14 +151,15 @@
 }
 .carouselcards {
   width: 20%;
-  
-  transition: background-color .5s;
+  transition: transform 0.3s ease-in-out;
+  transition: background-color 0.5s;
 }
 
-.carouselcards:hover{
-  background-color: rgba(85, 83, 83, 0.836);
+.carouselcards:hover {
+  background-color: whitesmoke;
+  transform: scale(1.5);
   border-radius: 5px;
-   cursor: pointer;
+  cursor: pointer;
 }
 
 .carouseltarget {
@@ -169,6 +170,7 @@
   padding-right: 5%;
   display: inline-flex;
 }
+
 @media screen and (max-width: 1024px) {
   .carouseltarget {
     padding-bottom: 8%;
@@ -190,4 +192,7 @@
   width: 100%;
   margin: 0;
   border-radius: 1vh 1vh 0 0;
+}
+.carouselCardProduct:hover {
+  box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.75);
 }
