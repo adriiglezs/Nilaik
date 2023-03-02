@@ -1,14 +1,12 @@
 import { useStateValue } from "../../StateProvider";
 //import { AiOutlineShoppingCart } from "react-icons/ai";
 import { RxTrash } from "react-icons/rx";
-
-import React, { useState } from "react";
-
+import React, { useEffect, useState } from "react";
 import { actionTypes } from "../../reducer";
 import style from "./CheckoutCard.module.css";
 
 
-const CheckoutCard = ({ item: { id, name, src, category, price } }) => {
+const CheckoutCard = ({ setTotal, index, total, item: { id, name, src, category, price } }) => {
   const [{ basket }, dispatch] = useStateValue();
 
   const removeItem = () => {
@@ -18,43 +16,87 @@ const CheckoutCard = ({ item: { id, name, src, category, price } }) => {
     });
   };
 
-  const [num2, setNum2] = useState(0);
-  const [num4, setNum4] = useState(0);
-  const [num6, setNum6] = useState(0);
-  const [num8, setNum8] = useState(0);
-  const [num10, setNum10] = useState(0);
-  const [num12, setNum12] = useState(0);
-  const handleDecrease2 = () => {
-    if (num2 > 0) {
-      setNum2(num2 - 1);
+  const onAdd = (key) => {
+    switch (key) {
+      case 2:
+        let val2 = Array.from(total);
+        val2[index] = { ...val2[index], num2: val2[index]?.num2 + 1 };
+        setTotal(val2);
+        break;
+      case 4:
+        let val4 = Array.from(total);
+        val4[index] = { ...val4[index], num4: val4[index]?.num4 + 1 };
+        setTotal(val4);
+        break;
+      case 6:
+        let val6 = Array.from(total);
+        val6[index] = { ...val6[index], num6: val6[index]?.num6 + 1 };
+        setTotal(val6);
+        break;
+      case 8:
+        let val8 = Array.from(total);
+        val8[index] = { ...val8[index], num8: val8[index]?.num8 + 1 };
+        setTotal(val8);
+        break;
+      case 10:
+        let val10 = Array.from(total);
+        val10[index] = { ...val10[index], num10: val10[index]?.num10 + 1 };
+        setTotal(val10);
+        break;
+      case 12:
+        let val12 = Array.from(total);
+        val12[index] = { ...val12[index], num12: val12[index]?.num12 + 1 };
+        setTotal(val12);
+        break;
     }
-  };
+  }
 
-  const handleDecrease4 = () => {
-    if (num4 > 0) {
-      setNum4(num4 - 1);
+  const onRemove = (key) => {
+    switch (key) {
+      case 2:
+        let val2 = Array.from(total);
+        if ((val2[index]?.num2 - 1) >= 0) {
+          val2[index] = { ...val2[index], num2: val2[index]?.num2 - 1 }
+          setTotal(val2)
+        }
+        break;
+      case 4:
+        let val4 = Array.from(total);
+        if ((val4[index]?.num4 - 1) >= 0) {
+          val4[index] = { ...val4[index], num4: val4[index]?.num4 - 1 }
+          setTotal(val4)
+        }
+        break;
+      case 6:
+        let val6 = Array.from(total);
+        if ((val6[index]?.num6 - 1) >= 0) {
+          val6[index] = { ...val6[index], num6: val6[index]?.num6 - 1 }
+          setTotal(val6)
+        }
+        break;
+      case 8:
+        let val8 = Array.from(total);
+        if ((val8[index]?.num8 - 1) >= 0) {
+          val8[index] = { ...val8[index], num8: val8[index]?.num8 - 1 }
+          setTotal(val8)
+        }
+        break;
+      case 10:
+        let val10 = Array.from(total);
+        if ((val10[index]?.num10 - 1) >= 0) {
+          val10[index] = { ...val10[index], num10: val10[index]?.num10 - 1 }
+          setTotal(val10)
+        }
+        break;
+      case 12:
+        let val12 = Array.from(total);
+        if ((val12[index]?.num12 - 1) >= 0) {
+          val12[index] = { ...val12[index], num12: val12[index]?.num12 - 1 }
+          setTotal(val12)
+        }
+        break;
     }
-  };
-  const handleDecrease6 = () => {
-    if (num6 > 0) {
-      setNum6(num6 - 1);
-    }
-  };
-  const handleDecrease8 = () => {
-    if (num8 > 0) {
-      setNum8(num8 - 1);
-    }
-  };
-  const handleDecrease10 = () => {
-    if (num10 > 0) {
-      setNum10(num10 - 1);
-    }
-  };
-  const handleDecrease12 = () => {
-    if (num12 > 0) {
-      setNum12(num12 - 1);
-    }
-  };
+  }
 
   return (
     <div key={id} className={style.target}>
@@ -70,13 +112,13 @@ const CheckoutCard = ({ item: { id, name, src, category, price } }) => {
         <div className={style.tallas}>
           <h2 className={style.labelNumT}>2</h2>
           <div className={style.labelNum}>
-            <button className={style.tallasB} onClick={() => setNum2(num2 + 1)}>
+            <button className={style.tallasB} onClick={() => onAdd(2)}>
               +
             </button>
             <label className={style.labelNumC} type="number" id="label2">
-              {num2}
+              {total[index]?.num2}
             </label>
-            <button className={style.tallasB} onClick={handleDecrease2}>
+            <button className={style.tallasB} onClick={() => onRemove(2)}>
               -
             </button>
           </div>
@@ -84,11 +126,13 @@ const CheckoutCard = ({ item: { id, name, src, category, price } }) => {
         <div className={style.tallas}>
           <h2 className={style.labelNumT}>4</h2>
           <div className={style.labelNum}>
-            <button className={style.tallasB} onClick={() => setNum4(num4 + 1)}>
+            <button className={style.tallasB} onClick={() => onAdd(4)}>
               +
             </button>
-            <label className={style.labelNumC}>{num4}</label>
-            <button className={style.tallasB} onClick={handleDecrease4}>
+            <label className={style.labelNumC} type="number" id="label2">
+              {total[index]?.num4}
+            </label>
+            <button className={style.tallasB} onClick={() => onRemove(4)}>
               -
             </button>
           </div>
@@ -96,11 +140,13 @@ const CheckoutCard = ({ item: { id, name, src, category, price } }) => {
         <div className={style.tallas}>
           <h2 className={style.labelNumT}>6</h2>
           <div className={style.labelNum}>
-            <button className={style.tallasB} onClick={() => setNum6(num6 + 1)}>
+            <button className={style.tallasB} onClick={() => onAdd(6)}>
               +
             </button>
-            <label className={style.labelNumC}>{num6}</label>
-            <button className={style.tallasB} onClick={handleDecrease6}>
+            <label className={style.labelNumC} type="number" id="label2">
+              {total[index]?.num6}
+            </label>
+            <button className={style.tallasB} onClick={() => onRemove(6)}>
               -
             </button>
           </div>
@@ -108,11 +154,13 @@ const CheckoutCard = ({ item: { id, name, src, category, price } }) => {
         <div className={style.tallas}>
           <h2 className={style.labelNumT}>8</h2>
           <div className={style.labelNum}>
-            <button className={style.tallasB} onClick={() => setNum8(num8 + 1)}>
+            <button className={style.tallasB} onClick={() => onAdd(8)}>
               +
             </button>
-            <label className={style.labelNumC}>{num8}</label>
-            <button className={style.tallasB} onClick={handleDecrease8}>
+            <label className={style.labelNumC} type="number" id="label2">
+              {total[index]?.num8}
+            </label>
+            <button className={style.tallasB} onClick={() => onRemove(8)}>
               -
             </button>
           </div>
@@ -120,14 +168,13 @@ const CheckoutCard = ({ item: { id, name, src, category, price } }) => {
         <div className={style.tallas}>
           <h2 className={style.labelNumT}>10</h2>
           <div className={style.labelNum}>
-            <button
-              className={style.tallasB}
-              onClick={() => setNum10(num10 + 1)}
-            >
+            <button className={style.tallasB} onClick={() => onAdd(10)}>
               +
             </button>
-            <label className={style.labelNumC}>{num10}</label>
-            <button className={style.tallasB} onClick={handleDecrease10}>
+            <label className={style.labelNumC} type="number" id="label2">
+              {total[index]?.num10}
+            </label>
+            <button className={style.tallasB} onClick={() => onRemove(10)}>
               -
             </button>
           </div>
@@ -135,14 +182,13 @@ const CheckoutCard = ({ item: { id, name, src, category, price } }) => {
         <div className={style.tallas}>
           <h2 className={style.labelNumT}>12</h2>
           <div className={style.labelNum}>
-            <button
-              className={style.tallasB}
-              onClick={() => setNum12(num12 + 1)}
-            >
+            <button className={style.tallasB} onClick={() => onAdd(12)}>
               +
             </button>
-            <label className={style.labelNumC}>{num12}</label>
-            <button className={style.tallasB} onClick={handleDecrease12}>
+            <label className={style.labelNumC} type="number" id="label2">
+              {total[index]?.num12}
+            </label>
+            <button className={style.tallasB} onClick={() => onRemove(12)}>
               -
             </button>
           </div>
@@ -150,7 +196,8 @@ const CheckoutCard = ({ item: { id, name, src, category, price } }) => {
 
         <div className={style.cost}>
           <h3 className={style.costL}>
-            {((num2 + num4 + num6 + num8 + num10 + num12) * price)}
+            ${(total[index]?.num2 + total[index]?.num4 + total[index]?.num6
+              + total[index]?.num8 + total[index]?.num10 + total[index]?.num12) * price}
           </h3>
         </div>
         <div className={style.shopping}>

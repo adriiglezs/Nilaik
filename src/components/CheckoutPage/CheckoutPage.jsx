@@ -1,18 +1,28 @@
-import React from "react";
+import { useCookies } from 'react-cookie';
+import React, { useEffect, useState } from "react";
 import { useStateValue } from "../../StateProvider";
 import CheckoutCard from "./CheckoutCard";
 import Total from "./Total";
 import style from "./CheckoutCard.module.css";
+import { withCookies } from 'react-cookie';
 
-const CheckoutPage = () => {
+const CheckoutPage = ({ cookies }) => {
   const [{ basket }, dispatch] = useStateValue();
+  const [total, setTotal] = useState(cookies.get('cart') || Array.from(Array(10).keys())?.map(() => ({
+    num2: 0, num4: 0, num6: 0, num8: 0, num10: 0, num12: 0, total: 0, price: 0, id: 0
+  })));
+  /* console.log(total); */
+  const [status, setStatus] = useState(0);
+  useEffect(() => {
+    cookies.set('cart', total)
+  }, [total])
 
   function FormRow() {
     return (
       <div>
-        {basket?.map((product) => (
+        {basket?.map((product, index) => (
           <div key={product.id}>
-            <CheckoutCard item={product} />
+            <CheckoutCard setTotal={setTotal} total={total} index={index} item={product} />
           </div>
         ))}
       </div>
@@ -42,7 +52,7 @@ const CheckoutPage = () => {
         </div>
         <div>
           <div>
-            <Total />
+            <Total total={total} />
           </div>
         </div>
       </div>
@@ -50,4 +60,4 @@ const CheckoutPage = () => {
   );
 };
 
-export default CheckoutPage;
+export default withCookies(CheckoutPage);
