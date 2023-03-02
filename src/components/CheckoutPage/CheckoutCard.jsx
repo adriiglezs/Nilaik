@@ -150,8 +150,7 @@ const CheckoutCard = ({ item: { id, name, src, category, price } }) => {
 
         <div className={style.cost}>
           <h3 className={style.costL}>
-            {/*price*/}
-            {(num2 + num4 + num6 + num8 + num10 + num12) * price}
+            {((num2 + num4 + num6 + num8 + num10 + num12) * price)}
           </h3>
         </div>
         <div className={style.shopping}>

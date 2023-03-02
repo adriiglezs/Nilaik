@@ -1,6 +1,5 @@
 import { Button } from "@mui/material/";
 import style from "./Total.module.css";
-
 import { getBasketTotal } from "../../reducer";
 import { Link } from "react-router-dom";
 import { useStateValue } from "../../StateProvider";

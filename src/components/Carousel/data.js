@@ -5,7 +5,7 @@ export const adidasBicolor = [
     id: uuid(),
     name: "Adidas bicolor camuflaje",
     src: "https://res.cloudinary.com/ddwq0ulee/image/upload/v1676402954/Nilaik/adidas%20bicolor/IMG_20230212_145712-min_nublxu.jpg",
-    code: "ADBCA",
+    category: "ADBCA",
     price: 175.0,
   },
   {
