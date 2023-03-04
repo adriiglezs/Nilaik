@@ -17,13 +17,17 @@ export default function CardLogin() {
     if (email === '' || password === '') {
       alert('Por favor llene todos los campos');
     } else {
-      setIsLoggedIn(true);
-      console.log('Correo electrónico:', email);
-      console.log('Contraseña:', password);
-      setEmail('');
-      setPassword('');
-      setEmailClicked(false);
-      setPasswordClicked(false);
+      const userData = JSON.parse(localStorage.getItem('user'));
+      if (email === userData.email && password === userData.password) {
+        setIsLoggedIn(true);
+        console.log('Ha iniciado sesión correctamente.');
+        setEmail('');
+        setPassword('');
+        setEmailClicked(false);
+        setPasswordClicked(false);
+      } else {
+        alert('El correo electrónico o la contraseña son incorrectos.');
+      }
     }
   };
 

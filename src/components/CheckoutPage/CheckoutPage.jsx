@@ -38,15 +38,15 @@ const CheckoutPage = ({ cookies }) => {
         </div>
         <div>
           <div className={style.prueba}>
-            <h2 className={style.Carro1}> Imagen </h2>
-            <h2 className={style.Carro2}> Nombre </h2>
-            <h2 className={style.Carro3}> Categoria </h2>
+            <div className={style.Carro1}> Imagen </div>
+            <div className={style.Carro2}> Nombre </div>
+            <div className={style.Carro3}> Categoria </div>
 
-            <h2 className={style.Carro4}> Tallas </h2>
+            <div className={style.Carro4}> Tallas </div>
 
-            <h2 className={style.Carro5}> precio </h2>
+            <div className={style.Carro5}> precio </div>
 
-            <h2 className={style.Carro6}> Borrar </h2>
+            <div className={style.Carro6}> Borrar </div>
           </div>
           <FormRow />
         </div>

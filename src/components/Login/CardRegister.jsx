@@ -37,6 +37,9 @@ export default function CardRegister() {
     // Imprimir objeto JSON en consola para verificar
     console.log(jsonData);
 
+    // Guardar el objeto JSON en el Local Storage
+    localStorage.setItem("user", jsonData);
+
     // Aquí va la lógica para enviar el formulario
 
     // Si se envía correctamente, limpiamos el formulario y activamos el estado de éxito

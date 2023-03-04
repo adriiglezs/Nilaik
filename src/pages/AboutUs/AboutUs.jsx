@@ -13,7 +13,7 @@ export default function AboutUs() {
   return (
     <>
       <div className={style.background}>
-        <Card
+        {/* <Card
           name="Melanie Leal"
           changeColor={true}
           instagramUrl=""
@@ -22,7 +22,7 @@ export default function AboutUs() {
           cvUrl="https://drive.google.com/file/d/1943JMzq3gUEc1SV-RhUHkDKO2P-xDjr4/view?usp=sharing"
           photo={melanie}
           biography="Originaria del estado de Hidalgo, graduada de la Licenciatura en Historia del Arte. Me gustan las caminatas al aire libre, soy una persona curiosa en busca de nuevas cosas que aprender. Integrante del development team en el proyecto."
-        />
+        /> */}
 
         <Card
           name="Alan Ramos"

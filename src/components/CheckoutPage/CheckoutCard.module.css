@@ -9,24 +9,14 @@
   text-align: center;
   border-bottom: 2px dashed #4f1f28;
 }
-.prueba{
-  margin-left: 10px;
-  margin-right: 10px;
-  height: auto;
-  display: flex;
-  
-  align-items: center;
-  text-align: center;
-  
 
-}
-.TituloCart{
+.TituloCart {
   justify-content: center;
   text-align: center;
 }
 
-.linea{
-   border-top: 5px solid #4f1f28;
+.linea {
+  border-top: 5px solid #4f1f28;
   height: 2px;
   padding: 0;
   margin: 20px 20px 20px 20px;
@@ -166,86 +156,87 @@
   }
 }
 
-.Carro1{
- 
-margin-left: 20px;
-margin-right: 250px;
+/* //////////////////////////////////////////////////////////////////// */
+.prueba {
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
-.Carro2{
- margin-right: 280px;
+.Carro1 {
+  width: 5%;
+  border: 1px solid black;
 }
-.Carro3{
- margin-right: 300px;
+.Carro2 {
+  height: 28%;
 }
-.Carro4{
-  margin-right: 550px;
+.Carro3 {
+  height: 10%;
+}
+.Carro4 {
+  height: 35%;
 }
 
-.Carro5{
- margin-right: 100px;
- 
+.Carro5 {
+  height: 10%;
 }
-.Carro6{
- margin-right: 15px;
+.Carro6 {
+  height: 5%;
 }
-
 
 @media screen and (max-width: 464px) {
-  .Carro1{
- 
-margin-left: 10px;
-margin-right: 80px;
-}
-.Carro2{
- margin-right: 80px;
-}
-.Carro3{
- margin-right: 20px;
-}
+  .Carro1 {
+    margin-left: 10px;
+    margin-right: 80px;
+  }
+  .Carro2 {
+    margin-right: 80px;
+  }
+  .Carro3 {
+    margin-right: 20px;
+  }
 
-.Carro4{
-  display: none;
-}
-.Carro5{
- display: none;
-}
-.Carro6{
- display: none;
-}
-.CardProduct {
-  margin-left: 10px;
-}
+  .Carro4 {
+    display: none;
+  }
+  .Carro5 {
+    display: none;
+  }
+  .Carro6 {
+    display: none;
+  }
+  .CardProduct {
+    margin-left: 10px;
+  }
 }
 @media screen and (max-width: 768px) {
-.Carro1{
- 
-margin-left: 20px;
-margin-right: 80px;
-}
-.Carro2{
- margin-right: 80px;
-}
-.Carro3{
- margin-right: 100px;
-}
-.Carro4{
-  margin-right: 100px;
-}
+  .Carro1 {
+    margin-left: 20px;
+    margin-right: 80px;
+  }
+  .Carro2 {
+    margin-right: 80px;
+  }
+  .Carro3 {
+    margin-right: 100px;
+  }
+  .Carro4 {
+    margin-right: 100px;
+  }
 
-.Carro5{
- margin-right: 25px;
- 
-}
-.Carro6{
- margin-right: 15px;
-}
+  .Carro5 {
+    margin-right: 25px;
+  }
+  .Carro6 {
+    margin-right: 15px;
+  }
 
-
-
-.CardProduct {
-  margin-left: 5px;
-}
-.nameL{
-  font-size: 80%;
-}
+  .CardProduct {
+    margin-left: 5px;
+  }
+  .nameL {
+    font-size: 80%;
+  }
 }
