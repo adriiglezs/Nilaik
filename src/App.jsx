@@ -12,6 +12,7 @@ import NikePuma from "./pages/NikePuma/NikePuma";
 import AboutNilaik from "./pages/AboutNilaik/AboutNilaik";
 import AskQuestions from "./pages/AskQuestions/AskQuestions";
 import Register from "./pages/LoginRegister/LoginRegister";
+import SpecialThanks from "./pages/SpecialThanks/SpecialThanks";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
         <Route path="/nike-puma" element={<NikePuma />} />
         <Route path="/AskQuestions" element={<AskQuestions />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/special-thanks" element={<SpecialThanks />} />
         <Route path="*" element={<Error />} />
       </Routes>
     </>

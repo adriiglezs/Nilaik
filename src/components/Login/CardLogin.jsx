@@ -8,6 +8,8 @@ export default function CardLogin() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [emailClicked, setEmailClicked] = useState(false);
   const [passwordClicked, setPasswordClicked] = useState(false);
+  const [showError, setShowError] = useState(false);
+
 
   const handleEmailClick = () => setEmailClicked(true);
   const handlePasswordClick = () => setPasswordClicked(true);
@@ -26,7 +28,7 @@ export default function CardLogin() {
         setEmailClicked(false);
         setPasswordClicked(false);
       } else {
-        alert('El correo electrónico o la contraseña son incorrectos.');
+        setShowError(true);
       }
     }
   };
@@ -63,7 +65,8 @@ export default function CardLogin() {
               onChange={(e) => setPassword(e.target.value)}
               onClick={handlePasswordClick}
             />
-            {passwordClicked && password === '' && <span>Por favor ingrese su contraseña</span>}
+            {/* {passwordClicked && password === '' && <span>Por favor ingrese su contraseña</span>} */}
+            {showError && <span>El correo electrónico o la contraseña son incorrectos.</span>}
           </div>
           <input type="submit" className={style.loginBtn} value="Ingresar" />
           <Link to="/register "><label>Registrate</label></Link>

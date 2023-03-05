@@ -1,0 +1,10 @@
+.foo {
+  position: relative;
+  background-color: #2f5898;
+}
+.contend {
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+}

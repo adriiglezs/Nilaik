@@ -1,8 +1,8 @@
 import Card from "../../components/Card/Card";
-import melanie from "../../assets/melanie-min.jpeg";
+/* import melanie from "../../assets/melanie-min.jpeg"; */
 import alan from "../../assets/alan-min.png";
 import axel from "../../assets/axel-min.jpeg";
-import victoria from "../../assets/victoria-min.jpg";
+//import victoria from "../../assets/victoria-min.jpg";
 //import diego from "../../assets/diego-min.png";
 import jorge from "../../assets/jorge.jpg";
 import adrian from "../../assets/adrian-min.jpg";

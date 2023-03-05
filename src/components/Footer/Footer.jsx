@@ -6,7 +6,7 @@ import nilaikFooter from "../../assets/nilaikFooter.png";
 export default function Footer({ styleFoo }) {
   return (
     <footer className={styleFoo ? styleFoo : style.Fcontent}>
-     
+
       <div className={style.Fsection}>
         <Link to="/">
           <img
@@ -40,6 +40,7 @@ export default function Footer({ styleFoo }) {
             <Link to="/"><li>Inicio</li></Link>
             <Link to="/about"><li>Acerca de</li></Link>
             <Link to="/contact"><li>Contáctanos</li></Link>
+            <Link to="/special-thanks"><li>Agradecimientos Especiales</li></Link>
           </ul>
         </div>
 
@@ -50,7 +51,7 @@ export default function Footer({ styleFoo }) {
           </ul>
         </div>
       </div>
-     
+
     </footer>
   );
 }
