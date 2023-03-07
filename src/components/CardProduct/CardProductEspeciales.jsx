@@ -1,4 +1,4 @@
-import style from "./CardProduct.module.css";
+/* import style from "./CardProduct.module.css";
 import { especiales } from "../Carousel/data.js";
 import cart from '../../assets/cart.svg';
 
@@ -25,4 +25,4 @@ export default function CardProductEspeciales() {
       </div>
     ))}
   </>)
-}
+} */

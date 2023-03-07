@@ -5,7 +5,7 @@ import { useStateValue } from "../../StateProvider";
 import { actionTypes } from "../../reducer";
 import cart from "../../assets/cart.svg";
 
-const ProductNike = ({ item: { id, name, src, category, price } }) => {
+const Product = ({ item: { id, articulo, marca, codigo, color, precioMayoreo, precioMenudeo, existencias, url } }) => {
   const [{ basket }, dispatch] = useStateValue(0);
 
   const addToBasket = () => {
@@ -14,10 +14,14 @@ const ProductNike = ({ item: { id, name, src, category, price } }) => {
       type: actionTypes.ADD_TO_BASKET,
       item: {
         id,
-        name,
-        src,
-        category,
-        price,
+        articulo,
+        marca,
+        codigo,
+        color,
+        precioMayoreo,
+        precioMenudeo,
+        existencias,
+        url
       },
     });
   };
@@ -25,15 +29,15 @@ const ProductNike = ({ item: { id, name, src, category, price } }) => {
   return (
     <div key={id} className={style.carouseltarget}>
       <div className={style.carouselbackgroundNike}>
-        <img className={style.carouselCardProduct} src={src} alt={name} />
+        <img className={style.carouselCardProduct} src={url} alt={marca + color} />
         <div className={style.carouselname}>
-          <p className={style.carouselp}>{name}</p>
+          <p className={style.carouselp}>{marca + color}</p>
         </div>
         <div className={style.carouselcod}>
-          <p className={style.carouselp}>{category}</p>
+          <p className={style.carouselp}>{codigo}</p>
         </div>
         <div className={style.carouselcost}>
-          <p className={style.carouselp}>${price}.00</p>
+          <p className={style.carouselp}>${precioMayoreo}.00</p>
         </div>
         <div className={style.carouselshopping} onClick={addToBasket}>
           <img
@@ -47,4 +51,4 @@ const ProductNike = ({ item: { id, name, src, category, price } }) => {
   );
 };
 
-export default ProductNike;
+export default Product;

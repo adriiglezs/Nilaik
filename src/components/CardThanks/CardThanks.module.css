@@ -1,12 +1,24 @@
 .card {
   position: relative;
-  width: 25%;
+  width: 60vh;
   height: 60vh;
   margin: 3%;
   background: linear-gradient(315deg, #fb9595, #2f5898);
   display: inline-flex;
   justify-content: center;
   align-items: center;
+}
+/* @media screen and (max-width: 1024px) {
+  .card {
+    width: 60vh;
+    height: 60vh;
+  }
+}*/
+@media screen and (max-width: 464px) {
+  .card {
+    width: 30vh;
+    height: 30vh;
+  }
 }
 
 .card::before {

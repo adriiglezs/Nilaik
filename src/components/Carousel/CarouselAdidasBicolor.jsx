@@ -1,11 +1,8 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import style from './Carousel.module.css';
-import { adidasBicolor } from './data';
-import cart from '../../assets/cart.svg';
-
-import Product from '../Products/Product';
+import Product from '../Products/ProductNike';
 
 const responsive = {
   desktop: {
@@ -24,9 +21,19 @@ const responsive = {
     slidesToSlide: 1 // optional, default to 1.
   }
 };
-export default function CarouselAdidasBicolor() {
+async function fetchData() {
+  const response = await fetch("https://nilaik.up.railway.app/productos/");
+  const data = await response.json();
+  return data.filter(item => item.marca === "Adidas Bicolor");
+}
 
-     
+export default function CarouselAdidasBicolor() {
+  const [adidasBicolor, setAdidasBicolorItems] = useState([]);
+
+  useEffect(() => {
+    fetchData().then(data => setAdidasBicolorItems(data));
+  }, []);
+
   return (
     <>
       <h1 className={style.carouselencabezado}>Adidas Bicolor</h1>
@@ -48,10 +55,10 @@ export default function CarouselAdidasBicolor() {
         itemClass="carousel-item-padding-40-px"
       >
         {adidasBicolor.map((item) => (
-          <Product item={item} key={item.id} />
+          <Product item={item} key={item.idProduct} />
         ))}
       </Carousel>
-      
+
     </>
   );
 }

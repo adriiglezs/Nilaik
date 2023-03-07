@@ -1,10 +1,8 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import style from './Carousel.module.css';
-import { adidas3 } from './data';
-import cart from '../../assets/cart.svg';
-import ProductAdidas3 from '../Products/ProductAdidas3';
+import Product from '../Products/ProductNike';
 
 const responsive = {
   desktop: {
@@ -23,7 +21,19 @@ const responsive = {
     slidesToSlide: 1 // optional, default to 1.
   }
 };
+
+async function fetchData() {
+  const response = await fetch("https://nilaik.up.railway.app/productos/");
+  const data = await response.json();
+  return data.filter(item => item.marca === "Adidas 3");
+}
+
 export default function CarouselAdidas3() {
+  const [adidas3, setAdidas3Items] = useState([]);
+
+  useEffect(() => {
+    fetchData().then(data => setAdidas3Items(data));
+  }, []);
   return (<>
     <h1 className={style.carouselencabezado}>Adidas 3</h1>
     <Carousel
@@ -44,7 +54,7 @@ export default function CarouselAdidas3() {
       itemClass="carousel-item-padding-40-px"
     >
       {adidas3.map(item => (
-        <ProductAdidas3 item={item} key={item.id} />
+        <Product item={item} key={item.idProduct} />
       ))}
     </Carousel>
   </>);

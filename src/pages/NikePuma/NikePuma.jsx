@@ -1,6 +1,6 @@
-import CardProductNike from "../../components/CardProduct/CardProductNike";
+/* import CardProductNike from "../../components/CardProduct/CardProductNike";
 import CardProductPuma from "../../components/CardProduct/CardProductPuma";
-import CardProductPumaArlequin from "../../components/CardProduct/CardProductPumaArlequin";
+import CardProductPumaArlequin from "../../components/CardProduct/CardProductPumaArlequin"; */
 import CarouselNike from "../../components/Carousel/CarouselNike";
 import CarouselPuma from "../../components/Carousel/CarouselPuma";
 import CarouselPumaArlequin from "../../components/Carousel/CarouselPumaArlequin";
@@ -12,18 +12,18 @@ import style from "./NikePuma.module.css";
 export default function NikePuma() {
   return (<>
     <div className={style.card}>
-      <CarouselNike/>
+      <CarouselNike />
       <UniqueCollection />
-      <CarouselPuma/>
-      
+      <CarouselPuma />
+
     </div>
-    {/*<div className={style.cardmovil}>
+    <div className={style.cardmovil}>
       <CarouselPumaArlequin />
       <CarouselPuma />
       <UniqueCollection />
-  <CarouselNike />
+      <CarouselNike />
 
-  </div>*/}
+    </div>
     <SocialMedia />
     <Footer styleFoo={style.foo} />
 

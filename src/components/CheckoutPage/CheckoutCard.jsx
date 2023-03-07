@@ -76,7 +76,7 @@ const CheckoutCard = ({ setTotal, index, total, item: { id, name, src, category,
         break;
       case 8:
         let val8 = Array.from(total);
-        if ((val8[index]?.num8 - 1) >= 0) {
+        if ((val8[index]?.num8 - 1) >= 1) {
           val8[index] = { ...val8[index], num8: val8[index]?.num8 - 1 }
           setTotal(val8)
         }
@@ -109,7 +109,7 @@ const CheckoutCard = ({ setTotal, index, total, item: { id, name, src, category,
           <h2 className={style.codL}>{category}</h2>
         </div>
 
-        <div className={style.tallas}>
+        {/* <div className={style.tallas}>
           <h2 className={style.labelNumT}>2</h2>
           <div className={style.labelNum}>
             <button className={style.tallasB} onClick={() => onAdd(2)}>
@@ -150,9 +150,9 @@ const CheckoutCard = ({ setTotal, index, total, item: { id, name, src, category,
               -
             </button>
           </div>
-        </div>
+        </div> */}
         <div className={style.tallas}>
-          <h2 className={style.labelNumT}>8</h2>
+          <h2 className={style.labelNumT}>Unitalla</h2>
           <div className={style.labelNum}>
             <button className={style.tallasB} onClick={() => onAdd(8)}>
               +
@@ -165,7 +165,7 @@ const CheckoutCard = ({ setTotal, index, total, item: { id, name, src, category,
             </button>
           </div>
         </div>
-        <div className={style.tallas}>
+        {/* <div className={style.tallas}>
           <h2 className={style.labelNumT}>10</h2>
           <div className={style.labelNum}>
             <button className={style.tallasB} onClick={() => onAdd(10)}>
@@ -192,7 +192,7 @@ const CheckoutCard = ({ setTotal, index, total, item: { id, name, src, category,
               -
             </button>
           </div>
-        </div>
+        </div> */}
 
         <div className={style.cost}>
           <h3 className={style.costL}>

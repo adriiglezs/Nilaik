@@ -1,4 +1,4 @@
-import style from "./CardProduct.module.css";
+/* import style from "./CardProduct.module.css";
 import { pumaArlequin } from "../Carousel/data.js";
 import cart from '../../assets/cart.svg';
 
@@ -27,4 +27,4 @@ export default function CardProductPumaArlequin() {
       ))}
     </>
   );
-}
+} */

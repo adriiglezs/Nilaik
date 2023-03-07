@@ -1,10 +1,8 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import style from './Carousel.module.css';
-import { pumaArlequin } from './data';
-import cart from '../../assets/cart.svg';
-import ProductNike from '../Products/ProductNike';
+import Product from '../Products/ProductNike';
 
 const responsive = {
   desktop: {
@@ -23,7 +21,20 @@ const responsive = {
     slidesToSlide: 1 // optional, default to 1.
   }
 };
+
+async function fetchData() {
+  const response = await fetch("https://nilaik.up.railway.app/productos/");
+  const data = await response.json();
+  return data.filter(item => item.marca === "Puma Arlequin");
+}
+
 export default function CarouselPumaArlequin() {
+  const [pumaArlequin, setPumaArlequinItems] = useState([]);
+
+  useEffect(() => {
+    fetchData().then(data => setPumaArlequinItems(data));
+  }, []);
+
   return (
     <>
       <h1 className={style.carouselencabezado}>Puma Arlequin</h1>
@@ -45,10 +56,10 @@ export default function CarouselPumaArlequin() {
         itemClass="carousel-item-padding-40-px"
       >
         {pumaArlequin.map((item) => (
-          <ProductNike item={item} key={item.id} />
+          <Product item={item} key={item.idProducto} />
         ))}
       </Carousel>
-      
+
     </>
   );
 }

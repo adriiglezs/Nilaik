@@ -12,6 +12,9 @@ import { Badge } from "@mui/material/";
 function Navbar() {
   const [isNavShow, setNavShow] = useState(false)
   const [{ basket }, dispatch] = useStateValue();
+  const userData = JSON.parse(localStorage.getItem('user'));
+  const username = userData ? "Cliente: " + userData.username : "";
+
   return (
     <nav className={style.nav}>
       <div className={style.logo}>
@@ -21,6 +24,7 @@ function Navbar() {
             src={brand}
             alt="Nilaik logo de colores diversos"
           />
+          <h2>{username}</h2>
         </Link>
       </div>
       <div className={`${isNavShow ? style.false : style.true}`}>

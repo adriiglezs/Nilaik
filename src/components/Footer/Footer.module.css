@@ -39,7 +39,8 @@ footer {
   height: auto;
 }
 @media screen and (max-width: 768px) {
-  .Fsection2, .Fsection {
+  .Fsection2,
+  .Fsection {
     padding-left: 10px;
     display: block;
     align-items: flex-start;
@@ -94,14 +95,20 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-  .Flis{
+  .Flis {
     margin-top: 10%;
     display: inline-block;
-    align-content:flex-end;
-    width: 100%; 
+    align-content: flex-end;
+    width: 100%;
   }
 }
 
+.cerrarSesion {
+  color: white;
+}
+.cerrarSesion:hover {
+  transform: scale(1);
+}
 
 /* .content{
  

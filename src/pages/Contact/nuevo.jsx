@@ -4,12 +4,15 @@ import style from "./Contact.module.css";
 import * as Yup from "yup";
 
 export default function Nuevo() {
+
   const initialValues = {
     nombre: "",
     correo: "",
     telefono: "",
     mensaje: "",
+    idmensajecliente: JSON.parse(localStorage.getItem('user')) ? JSON.parse(localStorage.getItem('user')).idCliente : 0
   };
+
   const validationSchema = Yup.object().shape({
     nombre: Yup.string()
       .min(3, "El nombre debe tener al menos 3 caracteres.")
@@ -39,8 +42,24 @@ export default function Nuevo() {
         }
       );
     resetForm();
-    alert("Formulario enviado.");
+    /* alert("Formulario enviado."); */
     console.log("Formulario enviado", values);
+    const formDataJson = JSON.stringify(values);
+    console.log(formDataJson);
+    fetch('https://nilaik.up.railway.app/mensajes', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: formDataJson
+    })
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        resetForm();
+      })
+      ;
   };
   return (
     <>
@@ -74,7 +93,7 @@ export default function Nuevo() {
             <div>
               <label htmlFor="telefono">Teléfono</label>
               <Field
-                type="tel"
+                type="text"
                 id="telefono"
                 name="telefono"
                 placeholder="55-5555-5555"

@@ -31,24 +31,24 @@
   height: auto;
 }
 .name {
-  width: 28%;
+  width: 35%;
 }
 .nameL {
   font-size: 25px;
 }
 .cod {
-  width: 10%;
+  width: 15%;
   font-size: 15px;
 }
 .tallas {
-  width: 7%;
+  width: 20%;
 }
 .cost {
-  width: 10%;
+  width: 15%;
   font-size: 20px;
 }
 .shopping {
-  width: 5%;
+  width: 10%;
 }
 .labelNum {
   display: inline-flex;
@@ -63,12 +63,20 @@
 .tallasB {
   width: 20%;
 }
+.tallasB:hover {
+  transform: scale(1.2);
+}
 .labelNumT {
   width: 100%;
   height: 50%;
 }
 .btnCart {
   width: 100%;
+}
+.btnCart:hover {
+  background-color: red;
+  transform: scale(1.2);
+  border-radius: 5px;
 }
 
 /*///////////////////////////// styles 464px///////////////////*/
@@ -95,7 +103,7 @@
 }
 @media screen and (max-width: 464px) {
   .name {
-    width: 70%;
+    width: 60%;
   }
 }
 @media screen and (max-width: 464px) {
@@ -111,18 +119,18 @@
 }
 @media screen and (max-width: 464px) {
   .tallas {
-    width: 12%;
+    width: 65%;
   }
 }
 @media screen and (max-width: 464px) {
   .cost {
-    width: 18%;
+    width: 20%;
     font-size: 20px;
   }
 }
 @media screen and (max-width: 464px) {
   .shopping {
-    width: 10%;
+    width: 15%;
   }
 }
 @media screen and (max-width: 464px) {
@@ -158,32 +166,32 @@
 
 /* //////////////////////////////////////////////////////////////////// */
 .prueba {
-  margin-left: 10px;
-  margin-right: 10px;
+  padding: 2%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  height: auto;
+  text-align: center;
 }
 .Carro1 {
   width: 5%;
-  border: 1px solid black;
 }
 .Carro2 {
-  height: 28%;
+  width: 35%;
 }
 .Carro3 {
-  height: 10%;
+  width: 15%;
 }
 .Carro4 {
-  height: 35%;
+  width: 20%;
 }
 
 .Carro5 {
-  height: 10%;
+  width: 15%;
 }
 .Carro6 {
-  height: 5%;
+  width: 10%;
 }
 
 @media screen and (max-width: 464px) {
@@ -236,7 +244,7 @@
   .CardProduct {
     margin-left: 5px;
   }
-  .nameL {
+  /* .nameL {
     font-size: 80%;
-  }
+  } */
 }

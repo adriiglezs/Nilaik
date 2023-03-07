@@ -16,10 +16,10 @@ function Home() {
       <PrimerComponente />
       <CaroucelAdidasBicolor />
       <CaroucelNike />
-      <CaroucelPuma />
+      {/* <CaroucelPuma />
       <CaroucelJordan />
       <CaroucelAdidas3 />
-      <CarouselPumaArlequin />
+      <CarouselPumaArlequin /> */}
       <Descubre />
       <SocialMedia />
       <Footer styleFoo={style.foo} />
