@@ -17,12 +17,18 @@ export default function SpecialThanks() {
     <div className={style.contend}>
       <CardThanks
         photo={melanie}
+        name="Melanie Leal"
+        cargo="integrante"
       />
       <CardThanks
         photo={victoria}
+        name="Victoria Bolaños"
+        cargo="integrante"
       />
       <CardThanks
         photo={diego}
+        name="Diego Pahua"
+        cargo="integrante"
       />
     </div>
     <br />
@@ -30,9 +36,13 @@ export default function SpecialThanks() {
     <div className={style.contend}>
       <CardThanks
         photo={nan}
+        name="Nan"
+        cargo="mentora"
       />
       <CardThanks
         photo={mon}
+        name="Mon"
+        cargo="mentora"
       />
     </div>
     <br />
@@ -40,9 +50,13 @@ export default function SpecialThanks() {
     <div className={style.contend}>
       <CardThanks
         photo={serch}
+        name="Sergio"
+        cargo="instructor lider"
       />
       <CardThanks
         photo={tan}
+        name="Tania"
+        cargo="instructora"
       />
     </div>
 

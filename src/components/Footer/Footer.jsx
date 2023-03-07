@@ -45,7 +45,7 @@ export default function Footer({ styleFoo }) {
             <Link to="/"><li>Inicio</li></Link>
             <Link to="/about"><li>Acerca de</li></Link>
             <Link to="/contact"><li>Contáctanos</li></Link>
-            <Link to="/special-thanks"><li>Agradecimientos Especiales</li></Link>
+            <Link to="/special-thanks"><li className={style.Special}>Agradecimientos Especiales</li></Link>
           </ul>
         </div>
 

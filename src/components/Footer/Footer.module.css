@@ -109,6 +109,9 @@ footer {
 .cerrarSesion:hover {
   transform: scale(1);
 }
+.Special {
+  color: #2f5898;
+}
 
 /* .content{
  

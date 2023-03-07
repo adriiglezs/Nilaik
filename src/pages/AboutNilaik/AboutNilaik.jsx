@@ -38,7 +38,7 @@ export default function AboutNilaik() {
 
             <CardNosotros
               tittle="Sobre nosotros"
-              content="Somos un proyecto que está enfocado en ofrecer productos de calidad a un precio bajo, nos caracterizamos por ser un proyecto con valores como, accesibilidad, medio ambiente, inclusión y diversidad." />
+              content="Nilaik surge como un proyecto improvisado, como suele ocurrir con las cosas buenas en México, sin planificación previa. Buscamos ofrecer conjuntos de ropa accesibles y de buena calidad para los niños, permitiéndoles jugar cómodamente mientras se divierten." />
           </div>
         </div>
       </div>

@@ -1,7 +1,7 @@
 import style from "./CardThanks.module.css";
 
 
-export default function CardThanks({ photo }) {
+export default function CardThanks({ photo, cargo, name }) {
   const bStyle = {
     backgroundImage: `url(${photo})`,
     backgroundSize: "cover",
@@ -12,7 +12,7 @@ export default function CardThanks({ photo }) {
     <div className={style.card}>
       <b style={bStyle}></b>
       <div className={style.content}>
-        <p className={style.title}>Some Fomous<br /><span>Creative Designer</span></p>
+        <p className={style.title}>{name}<br /><span>{cargo}</span></p>
         <ul className={style.sci}>
           <li>
             <a href="#">
