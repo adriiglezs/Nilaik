@@ -12,7 +12,7 @@ function PrimerComponente() {
           <div className={style.boxa}>
             <h3>...SOMOS NILAIK...</h3>
             <p>Conoce nuestra propuesta especialista en elevar el confort de la población infantil.</p>
-            <a href="/characters">Conócenos</a>
+            <a href="/about">Conócenos</a>
           </div>
         </div>
         <div className={style.ParteB}>
@@ -20,7 +20,7 @@ function PrimerComponente() {
           <div className={style.boxb}>
             <h3>...NIKE...</h3>
             <p>Diseños exclusivos</p>
-            <a href="/jordan-adidas">Comprar ahora</a>
+            <a href="/nike-puma">Comprar ahora</a>
           </div>
 
           <div className={style.boxc}>
@@ -38,7 +38,7 @@ function PrimerComponente() {
           <div className={style.boxe}>
             <h3>...ADIDAS...</h3>
             <p>Diseños exclusivos</p>
-            <a href="/nike-puma">Comprar ahora</a>
+            <a href="/jordan-adidas">Comprar ahora</a>
           </div>
         </div>
 
