@@ -1,8 +1,8 @@
 import Card from "../../components/Card/Card";
-import melanie from "../../assets/melanie-min.jpeg";
+/* import melanie from "../../assets/melanie-min.jpeg"; */
 import alan from "../../assets/alan-min.png";
 import axel from "../../assets/axel-min.jpeg";
-import victoria from "../../assets/victoria-min.jpg";
+//import victoria from "../../assets/victoria-min.jpg";
 //import diego from "../../assets/diego-min.png";
 import jorge from "../../assets/jorge.jpg";
 import adrian from "../../assets/adrian-min.jpg";
@@ -13,7 +13,7 @@ export default function AboutUs() {
   return (
     <>
       <div className={style.background}>
-        <Card
+        {/* <Card
           name="Melanie Leal"
           changeColor={true}
           instagramUrl=""
@@ -22,7 +22,7 @@ export default function AboutUs() {
           cvUrl="https://drive.google.com/file/d/1943JMzq3gUEc1SV-RhUHkDKO2P-xDjr4/view?usp=sharing"
           photo={melanie}
           biography="Originaria del estado de Hidalgo, graduada de la Licenciatura en Historia del Arte. Me gustan las caminatas al aire libre, soy una persona curiosa en busca de nuevas cosas que aprender. Integrante del development team en el proyecto."
-        />
+        /> */}
 
         <Card
           name="Alan Ramos"
@@ -46,7 +46,7 @@ export default function AboutUs() {
           apasionado por las motocicletas, videojuegos, ejercicio y programación. Integrante del development team."
         />
 
-        <Card
+        {/* <Card
           name="Victoria Bolaños"
           instagramUrl="https://www.instagram.com/mexavictoria/"
           githubUrl="https://github.com/mexavictoriab"
@@ -54,10 +54,9 @@ export default function AboutUs() {
           cvUrl="https://www.canva.com/design/DAFYoAp9a6o/3c_dzHUU9D5QE8PKjmVzuw/view?utm_content=DAFYoAp9a6o&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"
           photo={victoria}
           biography="Amante de los libros, la danza, los idiomas, la tecnología y el diseño, licenciada en innovación de negocios y mercadotecnia. Mujer en búsqueda de respuestas a las mil y un preguntas formuladas cada día. Parte del development team en el proyecto."
-        />
+        /> */}
         <Card
           name="Jorge Hernandez"
-          changeColor={true}
           instagramUrl=""
           githubUrl="https://github.com/jorhdz"
           linkedinUrl="https://www.linkedin.com/in/jorge-hern%C3%A1ndez-46083425a/"
@@ -77,13 +76,13 @@ export default function AboutUs() {
 
         <Card
           name="Adrián González"
+          changeColor={true}
           instagramUrl="https://instagram.com/adrii_wings?igshid=NmQ2ZmYxZjA="
           githubUrl="https://github.com/adriiglezs"
           linkedinUrl="https://www.linkedin.com/in/adri%C3%A1n-gonz%C3%A1lez-s%C3%A1nchez-649141253"
           cvUrl="https://drive.google.com/file/d/1vlJgcxMdQ644m2vCBInBFGT8dkn_5bKt/view?usp=sharing"
           photo={adrian}
-          biography="Originario del Estado de México, estudiante de M. en Cs. en Ingeniería de Sistemas y egresado de la Ing. Matemática, mantengo un alto interés en el aprendizaje del desarrollo web, 
-          dispuesto a aprender cosas nuevas y desarrollar soluciones de forma óptima, manteniendo comunicación, iniciativa y trabajo en equipo. Integrante del development team"
+          biography="Originario del Estado de México, estudiante de la M. en Cs. en Ingeniería de Sistemas y egresado de la Ing. Matemática, mantengo un alto interés en el desarrollo web. Dispuesto a aprender cosas nuevas y desarrollar soluciones de forma óptima, manteniendo comunicación, iniciativa y disponibilidad para el trabajo en equipo. Integrante del development team."
         />
       </div>
       <Footer styleFoo={style.foo} />

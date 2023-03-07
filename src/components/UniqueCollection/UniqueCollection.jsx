@@ -6,12 +6,12 @@ export default function UniqueCollection() {
     <div className={style.content1}>
       <section className={style.content}>
         <img
-          src="https://images.pexels.com/photos/996329/pexels-photo-996329.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          src="https://res.cloudinary.com/ddwq0ulee/image/upload/v1676402974/Nilaik/colleccion%20unica/IMG_20230212_173330-min_z7bhub.jpg"
           alt=""
           className={style.img}
         />
         <img
-          src="https://images.pexels.com/photos/322207/pexels-photo-322207.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          src="https://res.cloudinary.com/ddwq0ulee/image/upload/v1676402972/Nilaik/colleccion%20unica/IMG_20230212_173624-min_ucy2i1.jpg"
           alt=""
           className={style.img}
         />

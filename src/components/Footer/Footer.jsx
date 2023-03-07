@@ -4,9 +4,14 @@ import nilaikFooter from "../../assets/nilaikFooter.png";
 
 
 export default function Footer({ styleFoo }) {
+  const handleLogout = () => {
+    localStorage.clear();
+    // aquí también podrías redirigir al usuario a la página de inicio de sesión
+  };
+
   return (
     <footer className={styleFoo ? styleFoo : style.Fcontent}>
-     
+
       <div className={style.Fsection}>
         <Link to="/">
           <img
@@ -40,6 +45,7 @@ export default function Footer({ styleFoo }) {
             <Link to="/"><li>Inicio</li></Link>
             <Link to="/about"><li>Acerca de</li></Link>
             <Link to="/contact"><li>Contáctanos</li></Link>
+            <Link to="/special-thanks"><li>Agradecimientos Especiales</li></Link>
           </ul>
         </div>
 
@@ -47,10 +53,11 @@ export default function Footer({ styleFoo }) {
           <h4>Envíos</h4>
           <ul className={style.Flis}>
             <Link to="/AskQuestions"><li>Preguntas frecuentes</li></Link>
+            <Link to="/"><li className={style.cerrarSesion} id="logout-btn" onClick={handleLogout}>Cerrar sesión</li></Link>
           </ul>
         </div>
       </div>
-     
-    </footer>
+
+    </footer >
   );
 }

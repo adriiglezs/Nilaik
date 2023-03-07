@@ -15,12 +15,12 @@ export default function AboutNilaik() {
         </h1>
 
         <CardVision
-          tittle="Vision"
+          tittle="Visión"
           content="Expandir nuestra presencia en territorio nacional, ampliando nuestro catálogo y producción para mantener el crecimiento constante de nuestro proyecto. Y vender productos para público infantil y adulto, a precios competentes, manteniendo la calidad que nos respalda."
         />
 
         <CardMision
-          tittle="Mision"
+          tittle="Misión"
           content="Somos un proyecto especialista en elevar el confort de la población infantil sin descartar el estilo, esto lo logramos ofreciendo diseños actuales y contemporáneos para que la ropa ayude a reflejar la personalidad de tus pequeños."
         />
         <div className={style.principal}>

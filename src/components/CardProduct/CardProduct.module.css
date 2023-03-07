@@ -1,75 +1,187 @@
-.background {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: #f6d522;
+.cardProductbackgroundJordan {
+  background-color: #2f5898;
+  border-radius: 1vh;
+  border-radius: 1vh;
   padding: 3%;
+  width: 100%;
+  height: auto;
+  display: inline-block;
+}
+.cardProductbackgroundAdidasBicolor {
+  background-color: #fb9595;
+  border-radius: 1vh;
+  padding: 3%;
+  width: 100%;
+  height: auto;
+  display: inline-block;
+}
+.cardProductbackgroundAdidas3 {
+  background-color: #fb9595;
+  border-radius: 1vh;
+  padding: 3%;
+  width: 100%;
+  height: auto;
+  display: inline-block;
+}
+.cardProductbackgroundEspeciales {
+  background-color: #fb9595;
+  border-radius: 1vh;
+  padding: 3%;
+  width: 100%;
+  height: auto;
+  display: inline-block;
+}
+.cardProductbackgroundNike {
+  background-color: #2f5898;
+  border-radius: 1vh;
+  padding: 3%;
+  width: 100%;
+  height: auto;
+  display: inline-block;
+}
+.cardProductbackgroundPuma {
+  background-color: #fb9595;
+  border-radius: 1vh;
+  padding: 3%;
+  width: 100%;
+  height: auto;
+  display: inline-block;
+}
+.cardProductbackgroundPumaArlequin {
+  background-color: #2f5898;
+  border-radius: 1vh;
+  padding: 3%;
+  width: 100%;
+  height: auto;
+  display: inline-block;
+}
+
+.cardProductencabezado {
+  margin: 1% 0 0 5%;
+  font-size: 45px;
+}
+@media screen and (max-width: 1024px) {
+  .cardProductencabezado {
+    margin: 2% 0 0 10%;
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 464px) {
+  .cardProductencabezado {
+    margin: 3% 0 0 12%;
+    font-size: 35px;
+  }
+}
+
+.cardProductcod {
+  display: inline-flex;
+  width: 25%;
+  height: 8vh;
+  font-size: 15px;
+  margin: 0;
+  font-weight: bold;
+  text-align: right;
+}
+@media screen and (max-width: 1024px) {
+  .cardProductcod {
+    font-size: 13px;
+    height: 6vh;
+  }
+}
+@media screen and (max-width: 464px) {
+  .cardProductcod {
+    font-size: 11px;
+    height: 4vh;
+  }
+}
+.cardProductname {
+  display: inline-flex;
+  width: 75%;
+  height: 8vh;
+  font-size: 23px;
+  margin: 0;
+  text-align: left;
+  font-weight: bold;
+}
+@media screen and (max-width: 1024px) {
+  .cardProductname {
+    font-size: 20px;
+    height: 6vh;
+  }
+}
+@media screen and (max-width: 464px) {
+  .cardProductname {
+    font-size: 18px;
+    height: 4vh;
+  }
+}
+.cardProductp {
+  margin: 0;
+  width: 100%;
+}
+.cardProductpj {
+  color: #a6b8d3;
+  margin: 0;
   width: 100%;
 }
 
-.cod {
-  display: inline-block;
-  width: 40%;
-  font-size: 15px;
-}
-.name {
-  display: inline-block;
-  width: 60%;
-  font-display: 100%;
-  font-size: 12px;
-}
-.cost {
+.cardProductcost {
   display: inline-block;
   width: 50%;
+  font-size: 20px;
   margin: 0;
-  padding: 0;
-  font-size: 15px;
+  text-align: left;
+  font-weight: bold;
 }
-.shopping {
-  text-align: right;
-  display: inline-block;
-  width: 50%;
-  height: 50%;
-}
-@media screen and (max-width: 768px) {
-  .cards {
-    width: 40%;
-    height: 40%;
+@media screen and (max-width: 1024px) {
+  .cardProductcost {
+    font-size: 18px;
   }
 }
-.target {
-  width: 29%;
-  margin: 2%;
+@media screen and (max-width: 464px) {
+  .cardProductcost {
+    font-size: 16px;
+  }
+}
+
+.cardProductshopping {
+  width: 50%;
+  display: inline-block;
+  text-align: right;
+}
+.cardProductcards {
+  width: 20%;
+}
+.cardProducttarget {
+  width: 23%;
+  margin: 1%;
   align-self: center;
   justify-content: center;
   display: inline-block;
 }
 
-.CardProduct {
+@media screen and (max-width: 1024px) {
+  .cardProducttarget {
+    width: 45%;
+    margin: 2%;
+  }
+}
+@media screen and (max-width: 464px) {
+  .cardProducttarget {
+    width: 95%;
+    margin: 2%;
+    padding-bottom: 2%;
+    padding-top: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+}
+
+.cardProductCardProduct {
   width: 100%;
   height: auto;
   align-self: center;
   display: inline-block;
   margin: 0;
-}
-@media screen and (max-width: 810px) {
-  .cost,
-  .cod,
-  .name {
-    display: inline-block;
-    max-width: 90%;
-    flex-wrap: nowrap;
-    color: black;
-    font-size: 7.5px;
-  }
-}
-@media screen and (max-width: 512px) {
-  .cost,
-  .cod,
-  .name {
-    display: inline-block;
-    max-width: 90%;
-    flex-wrap: nowrap;
-    color: black;
-    font-size: 5px;
-  }
+  border-radius: 1vh 1vh 0 0;
 }

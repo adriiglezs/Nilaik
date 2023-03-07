@@ -1,12 +1,25 @@
 import style from "./Error.module.css"
-import error from "../../assets/error.svg"
 import Footer from "../../components/Footer/Footer"
+import Img from "../../assets/cono.png"
 function Error(){
-return(<div className={style.container}>
-    <img src={error} className={style.svg} alt="error esta pagina no existe" />
-    <p>No se encontro esta pagina</p>
-    <Footer/>
+return(
+    
+<div>
+    <div className={style.error404}>
+        <div className={style.izq404}>
+            <p className={style.p1error}>404</p>
+            <p className={style.p2error}>La pagina no fue encontrada</p>
+        </div>
+        
+        <div className={style.der404}>
+            <img className={style.imgerror} src={Img} alt="" />
+        </div>
+
     </div>
+
+<Footer  styleFoo={style.foo}/>
+</div>
+    
     )
 }
 export default Error

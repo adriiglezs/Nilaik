@@ -1,9 +1,60 @@
-.image {
+.imagea {
+  --glow-color: #fb9595;
+  --glow-spread-color: #fb9599;
+  --btn-color: none;
+  font-size: 15px;
+  font-weight: bold;
+  outline: none;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
   height: 291px;
   width: 291px;
-  border-radius: 100px;
   padding: 25px;
 }
+.imageb {
+  --glow-color: #f6d522;
+  --glow-spread-color: #f6d632;
+  --btn-color: none;
+  font-size: 15px;
+  font-weight: bold;
+  outline: none;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  height: 291px;
+  width: 291px;
+  padding: 25px;
+}
+
+.imagea ::after,
+.imageb ::after {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  top: 110%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--glow-spread-color);
+  -webkit-filter: blur(2em);
+  filter: blur(2em);
+  opacity: 0.7;
+  -webkit-transform: perspective(1.5em) rotateX(35deg) scale(1, 0.6);
+  transform: perspective(1.5em) rotateX(35deg) scale(1, 0.6);
+}
+
+.imagea:hover,
+.imageb:hover {
+  background-color: var(--glow-color);
+  -webkit-box-shadow: 0 0 0.5em 0.5em var(--glow-color),
+    0 0 1em 1em var(--glow-spread-color),
+    inset 0 0 0.5em 0.5em var(--glow-color);
+  box-shadow: 0 0 0.5em 0.5em var(--glow-color),
+    0 0 1em 1em var(--glow-spread-color),
+    inset 0 0 0.5em 0.5em var(--glow-color);
+}
+
 .anchor {
   cursor: pointer;
 }
@@ -24,8 +75,8 @@
 .photo {
   display: flex;
   max-width: 413px;
-  max-height: 330px;
-  background-color: #a6b8d3;
+  max-height: 330px; /* 
+  background-color: #a6b8d3; */
   justify-content: center;
 }
 .mainContainer {

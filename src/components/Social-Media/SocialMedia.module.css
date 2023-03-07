@@ -31,6 +31,12 @@
   width: 40%;
   height: auto;
 }
+/* .imgFB:hover,
+.imgIG:hover,
+.imgWA:hover {
+  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.75);
+  border-radius: 1vh 1vh 1vh 1vh;
+} */
 
 @media screen and (max-width: 768px) {
   .imgFB,
@@ -38,5 +44,18 @@
   .imgWA {
     width: 60%;
     height: auto;
+  }
+}
+
+.h1social {
+  text-align: center;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .h1social {
+    text-align: center;
+    width: 100%;
+    font-size: medium;
   }
 }

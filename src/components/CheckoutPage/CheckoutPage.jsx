@@ -1,22 +1,28 @@
-//import Product from "../Product/Product";
-//import Products from "../Product/Products";
-//import Total from "./Total";
-//import {adidasBicolor, nike} from "./data";
-
-import React from "react";
-import { useStateValue } from '../../StateProvider';
+import { useCookies } from 'react-cookie';
+import React, { useEffect, useState } from "react";
+import { useStateValue } from "../../StateProvider";
 import CheckoutCard from "./CheckoutCard";
 import Total from "./Total";
+import style from "./CheckoutCard.module.css";
+import { withCookies } from 'react-cookie';
 
-const CheckoutPage = () => {
+const CheckoutPage = ({ cookies }) => {
   const [{ basket }, dispatch] = useStateValue();
+  const [total, setTotal] = useState(cookies.get('cart') || Array.from(Array(10).keys())?.map(() => ({
+    num2: 0, num4: 0, num6: 0, num8: 0, num10: 0, num12: 0, total: 0, price: 0, id: 0
+  })));
+  /* console.log(total); */
+  const [status, setStatus] = useState(0);
+  useEffect(() => {
+    cookies.set('cart', total)
+  }, [total])
 
   function FormRow() {
     return (
       <div>
-        {basket?.map((product) => (
-          <div>
-            <CheckoutCard key={product.id} item={product} />
+        {basket?.map((product, index) => (
+          <div key={product.id}>
+            <CheckoutCard setTotal={setTotal} total={total} index={index} item={product} />
           </div>
         ))}
       </div>
@@ -26,15 +32,27 @@ const CheckoutPage = () => {
   return (
     <div>
       <div>
-        <div>
-          <h1>Shopping Cart</h1>
+        <div className={style.TituloCart}>
+          <h1>Carrito de compra</h1>
+          <div className={style.linea}></div>
         </div>
         <div>
+          <div className={style.prueba}>
+            <div className={style.Carro1}> Imagen </div>
+            <div className={style.Carro2}> Nombre </div>
+            <div className={style.Carro3}> Categoria </div>
+
+            <div className={style.Carro4}> Tallas </div>
+
+            <div className={style.Carro5}> precio </div>
+
+            <div className={style.Carro6}> Borrar </div>
+          </div>
           <FormRow />
         </div>
         <div>
           <div>
-            <Total />{" "}
+            <Total total={total} />
           </div>
         </div>
       </div>
@@ -42,4 +60,4 @@ const CheckoutPage = () => {
   );
 };
 
-export default CheckoutPage;
+export default withCookies(CheckoutPage);

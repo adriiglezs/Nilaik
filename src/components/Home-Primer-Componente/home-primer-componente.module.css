@@ -1,0 +1,117 @@
+.background {
+  display: inline-table;
+  width: 94%;
+  height: 50vh;
+  margin: 3%;
+  justify-content: center;
+  -webkit-text-stroke: 1px #4f1f28;
+}
+
+.homePrimerComponente {
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.ParteA {
+  display: inline-block;
+  width: 50%;
+  height: 100%;
+
+  font-size: 20px;
+  text-align: center;
+}
+.ParteB {
+  display: inline-block;
+  width: 50%;
+  height: 50vh;
+
+  font-size: 20px;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .ParteA,
+  .ParteB {
+    width: 100%;
+    font-size: 20px;
+  }
+}
+
+.boxa {
+  width: 98%;
+  height: 98%;
+  margin: 1%;
+  padding: 20%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-image: url(https://res.cloudinary.com/ddwq0ulee/image/upload/o_30/v1676402974/Nilaik/colleccion%20unica/IMG_20230212_173330-min_z7bhub.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.boxb {
+  width: 48%;
+  height: 48%;
+  margin: 0 1% 1% 1%;
+  padding: 5%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-image: url(https://res.cloudinary.com/ddwq0ulee/image/upload/o_30/v1676402972/Nilaik/colleccion%20unica/IMG_20230212_173855-min_cj2qce.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.boxc {
+  width: 48%;
+  height: 48%;
+  margin: 0 0 1% 1%;
+  padding: 5%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-image: url(https://res.cloudinary.com/ddwq0ulee/image/upload/o_30/v1676402972/Nilaik/colleccion%20unica/IMG_20230212_173120-min_qcxnjl.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.boxd {
+  width: 48%;
+  height: 48%;
+  margin: 1% 1% 0 1%;
+  padding: 5%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-image: url(https://res.cloudinary.com/ddwq0ulee/image/upload/o_30/v1676402972/Nilaik/colleccion%20unica/IMG_20230212_173624-min_ucy2i1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.boxe {
+  width: 48%;
+  height: 48%;
+  margin: 1% 0 0 1%;
+  padding: 5%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-image: url(https://res.cloudinary.com/ddwq0ulee/image/upload/o_30/v1676402972/Nilaik/colleccion%20unica/IMG_20230212_174121-min_lnyjv2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}

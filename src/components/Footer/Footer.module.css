@@ -5,16 +5,11 @@ footer {
   align-items: center;
   justify-items: center;
   display: flex;
-  /* font-size: 1em; */
   color: #a6b8d3;
-  /* Posicionar abajo */
-  /*  position: absolute; */
   bottom: 0;
-  /* Ocupar todo el ancho disponible */
   width: 100%;
   height: auto;
   padding: 25px 0;
-  /* estaba en 20 vh=viewportheight*/
 }
 @media screen and (max-width: 768px) {
   footer {
@@ -44,7 +39,8 @@ footer {
   height: auto;
 }
 @media screen and (max-width: 768px) {
-  .Fsection2, .Fsection {
+  .Fsection2,
+  .Fsection {
     padding-left: 10px;
     display: block;
     align-items: flex-start;
@@ -99,14 +95,20 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-  .Flis{
+  .Flis {
     margin-top: 10%;
     display: inline-block;
-    align-content:flex-end;
-    width: 100%; 
+    align-content: flex-end;
+    width: 100%;
   }
 }
 
+.cerrarSesion {
+  color: white;
+}
+.cerrarSesion:hover {
+  transform: scale(1);
+}
 
 /* .content{
  

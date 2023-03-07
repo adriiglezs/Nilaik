@@ -6,13 +6,15 @@ import user from "../../assets/user.svg";
 import menu from "../../assets/menu.svg"
 import { useState } from "react";
 import { useStateValue } from "../../StateProvider";
-import { Badge, Button } from "@mui/material/";
-
+import { Badge } from "@mui/material/";
 
 
 function Navbar() {
-  const [isNavShow,setNavShow] = useState(false)
+  const [isNavShow, setNavShow] = useState(false)
   const [{ basket }, dispatch] = useStateValue();
+  const userData = JSON.parse(localStorage.getItem('user'));
+  const username = userData ? "Cliente: " + userData.username : "";
+
   return (
     <nav className={style.nav}>
       <div className={style.logo}>
@@ -22,15 +24,16 @@ function Navbar() {
             src={brand}
             alt="Nilaik logo de colores diversos"
           />
+          <h2>{username}</h2>
         </Link>
       </div>
       <div className={`${isNavShow ? style.false : style.true}`}>
         <Link to="/">
           <h2>Inicio</h2>
         </Link>
-        <Link to="/characters">
+        {/* <Link to="/characters">
           <h2>Personajes</h2>
-        </Link>
+        </Link> */}
         <Link to="/nike-puma">
           <h2>Nike Puma</h2>
         </Link>
@@ -63,11 +66,12 @@ function Navbar() {
         onClick={() => setNavShow(!isNavShow)}
       >
         <Badge badgeContent={basket?.length} color="primary">
-        <img
-          src={menu}
-          className={`${isNavShow}`}
-          alt="menu para desplegar opciones en dispositivos mobiles"
-        /></Badge>
+          <img
+            src={menu}
+            className={`${isNavShow}`}
+            alt="menu para desplegar opciones en dispositivos mobiles"
+          />
+        </Badge>
       </div>
     </nav>
   );

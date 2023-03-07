@@ -1,0 +1,250 @@
+.background {
+  background-color: #f67;
+  padding: 2%;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  border-bottom: 2px dashed #4f1f28;
+}
+
+.TituloCart {
+  justify-content: center;
+  text-align: center;
+}
+
+.linea {
+  border-top: 5px solid #4f1f28;
+  height: 2px;
+  padding: 0;
+  margin: 20px 20px 20px 20px;
+}
+
+.target {
+  width: 98%;
+  margin: 0 1% 0 1%;
+}
+.CardProduct {
+  width: 5%;
+  height: auto;
+}
+.name {
+  width: 35%;
+}
+.nameL {
+  font-size: 25px;
+}
+.cod {
+  width: 15%;
+  font-size: 15px;
+}
+.tallas {
+  width: 20%;
+}
+.cost {
+  width: 15%;
+  font-size: 20px;
+}
+.shopping {
+  width: 10%;
+}
+.labelNum {
+  display: inline-flex;
+  width: 100%;
+  padding: 0 5% 0 5%;
+}
+.labelNumC {
+  width: 60%;
+  margin: 5%;
+  background-color: white;
+}
+.tallasB {
+  width: 20%;
+}
+.tallasB:hover {
+  transform: scale(1.2);
+}
+.labelNumT {
+  width: 100%;
+  height: 50%;
+}
+.btnCart {
+  width: 100%;
+}
+.btnCart:hover {
+  background-color: red;
+  transform: scale(1.2);
+  border-radius: 5px;
+}
+
+/*///////////////////////////// styles 464px///////////////////*/
+
+@media screen and (max-width: 464px) {
+  .background {
+    background-color: #f67;
+    padding: 2%;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 464px) {
+  .CardProduct {
+    width: 10%;
+    height: auto;
+  }
+}
+@media screen and (max-width: 464px) {
+  .name {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 464px) {
+  .nameL {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 464px) {
+  .cod {
+    width: 20%;
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 464px) {
+  .tallas {
+    width: 65%;
+  }
+}
+@media screen and (max-width: 464px) {
+  .cost {
+    width: 20%;
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 464px) {
+  .shopping {
+    width: 15%;
+  }
+}
+@media screen and (max-width: 464px) {
+  .labelNum {
+    display: inline-flex;
+    width: 100%;
+    padding: 0 5% 0 5%;
+  }
+}
+@media screen and (max-width: 464px) {
+  .labelNumC {
+    width: 60%;
+    margin: 5%;
+    background-color: white;
+  }
+}
+@media screen and (max-width: 464px) {
+  .tallasB {
+    width: 20%;
+  }
+}
+@media screen and (max-width: 464px) {
+  .labelNumT {
+    width: 100%;
+    height: 50%;
+  }
+}
+@media screen and (max-width: 464px) {
+  .btnCart {
+    width: 100%;
+  }
+}
+
+/* //////////////////////////////////////////////////////////////////// */
+.prueba {
+  padding: 2%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: auto;
+  text-align: center;
+}
+.Carro1 {
+  width: 5%;
+}
+.Carro2 {
+  width: 35%;
+}
+.Carro3 {
+  width: 15%;
+}
+.Carro4 {
+  width: 20%;
+}
+
+.Carro5 {
+  width: 15%;
+}
+.Carro6 {
+  width: 10%;
+}
+
+@media screen and (max-width: 464px) {
+  .Carro1 {
+    margin-left: 10px;
+    margin-right: 80px;
+  }
+  .Carro2 {
+    margin-right: 80px;
+  }
+  .Carro3 {
+    margin-right: 20px;
+  }
+
+  .Carro4 {
+    display: none;
+  }
+  .Carro5 {
+    display: none;
+  }
+  .Carro6 {
+    display: none;
+  }
+  .CardProduct {
+    margin-left: 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .Carro1 {
+    margin-left: 20px;
+    margin-right: 80px;
+  }
+  .Carro2 {
+    margin-right: 80px;
+  }
+  .Carro3 {
+    margin-right: 100px;
+  }
+  .Carro4 {
+    margin-right: 100px;
+  }
+
+  .Carro5 {
+    margin-right: 25px;
+  }
+  .Carro6 {
+    margin-right: 15px;
+  }
+
+  .CardProduct {
+    margin-left: 5px;
+  }
+  /* .nameL {
+    font-size: 80%;
+  } */
+}
