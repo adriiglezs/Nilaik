@@ -25,7 +25,7 @@ const responsive = {
 async function fetchData() {
   const response = await fetch("https://nilaik.up.railway.app/productos/");
   const data = await response.json();
-  return data.filter(item => item.marca === "Puma Arlequin");
+  return data.filter(item => item.marca === "Puma-arlequin");
 }
 
 export default function CarouselPumaArlequin() {

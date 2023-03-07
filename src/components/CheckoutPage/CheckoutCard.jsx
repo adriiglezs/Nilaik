@@ -6,13 +6,13 @@ import { actionTypes } from "../../reducer";
 import style from "./CheckoutCard.module.css";
 
 
-const CheckoutCard = ({ setTotal, index, total, item: { id, name, src, category, price } }) => {
+const CheckoutCard = ({ setTotal, index, total, item: { idProducto, marca, codigo, color, precioMayoreo, url } }) => {
   const [{ basket }, dispatch] = useStateValue();
 
   const removeItem = () => {
     dispatch({
       type: actionTypes.REMOVE_ITEM,
-      id,
+      idProducto,
     });
   };
 
@@ -99,14 +99,14 @@ const CheckoutCard = ({ setTotal, index, total, item: { id, name, src, category,
   }
 
   return (
-    <div key={id} className={style.target}>
+    <div key={idProducto} className={style.target}>
       <div className={style.background}>
-        <img className={style.CardProduct} src={src} alt={name} />
+        <img className={style.CardProduct} src={url} alt={marca + " " + color} />
         <div className={style.name}>
-          <h1 className={style.nameL}>{name}</h1>
+          <h1 className={style.nameL}>{marca + " " + color}</h1>
         </div>
         <div className={style.cod}>
-          <h2 className={style.codL}>{category}</h2>
+          <h2 className={style.codL}>{codigo}</h2>
         </div>
 
         {/* <div className={style.tallas}>
@@ -197,7 +197,7 @@ const CheckoutCard = ({ setTotal, index, total, item: { id, name, src, category,
         <div className={style.cost}>
           <h3 className={style.costL}>
             ${(total[index]?.num2 + total[index]?.num4 + total[index]?.num6
-              + total[index]?.num8 + total[index]?.num10 + total[index]?.num12) * price}
+              + total[index]?.num8 + total[index]?.num10 + total[index]?.num12) * precioMayoreo}
           </h3>
         </div>
         <div className={style.shopping}>

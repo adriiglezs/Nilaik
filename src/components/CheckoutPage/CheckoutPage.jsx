@@ -9,7 +9,7 @@ import { withCookies } from 'react-cookie';
 const CheckoutPage = ({ cookies }) => {
   const [{ basket }, dispatch] = useStateValue();
   const [total, setTotal] = useState(cookies.get('cart') || Array.from(Array(10).keys())?.map(() => ({
-    num2: 0, num4: 0, num6: 0, num8: 0, num10: 0, num12: 0, total: 0, price: 0, id: 0
+    num2: 0, num4: 0, num6: 0, num8: 0, num10: 0, num12: 0, total: 0, precioMayoreo: 0, idProducto: 0
   })));
   /* console.log(total); */
   const [status, setStatus] = useState(0);
@@ -21,7 +21,7 @@ const CheckoutPage = ({ cookies }) => {
     return (
       <div>
         {basket?.map((product, index) => (
-          <div key={product.id}>
+          <div key={product.idProducto}>
             <CheckoutCard setTotal={setTotal} total={total} index={index} item={product} />
           </div>
         ))}

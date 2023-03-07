@@ -5,15 +5,15 @@ import { useStateValue } from "../../StateProvider";
 import { actionTypes } from "../../reducer";
 import cart from "../../assets/cart.svg";
 
-const Product = ({ item: { id, articulo, marca, codigo, color, precioMayoreo, precioMenudeo, existencias, url } }) => {
+const Product = ({ item: { idProducto, articulo, marca, codigo, color, precioMayoreo, precioMenudeo, existencias, url } }) => {
   const [{ basket }, dispatch] = useStateValue(0);
 
   const addToBasket = () => {
-    if (basket?.filter((product) => (product?.id === id))?.length > 0) return;
+    if (basket?.filter((product) => (product?.idProducto === idProducto))?.length > 0) return;
     dispatch({
       type: actionTypes.ADD_TO_BASKET,
       item: {
-        id,
+        idProducto,
         articulo,
         marca,
         codigo,
@@ -27,11 +27,11 @@ const Product = ({ item: { id, articulo, marca, codigo, color, precioMayoreo, pr
   };
 
   return (
-    <div key={id} className={style.carouseltarget}>
+    <div key={idProducto} className={style.carouseltarget}>
       <div className={style.carouselbackgroundNike}>
-        <img className={style.carouselCardProduct} src={url} alt={marca + color} />
+        <img className={style.carouselCardProduct} src={url} alt={marca + " " + color} />
         <div className={style.carouselname}>
-          <p className={style.carouselp}>{marca + color}</p>
+          <p className={style.carouselp}>{marca + " " + color}</p>
         </div>
         <div className={style.carouselcod}>
           <p className={style.carouselp}>{codigo}</p>

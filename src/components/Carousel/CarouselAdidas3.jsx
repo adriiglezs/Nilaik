@@ -54,7 +54,7 @@ export default function CarouselAdidas3() {
       itemClass="carousel-item-padding-40-px"
     >
       {adidas3.map(item => (
-        <Product item={item} key={item.idProduct} />
+        <Product item={item} key={item.idProducto} />
       ))}
     </Carousel>
   </>);

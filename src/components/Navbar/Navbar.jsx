@@ -13,7 +13,7 @@ function Navbar() {
   const [isNavShow, setNavShow] = useState(false)
   const [{ basket }, dispatch] = useStateValue();
   const userData = JSON.parse(localStorage.getItem('user'));
-  const username = userData ? "Cliente: " + userData.username : "";
+  const username = userData ? "Un gusto tenerte de vuelta: " + userData.username : "";
 
   return (
     <nav className={style.nav}>

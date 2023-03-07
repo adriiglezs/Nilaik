@@ -108,6 +108,7 @@ export default function CardLogin() {
           if (userData) {
             setIsLoggedIn(true);
             console.log('Ha iniciado sesión correctamente.');
+            window.location.href = "/";
             saveUserData(userData);
             setEmail('');
             setPassword('');

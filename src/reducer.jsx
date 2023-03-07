@@ -11,7 +11,7 @@ export const actionTypes = {
 };
 
 export const getBasketTotal = (basket) =>
-  basket?.reduce((amount, item) => item.price + amount, 0);
+  basket?.reduce((amount, item) => item.precioMayoreo + amount, 0);
 
 const reducer = (state, action) => {
   console.log(action);
@@ -23,13 +23,13 @@ const reducer = (state, action) => {
       };
     case "REMOVE_ITEM":
       const index = state.basket.findIndex(
-        (basketItem) => basketItem.id === action.id
+        (basketItem) => basketItem.idProducto === action.idProducto
       );
       let newBasket = [...state.basket];
       if (index >= 0) {
         newBasket.splice(index, 1);
       } else {
-        console.log(`Cant remove product (id: ${action.id})!`);
+        console.log(`Cant remove product (id: ${action.idProducto})!`);
       }
       return {
         ...state,

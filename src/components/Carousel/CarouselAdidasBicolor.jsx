@@ -55,7 +55,7 @@ export default function CarouselAdidasBicolor() {
         itemClass="carousel-item-padding-40-px"
       >
         {adidasBicolor.map((item) => (
-          <Product item={item} key={item.idProduct} />
+          <Product item={item} key={item.idProducto} />
         ))}
       </Carousel>
 

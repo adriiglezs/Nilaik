@@ -54,7 +54,7 @@ export default function CarouselPersonajes() {
         itemClass="carousel-item-padding-40-px"
       >
         {personajes.map((item) => (
-          <Product item={item} key={item.idProduct} />
+          <Product item={item} key={item.idProducto} />
         ))}
       </Carousel>
 
