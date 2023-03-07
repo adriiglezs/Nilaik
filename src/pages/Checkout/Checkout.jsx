@@ -4,27 +4,21 @@ import nilaikFooter from "../../assets/brand.png";
 import React, { useState, useEffect } from 'react';
 
 export default function Checkout() {
-  const [data, setData] = useState({});
 
-  useEffect(() => {
-    setData(getUserData());
-  }, []);/* 
-  const [data, setData] = useState({}); */
+  const userData = JSON.parse(localStorage.getItem('user'));
+  const username = userData.username;
+  const lastname = userData.lastname;
+  const email = userData.email;
+  const adress = userData.adress;
+  const idCliente = userData.idCliente;
+  const idCarrito = idCliente;
+  const userDatap = JSON.parse(localStorage.getItem('order'));
+  const quantity = userDatap.quantity;
+  const total = userDatap.total;
 
-  /* useEffect(() => {
-    const fetchData = async () => {
-      const response = await fetch('https://nilaik.up.railway.app/clientes');
-      const json = await response.json();
-      setData(json);
-    };
-    fetchData();
-  }, []); */
-
-  function getUserData() {
-    const userData = localStorage.getItem('userData');
-    return JSON.parse(userData);
-  }
-
+  // Get the current date and format it as "dd - month - yyyy"
+  const options = { day: 'numeric', month: 'long', year: 'numeric' };
+  const currentDate = new Date().toLocaleDateString('es-ES', options);
 
   return (
     <>
@@ -36,31 +30,34 @@ export default function Checkout() {
               <form>
                 <div className={style.loginFormGroup}>
                   <label htmlFor="email">Nombre de usuario: </label>
-                  <label className={style.label2}>{data.username}</label>
+                  <label className={style.label2}>{username}</label>
                 </div>
                 <div className={style.loginFormGroup}>
                   <label htmlFor="password">Apellido: </label>
-                  <label className={style.label2}>{data.lastname}</label>
+                  <label className={style.label2}>{lastname}</label>
                 </div>
                 <div className={style.loginFormGroup}>
                   <label htmlFor="password">Email: </label>
-                  <label className={style.label2}>{data.email}</label>
+                  <label className={style.label2}>{email}</label>
                 </div>
                 <div className={style.loginFormGroup}>
                   <label htmlFor="password">Direccion: </label>
-                  <label className={style.label2}>{data.adress}</label>
+                  <label className={style.label2}>{adress}</label>
                 </div>
                 <div className={style.loginFormGroup}>
                   <label htmlFor="password">Fecha pedido: </label>
-                  <label className={style.label2}> 07 - marzo- 2023 </label>
+                  <label className={style.label2}>{currentDate}</label>
                 </div>
                 <div className={style.loginFormGroup}>
-                  <label htmlFor="password">ID Cliente: </label>
-                  <label className={style.label2}>123456 </label>
+                  <label htmlFor="password">Cantidad de conjuntos adquiridos: </label>
+                  <label className={style.label2}>{quantity}</label>
                 </div>
                 <div className={style.loginFormGroup}>
-                  <label htmlFor="password">ID Carrito: </label>
-                  <label className={style.label2}>1</label>
+                  <label htmlFor="password">Precio total a pagar </label>
+                  <label className={style.label2}>{total}</label>
+                </div>
+                <div className={style.loginFormGroup}>
+                  <input type="submit" className={style.loginBtn} value="Confirmar pedido" />
                 </div>
               </form>
             </div>

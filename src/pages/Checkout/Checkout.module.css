@@ -115,3 +115,23 @@
     margin: 15%;
   }
 }
+
+.loginBtn {
+  padding: 12px 24px;
+  align-items: center;
+  text-align: center;
+  margin-left: 13px;
+  font-size: 16px;
+  border: none; /* 
+  border-radius: 4px; */
+  background-color: #fb9595;
+  color: #4f1f28;
+  transition: background-color 0.2s ease-in-out;
+  cursor: pointer;
+  margin: 5%;
+}
+
+.loginBtn:hover {
+  background-color: #ccc;
+  color: #4f1f28;
+}
