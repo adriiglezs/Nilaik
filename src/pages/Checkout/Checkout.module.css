@@ -1,4 +1,126 @@
 .foo {
-  position: absolute;
+  position: relative;
   background-color: #2f5898;
+}
+.label2{
+  background-color: #a6b8d3;
+  text-align: center;
+}
+.loginCard {
+  width: 100%;
+  overflow: hidden;
+  margin: 10px;
+  background-color: #f6d522;
+  height: 100%;
+  height: auto;
+  align-self: center;
+  display: inline-block;
+}
+
+
+
+.loginCardBody {
+  padding: 1%;
+}
+
+.loginFormGroup {
+  inline-size: auto;
+}
+
+.loginFormGroup label {
+  padding: 2% 0% 0% 0%;
+  display: block;
+  font-size: 14px;
+  color: #4f1f28;
+  font-weight: bold;
+  margin-bottom: 1px;
+}
+
+
+
+.loginFormGroup input[type="text"],
+.loginFormGroup input[type="email"],
+.loginFormGroup input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+  /* border: 1px solid #4f1f28;
+  border-radius: 4px; */
+}
+
+
+
+
+
+
+.LoginPageContainerGlobal {
+  width: 100%;
+  margin: 2% 0% 2% 0%;
+  align-self: center;
+  justify-content: center;
+  display: flex;
+}
+@media screen and (max-width: 464px) {
+  .LoginPageContainerGlobal {
+    width: 100%;
+    display: inline-block;
+  }
+}
+.LoginPageContainerLogin {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  background-color: #f6d522;
+  margin: 0% 2% 0% 2%;
+  padding: 3% 3% 3% 3%;
+}
+@media screen and (max-width: 1024px) {
+  .LoginPageContainerLogin {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 464px) {
+  .LoginPageContainerLogin {
+    width: 95%;
+    display: inline-flex;
+    margin: 2% 2% 3% 2%;
+  }
+}
+
+.LoginPageContainerImg {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  background-color: #f6d522;
+  margin: 0% 2% 0% 2%;
+  padding: 0% 3% 0% 3%;
+}
+@media screen and (max-width: 1024px) {
+  .LoginPageContainerImg {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 464px) {
+  .LoginPageContainerImg {
+    width: 95%;
+    display: inline-flex;
+    margin: 2% 2% 3% 2%;
+  }
+}
+
+.LoginPageImg {
+  width: 100%;
+  height: auto;
+  align-self: center;
+  display: inline-flex;
+  margin: 0;
+}
+@media screen and (max-width: 464px) {
+  .LoginPageImg {
+    width: 95%;
+    display: inline-flex;
+    margin: 15%;
+  }
 }
