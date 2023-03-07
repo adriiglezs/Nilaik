@@ -13,6 +13,7 @@ import AboutNilaik from "./pages/AboutNilaik/AboutNilaik";
 import AskQuestions from "./pages/AskQuestions/AskQuestions";
 import Register from "./pages/LoginRegister/LoginRegister";
 import SpecialThanks from "./pages/SpecialThanks/SpecialThanks";
+import Checkout from "./pages/Checkout/Checkout";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
         <Route path="/AskQuestions" element={<AskQuestions />} />
         <Route path="/register" element={<Register />} />
         <Route path="/special-thanks" element={<SpecialThanks />} />
+        <Route path="/checkout" element={<Checkout />} />
         <Route path="*" element={<Error />} />
       </Routes>
     </>
