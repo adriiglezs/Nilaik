@@ -80,7 +80,7 @@ export default function AboutUs() {
           instagramUrl="https://instagram.com/adrii_wings?igshid=NmQ2ZmYxZjA="
           githubUrl="https://github.com/adriiglezs"
           linkedinUrl="https://www.linkedin.com/in/adri%C3%A1n-gonz%C3%A1lez-s%C3%A1nchez-649141253"
-          cvUrl="https://drive.google.com/file/d/1vlJgcxMdQ644m2vCBInBFGT8dkn_5bKt/view?usp=sharing"
+          cvUrl="https://drive.google.com/file/d/1i2mLLMskkt46QeDtKvCPD2KtR-9CqfV9/view?usp=share_link"
           photo={adrian}
           biography="Originario del Estado de México, estudiante de la M. en Cs. en Ingeniería de Sistemas y egresado de la Ing. Matemática, mantengo un alto interés en el desarrollo web. Dispuesto a aprender cosas nuevas y desarrollar soluciones de forma óptima, manteniendo comunicación, iniciativa y disponibilidad para el trabajo en equipo. Integrante del development team."
         />
