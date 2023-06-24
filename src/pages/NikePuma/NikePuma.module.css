@@ -2,7 +2,7 @@
   position: relative;
   background-color: #2f5898;
 }
-/*@media screen and (max-width: 464px) {
+@media screen and (max-width: 464px) {
   .card {
     display: none;
   }
@@ -11,4 +11,4 @@
   .cardmovil {
     display: none;
   }
-}*/
+}

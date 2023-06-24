@@ -19,6 +19,7 @@ export default function NikePuma() {
       <CarouselNike />
       <UniqueCollection />
       <CarouselPuma />
+      <CarouselPumaArlequin />
 
     </div>
     <div className={style.cardmovil}>

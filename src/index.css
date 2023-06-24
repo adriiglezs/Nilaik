@@ -9,6 +9,7 @@ body {
     rgba(238, 174, 202, 1) 0%,
     rgba(148, 187, 233, 1) 100%
   );
+  /* background-color: black; */
   color: #4f1f28;
   font-family: "Chivo Mono", monospace, system-ui, -apple-system,
     BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
