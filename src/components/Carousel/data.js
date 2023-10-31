@@ -43,7 +43,7 @@ export const adidasBicolor = [
     precioMayoreo: 0.0,
     precioMenudeo: 0.0,
     existencias: 3,
-    url: "https://res.cloudinary.com/ddwq0ulee/image/upload/v1676403119/Nilaik/adidas%20bicolor/IMG_20230212_00000322-min_etzuwp.jpg",
+    url: "https://res.cloudinary.com/ddwq0ulee/image/upload/v1676403119/Nilaik/adidas%20bicolor/IMG_20230212_170322-min_etzuwp.jpg",
   },
   {
     idProducto: uuid(),
@@ -272,7 +272,7 @@ export const adidas3 = [
     precioMayoreo: 0.0,
     precioMenudeo: 0.0,
     existencias: 10,
-    url: "https://res.cloudinary.com/ddwq0ulee/image/upload/v1676402924/Nilaik/adidas%203/IMG_20230212_00000556-min_ewf4mn.jpg",
+    url: "https://res.cloudinary.com/ddwq0ulee/image/upload/v1676402924/Nilaik/adidas%203/IMG_20230212_170556-min_ewf4mn.jpg",
   },
   {
     id: uuid(),
@@ -316,7 +316,7 @@ export const adidas3 = [
     precioMayoreo: 0.0,
     precioMenudeo: 0.0,
     existencias: 10,
-    url: "https://res.cloudinary.com/ddwq0ulee/image/upload/v1676402924/Nilaik/adidas%203/IMG_20230212_00000711-min_foofta.jpg",
+    url: "https://res.cloudinary.com/ddwq0ulee/image/upload/v1676402924/Nilaik/adidas%203/IMG_20230212_170711-min_foofta.jpg",
   },
 ];
 
@@ -352,7 +352,7 @@ export const puma = [
     precioMayoreo: 0.0,
     precioMenudeo: 0.0,
     existencias: 10,
-    url: "https://res.cloudinary.com/ddwq0ulee/image/upload/v1676403079/Nilaik/puma/IMG_20230212_00000020-min_cv77pn.jpg",
+    url: "https://res.cloudinary.com/ddwq0ulee/image/upload/v1676403079/Nilaik/puma/IMG_20230212_170020-min_cv77pn.jpg",
   },
   {
     id: uuid(),
@@ -374,7 +374,7 @@ export const puma = [
     precioMayoreo: 0.0,
     precioMenudeo: 0.0,
     existencias: 10,
-    url: "https://res.cloudinary.com/ddwq0ulee/image/upload/v1676403079/Nilaik/puma/IMG_20230212_00000117_oaw07h.jpg",
+    url: "https://res.cloudinary.com/ddwq0ulee/image/upload/v1676403079/Nilaik/puma/IMG_20230212_170117_oaw07h.jpg",
   },
   {
     id: uuid(),
@@ -431,14 +431,14 @@ export const personajes = [
     name: "Paris",
     src: "https://res.cloudinary.com/ddwq0ulee/image/upload/v1676402906/Nilaik/personajes/IMG_20230212_151040_1-min_ng9mxs.jpg",
     category: "PRS",
-    price: 0.0,
+    price: 175.0,
   },
   {
     id: uuid(),
     name: "Avioncito",
     src: " https://res.cloudinary.com/ddwq0ulee/image/upload/v1676402906/Nilaik/personajes/IMG_20230212_151355-min_gjlcqh.jpg",
     category: "PAV",
-    price: 0.0,
+    price: 175.0,
   },
 ];
 
