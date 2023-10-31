@@ -25,7 +25,7 @@ export default function JordanAdidas() {
 
   </div>*/}
     <UniqueCollection />
-    <SocialMedia />
+    {/* <SocialMedia /> */}
     <Footer styleFoo={style.foo} />
 
   </>)

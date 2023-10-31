@@ -23,7 +23,7 @@ function Home() {
       <CaroucelAdidas3 />
       <CarouselPumaArlequin />
       <Descubre />
-      <SocialMedia />
+      {/* <SocialMedia /> */}
       <Footer styleFoo={style.foo} />
     </>
   );

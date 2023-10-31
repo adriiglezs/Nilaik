@@ -22,8 +22,8 @@ export default function Footer({ styleFoo }) {
         </Link>
 
 
-        <p className={style.Faddress}>Direccion: Estado de México</p>
-        <p className={style.Faddress}>Correo: niilaiik@hotmail.com</p>
+        {/* <p className={style.Faddress}>Direccion: Estado de México</p>
+        <p className={style.Faddress}>Correo: niilaiik@hotmail.com</p> */}
         <p className={style.Faddress}></p>
 
       </div>
@@ -45,8 +45,8 @@ export default function Footer({ styleFoo }) {
           <ul className={style.Flis}>
             <Link to="/"><li>Inicio</li></Link>
             <Link to="/about"><li>Acerca de</li></Link>
-            <Link to="/contact"><li>Contáctanos</li></Link>
-            <Link to="/special-thanks"><li className={style.Special}>Agradecimientos Especiales</li></Link>
+            {/* <Link to="/contact"><li>Contáctanos</li></Link>
+            <Link to="/special-thanks"><li className={style.Special}>Agradecimientos Especiales</li></Link> */}
           </ul>
         </div>
 

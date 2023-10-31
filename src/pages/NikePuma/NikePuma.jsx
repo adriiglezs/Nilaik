@@ -29,7 +29,7 @@ export default function NikePuma() {
       <CarouselNike />
 
     </div>
-    <SocialMedia />
+    {/* <SocialMedia /> */}
     <Footer styleFoo={style.foo} />
 
   </>)

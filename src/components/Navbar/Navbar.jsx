@@ -40,13 +40,13 @@ function Navbar() {
         <Link to="/jordan-adidas">
           <h2>Jordan Adidas</h2>
         </Link>
-        <Link to="/aboutus">
+        {/* <Link to="/aboutus">
           <h2>Sobre nosotros</h2>
-        </Link>
+        </Link> */}
         <Link to="/about">
           <h2>Acerca de</h2>
         </Link>
-        <Link to="/contact">
+        {/* <Link to="/contact">
           <h2>Contáctanos</h2>
         </Link>
         <Link to="/login">
@@ -59,7 +59,7 @@ function Navbar() {
           <Badge badgeContent={basket?.length} color="secondary">
             <img src={cart} alt="carro de compra para añadir tus productos" />
           </Badge>
-        </Link>
+        </Link> */}
       </div>
       <div
         className={`${isNavShow} ${style.hamburger}`}
