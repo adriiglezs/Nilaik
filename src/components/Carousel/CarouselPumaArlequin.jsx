@@ -118,7 +118,7 @@ export default function CarouselPumaArlequin() {
         itemClass="carousel-item-padding-40-px"
       >
         {pumaArlequinItems.map((item) => (
-          <Product item={item} key={item.idProducto} />
+          <Product item={item} key={item.id} />
         ))}
       </Carousel>
 

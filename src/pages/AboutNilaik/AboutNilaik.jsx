@@ -38,73 +38,8 @@ export default function AboutNilaik() {
 
             <CardNosotros
               tittle="Sobre nosotros"
-              //content="Nilaik surge como un proyecto improvisado, como suele ocurrir con las cosas buenas en México, sin planificación previa. Buscamos ofrecer conjuntos de ropa accesibles y de buena calidad para los niños, permitiéndoles jugar cómodamente mientras se divierten." />
-              content="import javax.swing.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
+              content="Nilaik surge como un proyecto improvisado, como suele ocurrir con las cosas buenas en México, sin planificación previa. Buscamos ofrecer conjuntos de ropa accesibles y de buena calidad para los niños, permitiéndoles jugar cómodamente mientras se divierten." />
 
-public class LoginForm {
-    public static void main(String[] args) {
-        // Crear un nuevo marco (ventana) con título
-        JFrame frame = new JFrame(+Formulario de inicio de sesión+);
-
-            // Configurar el tamaño del marco
-            frame.setSize(300, 200);
-
-            // Crear etiquetas y campos de texto
-            JLabel userLabel = new JLabel(+Usuario:+);
-            JTextField userField = new JTextField();
-            JLabel passwordLabel = new JLabel(+Contraseña:+);
-            JPasswordField passwordField = new JPasswordField();
-            JButton loginButton = new JButton(+Iniciar sesión+);
-
-            // Establecer la ubicación y el tamaño de los componentes
-            userLabel.setBounds(20, 30, 80, 25);
-            userField.setBounds(100, 30, 160, 25);
-            passwordLabel.setBounds(20, 60, 80, 25);
-            passwordField.setBounds(100, 60, 160, 25);
-            loginButton.setBounds(100, 100, 100, 25);
-
-            // Agregar componentes al marco
-            frame.add(userLabel);
-            frame.add(userField);
-            frame.add(passwordLabel);
-            frame.add(passwordField);
-            frame.add(loginButton);
-
-            // Establecer el diseño nulo (null layout) para posicionar los componentes manualmente
-            frame.setLayout(null);
-
-            // Agregar un ActionListener al botón de inicio de sesión
-            loginButton.addActionListener(new ActionListener() {
-              @Override
-              public void actionPerformed(ActionEvent e) {
-              String user = userField.getText();
-            String password = new String(passwordField.getPassword());
-            String url = +jdbc:ncluster://myhost:2406/database+;
-
-            try {
-              // Intentar establecer la conexión
-              Connection connection = DriverManager.getConnection(url, user, password);
-            JOptionPane.showMessageDialog(null, +Conexión exitosa+);
-            // Aquí puedes realizar cualquier operación adicional con la conexión establecida
-
-            // Cerrar la conexión cuando hayas terminado de usarla
-            connection.close();
-                } catch (SQLException ex) {
-              JOptionPane.showMessageDialog(null, +Error al conectar: + + ex.getMessage());
-                }
-            }
-        });
-
-            // Hacer visible el marco
-            frame.setVisible(true);
-    }
-}
-" />
 
 
           </div>

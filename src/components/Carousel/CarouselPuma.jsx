@@ -112,7 +112,7 @@ export default function CarouselPuma() {
         itemClass="carousel-item-padding-40-px"
       >
         {pumaItems.map((item) => (
-          <Product item={item} key={item.idProducto} />
+          <Product item={item} key={item.id} />
         ))}
       </Carousel>
 

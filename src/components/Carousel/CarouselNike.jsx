@@ -115,7 +115,7 @@ export default function CarouselNike() {
         itemClass="carousel-item-padding-40-px"
       >
         {nikeItems.map((item) => (
-          <Product item={item} key={item.idProducto} />
+          <Product item={item} key={item.id} />
         ))}
       </Carousel>
 

@@ -116,7 +116,7 @@ export default function CarouselJordan() {
         itemClass="carousel-item-padding-40-px"
       >
         {jordanItems.map((item) => (
-          <Product item={item} key={item.idProducto} />
+          <Product item={item} key={item.id} />
         ))}
       </Carousel>
 
