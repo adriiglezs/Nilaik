@@ -9,11 +9,13 @@ import CaroucelAdidas3 from "../../components/Carousel/CarouselAdidas3";
 import CaroucelAdidasBicolor from "../../components/Carousel/CarouselAdidasBicolor";
 import CaroucelNike from "../../components/Carousel/CarouselNike";
 import Descubre from "../../components/Descubre/Descubre";
+import Carouselcarnal from "../../components/Carousel/CarouselEspeciales";
 
 function Home() {
   return (
     <>
       <PrimerComponente />
+      <Carouselcarnal />
       <CaroucelAdidasBicolor />
       <CaroucelNike />
       <CaroucelPuma />
