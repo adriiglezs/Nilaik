@@ -6,11 +6,11 @@
   background-color: #000;
   display: flex;
   flex-direction: column;
-  justify-content: end;
   padding: 12px;
   gap: 12px;
   border-radius: 8px;
   cursor: pointer;
+  justify-content: flex-start;
 }
 
 .card::before {
