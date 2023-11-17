@@ -2,16 +2,24 @@ import style from './home-primer-componente.module.css';
 
 
 
-function PrimerComponente() {
+function PrimerComponente({ name, occupation, phoneNumber, email, nationality, country, address }) {
   return (
     <div className={style.card}>
       <p className={style.heading}>
-        Popular this month
+        {name}
       </p>
       <p>
-        Powered By
+        {occupation}
       </p>
-      <p>Uiverse
+      <p>{phoneNumber}
+      </p>
+      <p>{email}
+      </p>
+      <p>{nationality}
+      </p>
+      <p>{country}
+      </p>
+      <p>{address}
       </p>
 
     </div>
