@@ -71,29 +71,29 @@ function Home() {
       <PrimerComponente
         name="Name: Celina Monserrat"
         phoneNumber="Phone number: 55 74 82 79 80"
-        occupation="Occupation: "
+        occupation="Occupation: nursing student"
         email="Email: monserratr139@glmail.com"
         nationality="Nationality: Mexican"
         country="Country: Ixtapaluca"
         address="Address: Stret Chapultepec#7 Ixtapaluca México"
       />
       <PrimerComponente
-        name="Name: "
+        name="Name: Diana"
         phoneNumber="Phone number: "
-        occupation="Occupation: "
-        email="Email: "
-        nationality="Nationality: "
-        country="Country:  "
-        address="Address: "
+        occupation="Occupation: backend developer at GS (Grupo Salinas)"
+        email="Email: diana.randi1@gmail.com"
+        nationality="Nationality: Mexican"
+        country="Country: Mexico"
+        address="Address: Vicente Guerrero Street, Luis Echeverría Colony, Cuautitlán Izcalli, Méx."
       />
       <PrimerComponente
-        name="Name: "
-        phoneNumber="Phone number: "
-        occupation="Occupation: "
-        email="Email: "
-        nationality="Nationality: "
-        country="Country:  "
-        address="Address: "
+        name="Name: Valentin"
+        phoneNumber="Phone number: 2331113740"
+        occupation="Occupation: student"
+        email="Email: vcode1104@gmail.com"
+        nationality="Nationality: Mexican"
+        country="Country:  Mexico City"
+        address="Address: Av. Escuadron 201 Ticoman"
       />
     </>
   );
