@@ -21,13 +21,13 @@ function Home() {
           occupation="Occupation: nuclear engineer"
           email="Email:  bluder400@gmail.com"
           nationality="Nationality: Mexican"
-          country="Country: Tulancingo"
+          country="Country: Mexico"
           address="Address: acueducto de Guadalupe, México city"
         />
         <PrimerComponente
           name="Name:  José"
           phoneNumber="Phone number: private"
-          occupation="Occupation: Currently I'm working in a company"
+          occupation="Occupation: Currently working at a company"
           email="Email: private"
           nationality="Nationality: British"
           country="Country: United Kingdom"
@@ -45,7 +45,7 @@ function Home() {
         <PrimerComponente
           name="Name: Hector"
           phoneNumber="Phone number: +52 7352014931"
-          occupation="Occupation: aeronautical engineer and I usually do aeronautical stuffs lol"
+          occupation="Occupation: aeronautical engineer and I usually do aeronautical stuffs"
           email="Email: hg3438773@gmail.com"
           nationality="Nationality: Mexican"
           country="Country:  Mexico"
@@ -57,7 +57,7 @@ function Home() {
           occupation="Occupation: home-office worker as an accountant assistant"
           email="Email: auroyariix@gmail.com"
           nationality="Nationality: Mexican"
-          country="Country:  Atenco"
+          country="Country:  Mexico"
           address="Address: San Salvador Atenco, at 16 de Septiembre st."
         />
         <PrimerComponente
@@ -71,12 +71,12 @@ function Home() {
         />
         <PrimerComponente
           name="Name: Celina Monserrat"
-          phoneNumber="Phone number: 55 74 82 79 80"
+          phoneNumber="Phone number: 5574827980"
           occupation="Occupation: nursing student"
           email="Email: monserratr139@glmail.com"
           nationality="Nationality: Mexican"
-          country="Country: Ixtapaluca"
-          address="Address: Stret Chapultepec#7 Ixtapaluca México"
+          country="Country: Mexico"
+          address="Address: Stret Chapultepec #7 Ixtapaluca México"
         />
         <PrimerComponente
           name="Name: Diana"
@@ -93,7 +93,7 @@ function Home() {
           occupation="Occupation: student"
           email="Email: vcode1104@gmail.com"
           nationality="Nationality: Mexican"
-          country="Country:  Mexico City"
+          country="Country:  Mexico"
           address="Address: Av. Escuadron 201 Ticoman"
         />
       </div>
