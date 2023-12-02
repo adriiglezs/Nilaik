@@ -29,6 +29,7 @@
 }
 
 .img {
+  opacity: 0;
   filter: contrast(0%);
   max-height: 60px;
   margin-left: 10px;
