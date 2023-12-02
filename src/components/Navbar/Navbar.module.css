@@ -1,10 +1,12 @@
 .nav {
-  background-color: #f6d522;
+  background-color: black;
   display: flex;
+  color: white !important;
   justify-content: space-between;
   height: fit-content;
   flex-direction: column;
 }
+
 .false {
   transform: translateY(0);
   display: flex;
@@ -14,6 +16,7 @@
   margin-right: 10px;
   flex-direction: column;
 }
+
 .true {
   display: flex;
   column-gap: 1rem;
@@ -26,12 +29,15 @@
 }
 
 .img {
+  filter: contrast(0%);
   max-height: 60px;
   margin-left: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
+
 .hamburger {
+  filter: contrast(0%);
   cursor: pointer;
   position: absolute;
   top: 1.5rem;
@@ -42,12 +48,14 @@
   .nav {
     flex-direction: row;
   }
+
   .true {
     transform: translateY(0);
-    color: black;
+    color: white !important;
     flex-direction: row;
     display: flex;
   }
+
   .hamburger {
     display: none;
   }

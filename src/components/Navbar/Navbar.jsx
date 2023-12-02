@@ -24,28 +24,27 @@ function Navbar() {
             src={brand}
             alt="Nilaik logo de colores diversos"
           />
-          <h2>{username}</h2>
         </Link>
       </div>
       <div className={`${isNavShow ? style.false : style.true}`}>
         <Link to="/">
-          <h2>Inicio</h2>
+          <h2>Tarjetas</h2>
         </Link>
         {/* <Link to="/characters">
           <h2>Personajes</h2>
         </Link> */}
-        <Link to="/nike-puma">
-          <h2>Nike Puma</h2>
+        <Link to="/VideoIngles">
+          <h2>Video</h2>
         </Link>
-        <Link to="/jordan-adidas">
-          <h2>Jordan Adidas</h2>
+        <Link to="/Agenda">
+          <h2>Agenda</h2>
         </Link>
         {/* <Link to="/aboutus">
           <h2>Sobre nosotros</h2>
         </Link> */}
-        <Link to="/about">
+        {/* <Link to="/about">
           <h2>Acerca de</h2>
-        </Link>
+        </Link> */}
         {/* <Link to="/contact">
           <h2>Contáctanos</h2>
         </Link>

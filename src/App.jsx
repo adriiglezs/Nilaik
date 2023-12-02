@@ -1,13 +1,17 @@
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import VideoIngles from "./pages/Video/VideoIngles";
+import Navbar from "./components/Navbar/Navbar";
+import Agenda from "./pages/Agenda/Agenda";
 
 function App() {
   return (
     <>
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/VideoIngles" element={<VideoIngles />} />
+        <Route path="/Agenda" element={<Agenda />} />
       </Routes>
     </>
   );
